@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="basic.css">
+    <link rel="stylesheet" href="explore.css">
+</head>
+
+
+
+
+
+<body>
+    
+    <div class="explore">
+
+        <!-- 鳥種探索頁籤 -->
+        <div>
+            <label for="explore-species">鳥種探索</label>
+            <input type="radio" name="explore" id="explore-species" class="btn1">
+        </div>
+
+        <!-- 探索地區頁籤 -->
+        <div>
+            <label for="explore-regions">探索地區</label>
+            <input type="radio" name="explore" id="explore-regions" class="btn2">
+        </div>
+
+
+
+        <div>
+            <!-- 頁籤內容-->
+            <div class="control-species">
+
+                <!-- 頁籤排版 -->
+                <div class="search-bg">
+                    <div class="left-block">
+                        <h1>Explore</h1>
+                        <form action="">
+                            <div>
+                                <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                <input type="text" class="search-btn" placeholder="輸入鳥種名">
+                            </div>
+                            
+                            <p>全球所有鳥種的分布地圖、統計數字、照片及錄音，以及你個人賞鳥的統計數據</p>
+                        </form>
+                    </div>
+                    <div class="right-block">
+                        <h1>Species</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+
+        <div>
+            <!-- 頁籤內容-->
+            <div class="control-regions">
+
+
+                 <!-- 頁籤排版 -->
+                <div class="search-bg">
+
+                    <div class="left-block">
+                        <h1>Regions</h1>
+                    </div>
+
+                    <div class="right-block">
+                        <h1>Explore</h1>
+                        <form action="">
+                            <div>
+                                <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                <input type="text" class="search-btn" placeholder="輸入國家或縣市名稱">
+                            </div>
+
+                            <p>一個地區的最新觀察、紀錄清單、賞鳥活動、及最佳熱門鳥點</p>
+                        </form>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</body>
+</html>

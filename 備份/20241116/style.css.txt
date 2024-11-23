@@ -1,0 +1,639 @@
+
+
+/* font-weight: Bold=700, SemiBold 600, Medium 500, Regular 400 */
+
+body{
+    background-color: #FEFBF1;
+    font-family: "Roboto Flex", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings: 
+    "slnt" 0,
+    "wdth" 100,
+    "GRAD" 0,
+    "XOPQ" 96,
+    "XTRA" 468,
+    "YOPQ" 79,
+    "YTAS" 750,
+    "YTDE" -203,
+    "YTFI" 738,
+    "YTLC" 514,
+    "YTUC" 712;
+
+    position: relative;
+    /* border: 5px solid red; */
+    height: 3060px;
+}
+
+
+
+/* ----------------------- banner ----------------------- */
+
+
+
+.banner{
+    /* min-width: 1440px; */
+    margin: 0 auto;
+    background-size: cover;
+    background-image: url(img/banner_mirror.jpg);
+    height: 560px;
+    width: auto;
+    background-position: 0 28% ;
+    display: block;
+}
+
+
+.banner .fixBanner{
+    width: 1200px;
+    margin: 0 auto;
+    height: 615px;
+    /* border: 1px solid red; */
+}
+
+.banner .title{
+    width: 525px;
+    /* border:  2px solid blue; */
+
+    padding-left: 100px;
+    padding-top: 126px;
+}
+
+
+.banner .title h2{
+    font-size: 56px;
+    font-weight: 700;
+    color: #363A3A;
+    word-spacing: 2px;
+    line-height: 140%;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);
+}
+
+.banner .title h1{
+    font-size: 72px;
+    font-weight: 700;
+    color: #363A3A;
+    word-spacing: 3px;
+    line-height: 140%;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);
+}
+
+.banner .title h1 span{
+    /* color: #F5D367; */
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);
+}
+
+.banner a{
+    display: block;
+    width: 168px;
+    height: 44px;
+    line-height: 44px;
+    text-decoration: none;
+    background-color: #2F475D;
+    color: #FEFBF1;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 999px;
+    border: .5px solid #B29671;
+    text-align: center;
+    box-shadow: 4px 4px 8px 0px rgb(0, 0, 0 , 25%);
+    margin-top: 30px;
+}
+
+
+.banner .fixBanner div:nth-of-type(2){
+    /* border: 3px solid yellow; */
+    width: 610px;
+    border-radius: 4px;
+    background: rgba(254, 251, 241, 0.50);
+    justify-content: flex-end;
+    align-items: center;
+    backdrop-filter: blur(1px);
+
+    float: right;
+
+    margin-top: 12px;
+}
+
+.banner ul{
+    display: flex;
+    /* border: 3px solid yellow; */
+    height: 104px;
+    align-items: center;
+    width: 540px;
+    gap: 56px;
+    padding-left: 33px;
+    position: relative;
+
+    box-sizing: border-box;
+}
+
+
+.banner ul li .data {
+    /* border: 1px solid blue; */
+    width: 140px;
+    display: flex;
+    
+    align-items: center;
+}
+
+
+.banner ul li .data img{
+    display: block;
+    padding-right: 16px;
+    height: 28px;
+    width: 32px;  
+}
+
+.banner ul li .data i{
+    display: block;
+    float: left;
+    font-size: 28px;
+    padding-right: 16px;
+    line-height: 160%;
+    color: #2F475D;
+}
+
+.banner ul li .data p{
+    font-size: 28px;
+    font-weight: 600;
+    word-spacing: 1px;
+    line-height: 160%;
+    color: #363A3A;
+    
+}
+
+.banner ul li{
+    /* border: 2px solid green; */
+    display: flex;
+    flex-direction: column;
+    height: 84px;
+    justify-content: center;
+
+    position: relative;
+    
+}
+
+.banner ul li p{
+    color: #363A3A;
+    font-size: 24px;
+    word-spacing: 1px;
+    line-height: 160%;
+    font-family: "Roboto Flex", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings: 
+    "slnt" 0,
+    "wdth" 100,
+    "GRAD" 0,
+    "XOPQ" 96,
+    "XTRA" 468,
+    "YOPQ" 79,
+    "YTAS" 750,
+    "YTDE" -203,
+    "YTFI" 738,
+    "YTLC" 514,
+    "YTUC" 712;
+    
+}
+
+/* World 裝飾 */
+.banner  ul:last-child::after{
+    content: 'World';
+    display: inline-flex;
+    font-size: 20px;
+    font-family: "Roboto Flex", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings: 
+    "slnt" 0,
+    "wdth" 100,
+    "GRAD" 0,
+    "XOPQ" 96,
+    "XTRA" 468,
+    "YOPQ" 79,
+    "YTAS" 750,
+    "YTDE" -203,
+    "YTFI" 738,
+    "YTLC" 514,
+    "YTUC" 712;
+
+    
+    line-height: 28px;
+    letter-spacing: 1px;
+
+    background-color: #2F475D;
+    transform: rotate(270deg);
+    width: 104px;
+    height: 28px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: -110px;
+    color:  #FEFBF1;
+    border-radius: 0 0 4px 4px;
+
+} 
+
+/* 裝飾分隔線 */
+.banner .fixBanner div ul li::after{
+    content: "";
+    border-right: 1px solid #B29671 ;
+    height: 80px;
+    width: 40px;
+    position: absolute;
+    right: -28px;
+}
+
+/* AVES使用者 右邊裝飾線去除 */
+.banner .fixBanner div ul li:last-child::after{
+    display: none;
+}
+
+
+
+
+
+/* ------------------- wrapper ---------------------- */
+
+.wrapper{
+    /* width: 1200px; */
+    color: #363A3A;
+    margin: 0 auto;
+
+}
+
+
+
+
+/*----- 最佳的鳥類顧問 區塊 -----*/
+.wrapper .main:nth-of-type(1){
+    height: 380px;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.wrapper .main .content{
+    /* border: 2px solid blue; */
+    width: 428px;
+    margin-left: auto;
+    padding: 54px 88px 0 0;
+}
+
+.wrapper .main:nth-of-type(1){
+    position: relative;
+    /* border: 2px solid red; */
+
+}
+
+.wrapper .main:nth-of-type(1) img{
+    object-fit: cover;
+    width: 564px;
+    height: 456px;
+    position: absolute;
+
+    bottom: -8px;
+    left: -12px;
+    box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.25);
+}
+
+.wrapper .main .content h4{
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 140%;
+    letter-spacing: 1px;
+    height: 56px;
+    text-align: center;
+}
+
+.wrapper .main .content p{
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 200%;
+    letter-spacing: 1px;
+    height: 100px;
+    text-align: start;
+}
+
+
+
+
+
+
+
+
+/*----- 特色 區塊 -----*/
+
+/* --- 滾動底圖 ---*/
+
+
+.wrapper .main div:first-child{
+    /* margin: 0 auto; */
+    /* width: 1200px; */
+    /* background-color: red; */
+}
+
+.main div h4{
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 140%; /* 56px */
+    letter-spacing: 1px;
+    color: #2F475D;
+    /* border: 1px solid red; */
+    text-align: center;
+    padding-top: 94px;
+    margin-bottom: 10px;
+}
+
+
+.wrapper .main:nth-of-type(2)>div{
+    background-image: url(./img/index_2.1.png);
+    height: 550px;
+    width: auto;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+
+}
+
+.wrapper .main:nth-of-type(2){
+    /* border: 2px solid red; */
+    height: 400px;
+    margin-top: 60px;
+
+    box-sizing: border-box;
+}
+
+.wrapper .main ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding-top: 10px;
+    border-radius: 4px;
+    background: rgba(254, 251, 241, 0.40);
+    backdrop-filter: blur(1px);
+    width: 1050px;
+    height: 300px;
+    margin: 0 auto;
+
+    box-sizing: border-box;
+}
+
+.wrapper .main ul li{
+    /* border: 2px solid blue; */
+    width: 268px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: auto;
+}
+
+.wrapper .main ul li img{
+    width: 160px;
+}
+
+.wrapper .main ul li span{
+    /* border: 2px solid #363A3A; */
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 140%;
+    letter-spacing: 1px;
+}
+
+.wrapper .main ul li p {
+    /* border: 2px solid red; */
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 1px;
+    /* color: #2F475D; */
+}
+
+
+.wrapper .main:nth-of-type(2){
+    position: relative;
+}
+
+
+
+/* --------- 推進科學研究與保育 區塊----------- */
+
+
+
+.wrapper .main:nth-of-type(3){
+    width: 1200px;
+    height: 456px;
+    margin: 0 auto;
+    /* border: 10px solid rgb(48, 16, 188); */
+    position: absolute;
+    left: 0;
+    right: 0;
+    transform: translateY(220px);
+    background-color: #2F475D;
+    display: flex;
+    position: relative;
+
+}
+
+
+.wrapper .main:nth-of-type(3)::after{
+    content: "";
+    display: block;
+    width: 1200px;
+    height: 150px;
+    position: absolute;
+    background-color: #B29671;
+    bottom: -150px;
+}
+
+.wrapper .main:nth-of-type(3) img{
+    height: 360px;
+    display: block;
+    align-self: center;
+    padding-left: 120px;
+    /* border: 2px solid red; */
+    transform: translateX(-40px);
+
+}
+
+.wrapper .main:nth-of-type(3) div{
+    /* border: 2px solid red; */
+    padding-top: 80px;
+    padding-left: 40px;
+
+}
+
+.wrapper .main:nth-of-type(3) div h4{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 140%; /* 56px */
+    letter-spacing: 1px;
+    width: 420px;
+    height: 56px;
+    color: #FEFBF1;
+    /* border: 2px solid black; */
+}
+
+.wrapper .main:nth-of-type(3) div p{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 200%;
+    letter-spacing: 1px;
+    width: 352px;
+    height: 100px;
+    color: #FEFBF1;
+    /* border: 2px solid black; */
+    margin: 0 auto;
+
+}
+
+
+
+/* ----------- AVES現況與展望 ------------ */
+
+.wrapper .main:nth-of-type(4){
+    width: 1200px;
+    margin: 0 auto;
+
+    position: relative;
+
+}
+
+.wrapper .main:nth-of-type(4)>div{
+    /* border: 2px solid blue; */
+    height: 400px;
+    top: 370px;
+    position: relative;
+}
+
+.wrapper .main:nth-of-type(4) .text{
+    /* border: 2px solid yellow; */
+    top: 10px;
+    width: 500px;
+    padding-left: 100px;
+}
+
+
+.wrapper .main:nth-of-type(4) .text p{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 200%;
+    letter-spacing: 1px;
+    width: 456px;
+    height: 108px;
+    /* border: 2px solid red; */
+    margin: 0 auto;
+    text-align: left;
+}
+
+
+
+
+/* ------ 舊圖 ------ */
+/* .wrapper .main:nth-of-type(4) img{
+    position: absolute;
+    width: 483px;
+    height: 419px;
+    object-fit: cover;
+    right: 0;
+    border: 2px solid red;
+    padding-right: 100px;
+    bottom: 20%;
+} */
+
+
+
+/* -------------- owl輪播套件 --------------------- */
+
+.wrapper .main .play{
+    /* border: 2px solid yellow; */
+    /* background-color: #785f5f; */
+    /* border:5px solid red; */
+    position: absolute;
+    top: -30%;
+    right: 40px;
+}
+
+
+/* 外框 */
+.play .owl-stage-outer{
+    width: 484px;
+    height: 420px;
+    /* border:1px solid black; */
+    margin: 0 auto;
+    box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.25);
+}
+
+/* 照片大小 */
+.play .owl-carousel .owl-item img{
+    width: 484px;
+    height: 420px;
+    object-fit: cover;
+}
+
+
+/* 按鈕 */
+.play .owl-carousel .owl-dots.disabled{
+    display: block;
+}
+
+/* 按鈕 */
+.play .owl-carousel .owl-nav.disabled{
+    display: block;
+}
+
+.play .owl-carousel .owl-nav .owl-next{
+    color: #B29671;
+}
+
+.play .owl-carousel .owl-nav .owl-prev{
+    color: #B29671;
+}
+
+/* 按鈕顏色 */
+.play .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span{
+    background-color: #B29671;
+}
+
+
+/* --------------- GOTOP ------------------ */
+
+
+.gotop a{
+    display: block;
+    position: fixed;
+    bottom: 40px;
+    left: 20px;
+    background-color: #FEFBF1;
+    border-radius: 50px;
+    box-sizing: border-box;
+    box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.25);
+    border: 1px solid transparent;
+}
+
+.gotop i{
+    font-size: 48px;
+    color: #B29671;
+}
+
+.gotop i:hover{
+    color: #363A3A;
+    border-radius: 50px;
+}
+
+
+
+
+
+/* -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+

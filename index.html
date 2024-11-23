@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AVES-全球最大的賞鳥數據平台</title>
+
+    <link rel="stylesheet" href="basic.css">
+    <link rel="stylesheet" href="style.css">
+
+
+
+    <!-- font-awesome icons Libraries 匯入 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"> 
+
+    <!-- Google 字體: Roboto Flex -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
+    
+
+
+
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+    <!-- jQuery (必要) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Owl Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+
+
+
+
+</head>
+
+<body>
+
+    <!-- Header -->
+    <div class="scroll-nav">
+        <div class="nav">
+            <a href="./index.html">
+                <img src="img/AVES_LOGO_horizontal.png" alt="">
+            </a>
+            <ul class="main-sel">
+                <li class="title">
+                    <a href="./events.html">相關消息</a>
+                </li>
+
+                <li class="title">
+                    <a href="./submit.html">提交發現</a>
+                    <a href="#">
+                        <i class="fa-solid fa-caret-down">
+                        </i>
+                    </a>
+                    <div class="sec-sel">
+                        <a href="./myRecord.html">我的紀錄</a>
+                    </div>
+                </li>
+
+                <li class="title">
+                    <a href="./explore.html">資料探索</a>
+                    <a href="#">
+                        <i class="fa-solid fa-caret-down"></i>
+                    </a>
+                    <div class="sec-sel">
+                        <a href="./exploreSpecies.html">探索鳥種</a>
+                        <a href="./exploreRegions.html">地區探索</a>
+                    </div>
+                </li>
+
+                <li class="title">
+                    <a href="./about_support.html">關於我們</a>
+                </li>
+
+                <li class="title">
+                    <a href="loginAccount.html">會員登入</a>
+                    <a href="#">
+                        <i class="fa-solid fa-caret-down"></i>
+                    </a>
+                    <div class="sec-sel">
+                        <!-- <a href="#">登出</a> -->
+                    </div>
+                </li>
+                <div>
+                    <a class="language" href="#">
+                        <i class="fa-solid fa-globe"></i>
+                        <i class="fa-solid fa-caret-down"></i>
+                    </a>
+                    <div class="sec-sel">
+                        <a href="#">English</a>
+                        <a href="#">日本語</a>
+                        <a href="#">繁體中文</a>
+                    </div>
+                </div>
+
+            </ul>
+        </div>
+    </div>
+    
+
+    <!-- Banner -->
+    <div class="banner">
+        <div class="fixBanner">
+            <div>
+                <div class="title">
+                    <h2>關於所有</h2>
+                    <h1>
+                        <span>鳥類</span>與賞鳥指南
+                    </h1>
+                    <a href="#">立即探索</a>
+                </div>
+            </div>
+            
+            <div>
+                <ul>
+                    <li>
+                        <div class="data">
+                            <img src="./img/birdicon_blue.svg" alt="">
+                            <p>10,954</p>
+                        </div>
+                        <p>鳥種</p>
+                    </li>
+                    <li>
+                        <div class="data">
+                            <i class="fa-solid fa-clipboard-list"></i>
+                            <p>1.01億</p>
+                        </div>
+                        <p>紀錄清單</p>
+                    </li>
+                    <li>
+                        <div class="data">
+                            <i class="fa-solid fa-circle-user"></i>
+                            <p>105萬</p>
+                        </div>
+                        <p>AVES使用者</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main -->
+    <div class="wrapper">
+        <div class="main">
+            <img src="./img/index_1.png" alt="">
+            <div class="content">
+                <h4>最佳的鳥類顧問</h4>
+                <p>幫助您成為鳥類世界的探索者！我們提供鳥類的生活習性與特徵辨識，即使您沒親眼見過，也能透過其它探索者的發現來認識稀有鳥種。</p>
+            </div>
+        </div>
+        <div class="main">
+            <div>
+                <div>
+                    <h4>特色</h4>
+                    <ul>
+                        <li>
+                            <img src="./img/index_3.svg" alt="">
+                            <span>尋找更多的鳥</span>
+                            <p>探索鄰近或任何即將拜訪地點的鳥類與熱門鳥點，資訊都來自全球各地最新的賞鳥紀錄。
+                            </p>
+                        </li>
+                        <li>
+                            <img src="./img/index_3.1.svg" alt="">
+                            <span>分享你的紀錄</span>
+                            <p>每筆紀錄、每次的觀察都很重要，一起做出貢獻，加入全球最大的賞鳥社群吧。</p>
+                        </li>
+                        <li>
+                            <img src="./img/index_3.2.svg" alt="">
+                            <span>追蹤你的紀錄</span>
+                            <p>哪一種鳥是你最新的生涯紀錄呢? AVES為你清楚整理，同時完整連結你的照片與錄音 。</p>
+                        </li>
+                    </ul>
+                </div> 
+            </div>
+        </div>
+        <div class="main">
+            <img src="./img/index_4.jpg" alt="">
+            <div>
+                <h4>推進科學研究與保育</h4>
+                <p>你所觀察的紀錄將協助成千上萬的保育決策、科學論文與學生研究，讓鳥類研究資訊更為全球瞭解。</p>
+            </div>
+        </div>
+        <div class="main">
+            <div>
+                <div class="text">
+                    <h4>AVES現況與展望</h4>
+                    <p>AVES 透過高解析度數據和視覺化工具，每年更新鳥類族群的趨勢，助力科學研究與保育應用，涵蓋棲地保護、政策支援等，成為理解與保護鳥類的關鍵資源。</p>
+                </div>
+
+                <div class="play">
+                    <div class="owl-carousel owl-theme">
+                        <div class="item">
+                            <img src="./img/demoiselle-crane-7705173_1920.jpg" alt="">
+                            <h4></h4>
+                        </div>
+                        <div class="item">
+                            <img src="./img/istockphoto-144723761-1024x1024.jpg" alt="">
+                            <h4></h4>
+                        </div>
+                        <div class="item">
+                            <img src="./img/istockphoto-1182169356-1024x1024.jpg" alt="">
+                            <h4></h4>
+                        </div> 
+                        <div class="item">
+                            <img src="./img/istockphoto-1347189484-1024x1024.jpg" alt="">
+                            <h4></h4>
+                        </div>
+                        <div class="item">
+                            <img src="./img/photo (1).jfif" alt="">
+                            <h4></h4>
+                        </div>
+                        <div class="item">
+                            <img src="./img/geese-1757887_1920.jpg" alt="">
+                            <h4>5</h4>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <!-- 舊圖 -->
+                <!-- <img src="./img/index_5.jpg" alt=""> -->
+            </div>
+            
+        </div>
+
+
+        
+    </div>
+
+    <!-- Footer -->
+
+    <div class="footer">
+
+        <div class="footer-bg">
+            <div class="main-footer">
+                <div class="footer-logo">
+                    <a href="./index.html">
+                        <img src="./img/AVES_LOGO_horizontal.png" alt="">
+                    </a>
+                    <p>4F., No. 219, Sec. 3, Nanjing E. Rd., Zhongshan Dist., Taipei City 104506, Taiwan (R.O.C.)</p>
+                </div>
+
+                <ul>
+                    <li class="footer-list">
+                        <a class="heading-link" href="./events.html">相關消息</a>
+                    </li>
+                    <li class="footer-list">
+                        <a class="heading-link" href="./submit.html">提交發現</a>
+                        <a href="./myRecord.html">我的紀錄</a>
+                    </li>
+                    <li class="footer-list">
+                        <a class="heading-link" href="./explore.html">資料探索</a>
+                        <a href="./exploreSpecies.html">鳥種探索</a>
+                        <a href="./exploreRegions.html">探索地區</a>
+                    </li>
+                    <li class="footer-list">
+                        <a class="heading-link" href="./about_support.html">關於我們</a>
+                    </li>
+                    <li class="footer-list">
+                        <a class="heading-link" href="loginAccount.html">會員登入</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+
+
+        <div>
+            <div class="copyright">
+                <p>Copyright © 2024 WiEdu Co. All rights reserved.</p>
+                <div>
+                    <a href="https://www.facebook.com/ebird/">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="https://x.com/team_ebird/">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a href="https://www.instagram.com/team_ebird/">
+                        <i class="fa-brands fa-square-instagram"></i>
+                    </a>
+                    
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="gotop">
+        <a href="#">
+            <i class="fa-solid fa-circle-up"></i>
+        </a>
+    </div>
+
+
+    <!-- Script -->
+    <script>
+        $('.owl-carousel').owlCarousel({
+        loop:true,
+        margin:550,
+        nav:true,
+        autoplay: true,  // 自動撥放
+        autoplayTimeout: 2000,  // 自動撥放間隔時間（單位: 毫秒）
+        responsive:{
+            0:{
+                items:1
+            },
+            2000:{
+                items:3
+            },
+            4000:{
+                items:5
+            }
+        }
+    })
+    </script>
+
+
+</body>
+</html>

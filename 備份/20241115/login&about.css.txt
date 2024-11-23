@@ -1,0 +1,309 @@
+@import url(reset.css);
+
+/* font-weight: Bold=700, SemiBold 600, Medium 500, Regular 400 */
+/* #FEFBF1 - Ivory White/50 , #2F475D - Midnight Blue/800 , #B29671 - Warm Khaki/400 , #5F446F - Deep Slate Purple/800*/
+
+
+.wrapper{
+    background-image: url(./img/kingfisher-5965475.jpg);
+    max-width: 1400px;
+    height: 740px;
+    background-size: cover;
+    background-position:0px -50px;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper .main{
+    /* border: 5px solid brown; */
+    width: 850px;
+    height: 540px;
+    box-shadow: 0px 0px 100px 0px rgba(0, 0, 0, 0.30);
+    display: flex;
+}
+
+.wrapper .main .content{
+    font-family: "Roboto Flex", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-variation-settings: 
+    "slnt" 0,
+    "wdth" 100,
+    "GRAD" 0,
+    "XOPQ" 96,
+    "XTRA" 468,
+    "YOPQ" 79,
+    "YTAS" 750,
+    "YTDE" -203,
+    "YTFI" 738,
+    "YTLC" 514,
+    "YTUC" 712;
+    letter-spacing: 1px;
+    color: #FEFBF1;
+    width: 515px;
+    height: 540px;
+    /* border: 2px solid green; */
+    
+}
+
+.wrapper .main .content h5{
+    font-size: 36px;
+    line-height: 140%;
+    margin-top: 28px;
+    margin-left: 32px;
+}
+
+.wrapper .main .content h6{
+    font-size: 24px;
+    line-height: 140%;
+    margin-top: 12px;
+    margin-left: 32px;
+}
+
+.wrapper .main .content p{
+    font-size: 20px;
+    line-height: 140%;
+    margin-left: 330px;
+    margin-top: 330px;
+}
+
+
+
+.wrapper .main .login{
+    width: 335px;
+    background-color: #B29671;
+    position: relative;
+}
+
+
+.wrapper .main .login div:nth-of-type(1){
+    /* border: 2px solid yellow; */
+    height: 230px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wrapper .main .login div:nth-of-type(1) img{
+    width: 100px;
+    padding-top: 60px;
+    padding-bottom: 36px;
+}
+
+.wrapper .main .login div:nth-of-type(1) p{
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: .5px;
+    color: #2F475D;
+    font-family: "Roboto Flex", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-variation-settings: 
+    "slnt" 0,
+    "wdth" 100,
+    "GRAD" 0,
+    "XOPQ" 96,
+    "XTRA" 468,
+    "YOPQ" 79,
+    "YTAS" 750,
+    "YTDE" -203,
+    "YTFI" 738,
+    "YTLC" 514,
+    "YTUC" 712;
+}
+
+
+.wrapper .main .login div:nth-of-type(1) p>a{
+    text-decoration: none;
+    color: #FEFBF1;
+}
+
+.wrapper .main .login div:nth-of-type(1) p>a:visited{
+    color: #FEFBF1;
+}
+
+.wrapper .main .login div:nth-of-type(1) p>a:hover{
+    color: #5F446F;
+}
+
+
+.wrapper .main .login form{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 12px;
+
+
+}
+
+
+.wrapper .main .login form input{
+    width: 250px;
+    height: 32px;
+    margin: 0 auto;
+    margin-bottom: 12px;
+    border-radius: 4px;
+    border: .5px solid #DADADA;
+    padding-left: 44px;
+}
+
+
+.wrapper .main .login input::placeholder{
+    content: "Email";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 19.6px */
+    color: #ACB4B3;
+}
+
+
+/* -------- 輸入框:focus ----------- */
+.wrapper .main .login form input[type="email"],
+.wrapper .main .login form input[type="password"] {
+    border: 1px solid #ACB4B3; 
+}
+
+.wrapper .main .login form input[type="email"]:focus,
+.wrapper .main .login form input[type="password"]:focus {
+    border-color: #5F446F;
+    outline: none; 
+}
+
+
+
+
+.wrapper .main .login form a{
+    display: block;
+    background-color: #2F475D;
+    width: 300px;
+    height: 36px;
+    font-size: 16px;
+    color: #FEFBF1;
+    text-decoration: none;
+    line-height: 36px;
+    margin: 0 auto;
+    border-radius: 4px;
+    font-family: "Roboto Flex", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-variation-settings: 
+    "slnt" 0,
+    "wdth" 100,
+    "GRAD" 0,
+    "XOPQ" 96,
+    "XTRA" 468,
+    "YOPQ" 79,
+    "YTAS" 750,
+    "YTDE" -203,
+    "YTFI" 738,
+    "YTLC" 514,
+    "YTUC" 712;
+    text-align: center;
+}
+
+
+.wrapper .main .login form a:hover{
+    background-color: #5F446F;
+}
+
+.wrapper .main .login form i:nth-of-type(1){
+    font-size: 20px;
+    color: #2F475D;
+    position: absolute;
+    transform: translate(150%, 40%);
+}
+
+.wrapper .main .login form i:nth-of-type(2){
+    font-size: 20px;
+    color: #2F475D;
+    position: absolute;
+    transform: translate(150%, 280%);
+}
+
+.wrapper .main .login div:nth-of-type(2){
+    /* border: 3px solid black; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 164px;
+    justify-content: center;
+    gap: 32px;
+}
+
+.wrapper .main .login div:nth-of-type(2) p{
+    font-family: "Roboto Flex", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-variation-settings: 
+    "slnt" 0,
+    "wdth" 100,
+    "GRAD" 0,
+    "XOPQ" 96,
+    "XTRA" 468,
+    "YOPQ" 79,
+    "YTAS" 750,
+    "YTDE" -203,
+    "YTFI" 738,
+    "YTLC" 514,
+    "YTUC" 712;
+    color: #2F475D;
+    line-height: 140%;
+    /* padding-top: 20px; */
+    /* height: 68px; */
+}
+
+
+.wrapper .main .login div:nth-of-type(2) p+ul+a{
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: none;
+    text-decoration-thickness: auto;
+    text-underline-offset: auto;
+    text-underline-position: from-font;
+    color: #FEFBF1;
+    
+    font-family: "Roboto Flex", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-variation-settings: 
+    "slnt" 0,
+    "wdth" 100,
+    "GRAD" 0,
+    "XOPQ" 96,
+    "XTRA" 468,
+    "YOPQ" 79,
+    "YTAS" 750,
+    "YTDE" -203,
+    "YTFI" 738,
+    "YTLC" 514,
+    "YTUC" 712;
+    line-height: 140%;
+}
+
+.wrapper .main .login div:nth-of-type(2) p+ul+a:hover{
+    color: #5F446F;
+}
+
+.wrapper .main .login div:nth-of-type(2) ul{
+    display: flex;
+    gap: 24px;
+}
+
+
+.wrapper .main .login div:nth-of-type(2) ul li i{
+    font-size: 24px;
+    color: #2F475D;
+    /* padding-bottom: 40px; */
+}
+
+
+.wrapper .main .login div:nth-of-type(2) ul li i:hover{
+    color: #5F446F;
+}

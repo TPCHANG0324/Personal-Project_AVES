@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AVES-我的紀錄</title>
+
+
+    <link rel="stylesheet" href="basic.css">
+    <link rel="stylesheet" href="submit_record.css">
+
+
+
+    <!-- font-awesome icons Libraries 匯入 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"> 
+
+    <!-- Google 字體: Roboto Flex -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+
+     <!-- Header -->
+     <div class="scroll-nav">
+        <div class="nav">
+            <a href="#">
+                <img src="img/AVES_LOGO_horizontal.png" alt="">
+            </a>
+            <ul class="main-sel">
+                <li class="title">
+                    <a href="#">相關消息</a>
+                </li>
+
+                <li class="title">
+                    <a href="#">提交發現</a>
+                    <a href="#">
+                        <i class="fa-solid fa-caret-down">
+                        </i>
+                    </a>
+                    <div class="sec-sel">
+                        <a href="#">我的紀錄</a>
+                    </div>
+                </li>
+
+                <li class="title">
+                    <a href="#">資料探索</a>
+                    <a href="#">
+                        <i class="fa-solid fa-caret-down"></i>
+                    </a>
+                    <div class="sec-sel">
+                        <a href="#">探索鳥種</a>
+                        <a href="#">地區探索</a>
+                    </div>
+                </li>
+
+                <li class="title">
+                    <a href="#">關於我們</a>
+                </li>
+
+                <li class="title">
+                    <a href="loginAccount.html">會員登入</a>
+                    <a href="#">
+                        <i class="fa-solid fa-caret-down"></i>
+                    </a>
+                    <div class="sec-sel">
+                        <a href="#">登出</a>
+                    </div>
+                </li>
+                <div>
+                    <a class="language" href="#">
+                        <i class="fa-solid fa-globe"></i>
+                        <i class="fa-solid fa-caret-down"></i>
+                    </a>
+                    <div class="sec-sel">
+                        <a href="#">English</a>
+                        <a href="#">日本語</a>
+                        <a href="#">繁體中文</a>
+                    </div>
+                </div>
+
+            </ul>
+        </div>
+    </div>
+
+
+
+    <!-- 個人檔案 -->
+    <div class="profile">
+        <div class="information">
+            <a href="#">
+                <i class="fa-solid fa-circle-user"></i>
+            </a>
+            <h5>Howard</h5>
+            <p>Taiwan</p>
+            <div>
+                <a href="#">
+                    <i class="fa-solid fa-unlock"></i>
+                    <p>公開</p>
+                </a>
+                <a href="#">
+                    <i class="fa-solid fa-pen-to-square"></i>
+                    <p>編輯簡介</p>
+                </a>
+            </div>
+
+            <h6>Your record URL:</h6>
+            <a href="#">https://AVES.org/profile/Howard</a>
+            <i class="fa-solid fa-qrcode"></i>
+            
+        </div>
+
+
+        
+        <!-- 我的紀錄標題 -->
+        <div class="profileBanner">
+
+            <h4>MY RECORD</h4>
+            <h5>我的紀錄</h5>
+        </div>
+
+
+        <!-- 個人數據 -->
+         <div class="profileData">
+             <ul>
+                 <li>
+                     <div>
+                         <img src="img/birdicon_blue.svg" alt="">
+                         <p>20</p>
+                     </div>
+                     <p>紀錄鳥種</p>
+                 </li>
+     
+                 <li>
+                     <div>
+                         <i class="fa-solid fa-clipboard-list"></i>
+                         <p>24</p>
+                     </div>
+                     <p>完整紀錄清單</p>
+                 </li>
+     
+                 <li>
+                     <div>
+                         <i class="fa-solid fa-camera-retro"></i>
+                         <p>10</p>
+                     </div>
+                     <p>照片鳥種數</p>
+                     <p>100 觀察記錄</p>
+                 </li>
+     
+                 
+                 <li>
+                     <div>
+                         <i class="fa-solid fa-volume-high"></i>
+                         <p>31</p>
+                     </div>
+                     <p>錄音鳥種數</p>
+                     <p>52 觀察記錄</p>
+                 </li>
+     
+             </ul>
+         </div>
+
+
+
+    </div>
+
+
+
+
+    <div class="recordList">
+        <div class="multiMedia">
+            <div class="newPhoto">
+                <div>
+                    <i class="fa-solid fa-camera-retro"></i>
+                    <h6>最新照片</h6>
+                    <a href="#">查看全部</a>
+                </div>
+                <ul>
+                    <li>
+                        <img src="./img/1800 (15).jpg" alt="">
+                        <p>五色鳥</p>
+                        <span>Psilopogon nuchalis</span>
+                    </li>
+
+                    <li>
+                        <img src="./img/1800 (16).jpg" alt="">
+                        <p>東方草鴞</p>
+                        <span>Tyto longimembris pithecops</span>
+                    </li>
+
+                    <li>
+                        <img src="./img/1800 (19).jpg" alt="">
+                        <p>冠八哥</p>
+                        <span>Acridotheres cristatellus formosanus</span>
+                    </li>
+
+                    <li>
+                        <img src="./img/1800 (18).jpg" alt="">
+                        <p>白頭翁</p>
+                        <span>Pycnonotus sinensis formosae</span>
+                    </li>
+
+                    <li>
+                        <img src="./img/1800 (17).jpg" alt="">
+                        <p>金背鳩</p>
+                        <span>Streptopelia orientalis</span>
+                    </li>
+
+                </ul>
+                
+            </div>
+
+
+            <div class="newRecording">
+                <div>
+                    <i class="fa-solid fa-volume-high"></i>
+                    <h6>最新錄音</h6>
+                    <a href="#">查看全部</a>
+                </div>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-circle-play"></i>
+                            <img src="./img/五色鳥_sound.png" alt="">
+                        </a>
+                        <p>五色鳥</p>
+                        <span>Psilopogon nuchalis</span>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-circle-play"></i>
+                            <img src="./img/東方草鴞_sound.png" alt="">
+                        </a>
+                        <p>東方草鴞</p>
+                        <span>Tyto longimembris pithecops</span>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-circle-play"></i>
+                            <img src="./img/冠八哥_sound.png" alt="">
+                        </a>
+                        <p>冠八哥</p>
+                        <span>Acridotheres cristatellus formosanus</span>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-circle-play"></i>
+                            <img src="./img/白頭翁_sound.png" alt="">
+                        </a>
+                        <p>白頭翁</p>
+                        <span>Pycnonotus sinensis formosae</span>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-circle-play"></i>
+                            <img src="./img/金背鳩_sound.png" alt="">
+                        </a>
+                        <p>金背鳩</p>
+                        <span>Streptopelia orientalis</span>
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+        <div class="newRecord">
+            <div>
+                <h6>最近記錄清單</h6>
+                <a href="#">查看全部</a>
+            </div>
+            <ul>
+                <li>
+                    <div>
+                        <p>1</p>
+                        <p>鳥種</p>
+                    </div>
+                    <div>
+                        <p>16 三月 2024</p>
+                        <p>輔仁大學</p>
+                        <p>New Taipei City, Taiwan</p>
+                    </div>
+                </li>
+
+                <li>
+                    <div>
+                        <p>1</p>
+                        <p>鳥種</p>
+                    </div>
+                    <div>
+                        <p>16 三月 2024</p>
+                        <p>輔仁大學</p>
+                        <p>New Taipei City, Taiwan</p>
+                    </div>
+                </li>
+
+                <li>
+                    <div>
+                        <p>1</p>
+                        <p>鳥種</p>
+                    </div>
+                    <div>
+                        <p>16 三月 2024</p>
+                        <p>輔仁大學</p>
+                        <p>New Taipei City, Taiwan</p>
+                    </div>
+                </li>
+
+                <li>
+                    <div>
+                        <p>1</p>
+                        <p>鳥種</p>
+                    </div>
+                    <div>
+                        <p>16 三月 2024</p>
+                        <p>輔仁大學</p>
+                        <p>New Taipei City, Taiwan</p>
+                    </div>
+                </li>
+
+                <li>
+                    <div>
+                        <p>1</p>
+                        <p>鳥種</p>
+                    </div>
+                    <div>
+                        <p>16 三月 2024</p>
+                        <p>輔仁大學</p>
+                        <p>New Taipei City, Taiwan</p>
+                    </div>
+                </li>
+            </ul>
+        
+        </div>
+
+    </div>
+
+
+
+
+    <!-- 我的地點 -->
+    <div class="myPlace">
+        <div>
+            <h6>我的地點</h6>
+            <a href="#">管理</a>
+        </div>
+
+        <ul>
+            <li>
+                <p>大安森林公園</p>
+                <p>Da'an District, Taipei City, Taiwan</p>
+                <div>
+                    <i class="fa-solid fa-clipboard-list"></i>
+                    <p>82</p>
+                </div>
+            </li>
+
+            <li>
+                <p>羅山林道</p>
+                <p>Hsinchu County, Taiwan</p>
+                <div>
+                    <i class="fa-solid fa-clipboard-list"></i>
+                    <p>1</p>
+                </div>
+            </li>
+            
+            <li>
+                <p>大安森林公園</p>
+                <p>Da'an District, Taipei City, Taiwan</p>
+                <div>
+                    <i class="fa-solid fa-clipboard-list"></i>
+                    <p>120</p>
+                </div>
+            </li>
+            
+            <li>
+                <p>羅山林道</p>
+                <p>Hsinchu County, Taiwan</p>
+                <div>
+                    <i class="fa-solid fa-clipboard-list"></i>
+                    <p>20</p>
+                </div>
+            </li>
+
+        </ul>
+
+
+
+    </div>
+
+
+
+
+
+
+    <div class="gotop">
+        <a href="#">
+            <i class="fa-solid fa-circle-up"></i>
+        </a>
+    </div>
+
+
+
+
+
+     <!-- Footer -->
+     <div class="footer">
+
+        <div class="footer-bg">
+            <div class="main-footer">
+                <div class="footer-logo">
+                    <a href="#">
+                        <img src="./img/AVES_LOGO_horizontal.png" alt="">
+                    </a>
+                    <p>4F., No. 219, Sec. 3, Nanjing E. Rd., Zhongshan Dist., Taipei City 104506, Taiwan (R.O.C.)</p>
+                </div>
+
+                <ul>
+                    <li class="footer-list">
+                        <a class="heading-link" href="#">相關消息</a>
+                    </li>
+                    <li class="footer-list">
+                        <a class="heading-link" href="#">提交發現</a>
+                        <a href="#">我的紀錄</a>
+                    </li>
+                    <li class="footer-list">
+                        <a class="heading-link" href="#">資料探索</a>
+                        <a href="#">探索地區</a>
+                        <a href="#">鳥種探索</a>
+                    </li>
+                    <li class="footer-list">
+                        <a class="heading-link" href="#">關於我們</a>
+                    </li>
+                    <li class="footer-list">
+                        <a class="heading-link" href="loginAccount.html">會員登入</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+
+
+        <div>
+            <div class="copyright">
+                <p>Copyright © 2024 WiEdu Co. All rights reserved.</p>
+                <div>
+                    <a href="https://www.facebook.com/ebird/">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="https://x.com/team_ebird/">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a href="https://www.instagram.com/team_ebird/">
+                        <i class="fa-brands fa-square-instagram"></i>
+                    </a>
+                    
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

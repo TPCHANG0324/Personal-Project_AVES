@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AVES-全球最大的賞鳥數據平台</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- font-awesome icons Libraries 匯入 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"> 
+
+    <!-- Google 字體: Roboto Flex -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
+    
+    
+</head>
+
+<body>
+    <!-- Header -->
+    <div class="scroll-nav">
+        <div class="nav">
+            <a href="#">
+                <img src="img/AVES_LOGO_horizontal.png" alt="">
+            </a>
+            <ul class="main-sel">
+                <li class="title">
+                    <a href="#">相關消息</a>
+                </li>
+
+                <li class="title">
+                    <a href="#">提交發現</a>
+                    <a href="#">
+                        <i class="fa-solid fa-caret-down">
+                        </i>
+                    </a>
+                    <div class="sec-sel">
+                        <a href="#">我的紀錄</a>
+                    </div>
+                </li>
+
+                <li class="title">
+                    <a href="#">資料探索</a>
+                    <a href="#">
+                        <i class="fa-solid fa-caret-down"></i>
+                    </a>
+                    <div class="sec-sel">
+                        <a href="#">探索鳥種</a>
+                        <a href="#">地區探索</a>
+                    </div>
+                </li>
+
+                <li class="title">
+                    <a href="#">關於我們</a>
+                </li>
+
+                <li class="title">
+                    <a href="#">會員登入</a>
+                    <a href="#">
+                        <i class="fa-solid fa-caret-down"></i>
+                    </a>
+                    <div class="sec-sel">
+                        <a href="#">登出</a>
+                    </div>
+                </li>
+                <div>
+                    <a class="language" href="#">
+                        <i class="fa-solid fa-globe"></i>
+                        <i class="fa-solid fa-caret-down"></i>
+                    </a>
+                    <div class="sec-sel">
+                        <a href="#">English</a>
+                        <a href="#">日本語</a>
+                        <a href="#">繁體中文</a>
+                    </div>
+                </div>
+
+            </ul>
+        </div>
+    </div>
+
+    <div class="banner">
+        <h2></h2>
+        <h1></h1>
+        <a href="#">立即探索</a>
+
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+
+
+    <div class="wrapper">
+        
+       
+    </div>
+
+</body>
+</html>

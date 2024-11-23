@@ -1,0 +1,572 @@
+
+*{
+    box-sizing: border-box;
+}
+
+.fullBanner{
+    background-image: url(./img/1800\ \(2\).jpg);
+    width: 100%;
+    background-size: 100%;
+    background-position: 0 390px;
+    
+    
+}
+
+.fullBanner>div{
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 180px;
+    position: relative;
+}
+
+.fullBanner h1{
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 140%;
+    letter-spacing: 2px;
+    color: #FEFBF1;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    position: absolute;
+    top: 15px;
+    left: 370px;
+
+}
+
+.fullBanner h2{
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 140px;
+    letter-spacing: 1px;
+    color: #FEFBF1;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    position: absolute;
+    bottom: 15px;
+    right: 370px;
+}
+
+.wrapper{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    max-width: 1200px;
+    margin: 0 auto;
+    grid-template-areas: "news"
+                        "activities"
+                        "thesis";
+}
+
+
+
+
+
+
+
+
+/* ------------------ news ------------------------- */
+
+
+
+.news{
+    grid-area: news;
+}
+
+.news>div{
+    display: flex;
+    /* border: 2px solid red; */
+    height: 56px;
+    justify-content: center;
+    gap: 30px;
+    color: #2F475D;
+    margin: 24px 0;
+    overflow: hidden;
+}
+
+.news h3{
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 56px;
+    letter-spacing: 1px;
+    height: 56px;
+    /* border: 2px solid yellow; */
+
+    position: relative;
+}
+
+.news h3::after{
+    content: "";
+    display: block;
+    height: 40px;
+    border-right: 3px solid #B29671;
+
+    position: absolute;
+    right: -18px;
+    top: 8px;
+}   
+
+.news h4{
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 56px;
+    letter-spacing: 1px;
+    height: 56px;
+    
+    /* border: 2px solid blue; */
+}
+
+.news ul{
+    /* border: 2px solid green; */
+    
+}
+
+.news ul .newList{
+    /* border: 2px solid purple; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 44px;
+}
+
+
+.news ul .newList img{
+    width: 324px;
+    height: 194px;
+}
+
+.news ul .newList .content{
+    border: 3px solid #D3E5A4;
+    width: auto;
+    padding: 0 28px 0 28px;
+    height: 194px;
+
+    position: relative;
+}
+
+.news ul .newList .content a{
+    text-decoration: none;
+}
+
+.news ul .newList .content a h5{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 140%;
+    letter-spacing: 1px;
+    margin-top: 25px;
+    padding-bottom: 5px;
+    text-decoration: none;
+    color: #2F475D;
+    height: auto;
+    width: 640px;
+    /* border: 2px solid blue; */
+
+
+    
+}
+
+.news ul .newList .content a p{
+    text-overflow: ellipsis;
+    white-space: wrap;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 160%;
+    overflow: hidden;
+    color: #363A3A;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    width: 650px;
+    /* border: 2px solid blue; */
+}
+
+.news ul .newList .content a+p{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 1px;
+    color: #2F475D;
+    padding: 8px 0;
+    /* border: 2px solid red; */
+
+    position: absolute;
+    bottom: 0;
+    right: 8px;
+}
+
+.news div+ul+a{
+    display: block;
+    width: 168px;
+    height: 44px;
+    background-color: #2F475D;
+    border-radius: 999px;
+    border: 0.5px solid #B29671;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 44px;
+    color: #FEFBF1;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.25);
+    margin: 0 auto;
+}
+
+.news div+ul+a:hover{
+    background-color: #5F446F;
+}
+
+
+
+
+/* ------------------ activities ------------------------- */
+
+
+.activities{
+    grid-area: activities;
+    margin:0 20px;
+    /* border: 2px solid red; */
+    margin-top: 48px;
+}
+
+
+.activities div:nth-of-type(1){
+    display: flex;
+    /* border: 2px solid red; */
+    height: 56px;
+    justify-content: center;
+    column-gap: 30px;
+    color: #2F475D;
+    
+    
+}
+
+.activities h3{
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 56px;
+    letter-spacing: 1px;
+    height: 56px;
+    /* border: 2px solid yellow; */
+
+    position: relative;
+}
+
+.activities h3::after{
+    content: "";
+    display: block;
+    height: 40px;
+    border-right: 3px solid #B29671;
+
+    position: absolute;
+    right: -18px;
+    top: 8px;
+}
+
+.activities h4{
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 56px;
+    letter-spacing: 1px;
+    height: 56px;
+    
+    /* border: 2px solid blue; */
+}
+
+/* 滿版裝飾背景 */
+.activities div:nth-of-type(1)::before{
+    content: "";
+    width: 100%;
+    height: 320px;
+    background-color: #B29671;
+
+    position: absolute;
+    top: 1820px;
+    left: 0;
+
+    z-index: -1;
+
+}
+
+.activities ul{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    column-gap: 56px;
+    margin-top: 24px;
+}
+
+
+.activities ul li{
+    display: flex;
+    flex-direction: column;
+    width: 312px;
+    height: 436px;
+    background-color: #FEFBF1;
+    border: 0.05px solid #ACB4B3;
+    border-radius: 4px;
+    box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.25);
+    justify-content: center;
+    align-items: center;
+
+}
+
+.activities ul li img{
+    width: 228px;
+    height: 180px;
+    object-fit: cover;
+    margin: 0 auto;
+    object-position: 0 0;
+    margin-top: 24px;
+    border-radius: 4px;
+}
+
+.activities ul li:nth-of-type(2) img{
+    width: 228px;
+    height: 180px;
+    object-fit: cover;
+    margin: 0 auto;
+    object-position: 0 -48px;
+    margin-top: 24px;
+    border-radius: 4px;
+}
+
+.activities ul li .introduce{
+    /* border: 3px solid gray; */
+    height: auto;
+    flex-direction: column;
+    padding: 12px;
+}
+
+.activities ul li .introduce a{
+    text-decoration: none;
+}
+
+.activities ul li .introduce a h6{
+    overflow: hidden;
+    color: #2F475D;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: wrap;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 140%;
+
+    width: 272px;
+    height: 54px;
+    margin: 0 auto;
+    /* border: 3px solid gray; */
+    margin-bottom: 8px;
+
+}
+
+.activities ul li .introduce a p{
+    text-overflow: ellipsis;
+    white-space: wrap;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 140%;
+    height: 134px;
+    width: 228px;
+    margin: 0 auto;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 6;
+    overflow: hidden;
+    color: #454545;
+}
+
+
+.activities div+ul+a{
+    display: block;
+    width: 168px;
+    height: 44px;
+    background-color: #2F475D;
+    border-radius: 999px;
+    border: 0.5px solid #B29671;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 44px;
+    color: #FEFBF1;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.25);
+    margin: 0 auto;
+    margin-top: 60px;
+}
+
+.activities div+ul+a:hover{
+    background-color: #5F446F;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------ thesis ------------------------- */
+
+
+
+.thesis{
+    grid-area: thesis;
+    margin:0 20px;
+    /* border: 2px solid red; */
+    margin-top: 48px;
+}
+
+
+.thesis div:nth-of-type(1){
+    display: flex;
+    /* border: 2px solid red; */
+    height: 56px;
+    justify-content: center;
+    column-gap: 30px;
+    color: #2F475D;
+    
+    
+}
+
+.thesis h3{
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 56px;
+    letter-spacing: 1px;
+    height: 56px;
+    /* border: 2px solid yellow; */
+
+    position: relative;
+}
+
+.thesis h3::after{
+    content: "";
+    display: block;
+    height: 40px;
+    border-right: 3px solid #B29671;
+
+    position: absolute;
+    right: -18px;
+    top: 8px;
+}
+
+.thesis h4{
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 56px;
+    letter-spacing: 1px;
+    height: 56px;
+    
+    /* border: 2px solid blue; */
+}
+
+.thesis ul{
+    /* border: 2px solid blue; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 32px;
+    margin-top: 24px;
+}
+
+.thesis ul li{
+    /* border: 2px solid green; */
+    width: 905px;
+    height: 145px;
+    background-color: #B29671;
+    box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.25);
+    position: relative;
+}
+
+.thesis ul li a .headline{
+    color: #FEFBF1;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 140%;
+    margin: 24px 40px 40px 40px;
+    /* border: 2px solid green; */
+    height: auto;
+}
+
+.thesis ul li a {
+    text-decoration: none;
+}
+
+.thesis ul li a .headline span{
+    font-style: italic;
+}
+
+.thesis ul li .author{
+    text-align: right;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 140%;
+    color: #FEFBF1;
+
+
+    width: auto;
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+
+    /* border: 2px solid green; */
+}
+
+
+.thesis div+ul+a{
+    display: block;
+    width: 168px;
+    height: 44px;
+    background-color: #2F475D;
+    border-radius: 999px;
+    border: 0.5px solid #B29671;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 44px;
+    color: #FEFBF1;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.25);
+    margin: 0 auto;
+    margin-top: 60px;
+    margin-bottom: 100px;
+}
+
+.thesis div+ul+a:hover{
+    background-color: #5F446F;
+}
+
+
+/* --------------- GOTOP ------------------ */
+
+
+.gotop a{
+    display: block;
+    position: fixed;
+    bottom: 40px;
+    right: 20px;
+    background-color: #FEFBF1;
+    border-radius: 50px;
+    box-sizing: border-box;
+    box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.25);
+    border: 1px solid transparent;
+}
+
+.gotop i{
+    font-size: 48px;
+    color: #B29671;
+}
+
+.gotop i:hover{
+    color: #363A3A;
+    border-radius: 50px;
+}
+
+/* -------------------Footer------------------------ */
+.footer{
+    position: static;
+    width: 100%;
+}

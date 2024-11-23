@@ -1,0 +1,731 @@
+@import url(reset.css);
+
+/* font-weight: Bold=700, SemiBold 600, Medium 500, Regular 400 */
+/* #FEFBF1 - Ivory White/50 , #2F475D - Midnight Blue/800 , #B29671 - Warm Khaki/400 , #5F446F - Deep Slate Purple/800*/
+
+
+/* ------------------LOGIN ACCOUNT------------------------ */
+
+.wrapper{
+    background-image: url(./img/kingfisher-5965475.jpg);
+    max-width: 1400px;
+    height: 740px;
+    background-size: cover;
+    background-position:0px -50px;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    /* margin-top: 20px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper .main{
+    /* border: 5px solid brown; */
+    width: 850px;
+    height: 540px;
+    box-shadow: 0px 0px 100px 0px rgba(0, 0, 0, 0.30);
+    display: flex;
+}
+
+.wrapper .main .content{
+    font-family: "Roboto Flex", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-variation-settings: 
+    "slnt" 0,
+    "wdth" 100,
+    "GRAD" 0,
+    "XOPQ" 96,
+    "XTRA" 468,
+    "YOPQ" 79,
+    "YTAS" 750,
+    "YTDE" -203,
+    "YTFI" 738,
+    "YTLC" 514,
+    "YTUC" 712;
+    letter-spacing: 1px;
+    color: #FEFBF1;
+    width: 515px;
+    height: 540px;
+    /* border: 2px solid green; */
+    
+}
+
+.wrapper .main .content h5{
+    font-size: 36px;
+    line-height: 140%;
+    margin-top: 28px;
+    margin-left: 32px;
+}
+
+.wrapper .main .content h6{
+    font-size: 24px;
+    line-height: 140%;
+    margin-top: 12px;
+    margin-left: 32px;
+}
+
+.wrapper .main .content p{
+    font-size: 20px;
+    line-height: 140%;
+    margin-left: 330px;
+    margin-top: 330px;
+}
+
+
+
+.wrapper .main .login{
+    width: 335px;
+    background-color: #B29671;
+    position: relative;
+}
+
+
+.wrapper .main .login div:nth-of-type(1){
+    /* border: 2px solid yellow; */
+    height: 230px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wrapper .main .login div:nth-of-type(1) img{
+    width: 100px;
+    padding-top: 60px;
+    padding-bottom: 36px;
+}
+
+.wrapper .main .login div:nth-of-type(1) p{
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: .5px;
+    color: #2F475D;
+    font-family: "Roboto Flex", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-variation-settings: 
+    "slnt" 0,
+    "wdth" 100,
+    "GRAD" 0,
+    "XOPQ" 96,
+    "XTRA" 468,
+    "YOPQ" 79,
+    "YTAS" 750,
+    "YTDE" -203,
+    "YTFI" 738,
+    "YTLC" 514,
+    "YTUC" 712;
+}
+
+
+.wrapper .main .login div:nth-of-type(1) p>a{
+    text-decoration: none;
+    color: #FEFBF1;
+}
+
+.wrapper .main .login div:nth-of-type(1) p>a:visited{
+    color: #FEFBF1;
+}
+
+.wrapper .main .login div:nth-of-type(1) p>a:hover{
+    color: #5F446F;
+}
+
+
+.wrapper .main .login form{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 12px;
+
+
+}
+
+
+.wrapper .main .login form input{
+    width: 250px;
+    height: 32px;
+    margin: 0 auto;
+    margin-bottom: 12px;
+    border-radius: 4px;
+    border: .5px solid #DADADA;
+    padding-left: 44px;
+}
+
+
+.wrapper .main .login input::placeholder{
+    content: "Email";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 19.6px */
+    color: #ACB4B3;
+}
+
+
+/* -------- 輸入框:focus ----------- */
+.wrapper .main .login form input[type="email"],
+.wrapper .main .login form input[type="password"] {
+    border: 1px solid #ACB4B3; 
+}
+
+.wrapper .main .login form input[type="email"]:focus,
+.wrapper .main .login form input[type="password"]:focus {
+    outline: 2px solid #5F446F; 
+}
+
+
+
+
+.wrapper .main .login form a{
+    display: block;
+    background-color: #2F475D;
+    width: 300px;
+    height: 36px;
+    font-size: 16px;
+    color: #FEFBF1;
+    text-decoration: none;
+    line-height: 36px;
+    margin: 0 auto;
+    border-radius: 4px;
+    font-family: "Roboto Flex", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-variation-settings: 
+    "slnt" 0,
+    "wdth" 100,
+    "GRAD" 0,
+    "XOPQ" 96,
+    "XTRA" 468,
+    "YOPQ" 79,
+    "YTAS" 750,
+    "YTDE" -203,
+    "YTFI" 738,
+    "YTLC" 514,
+    "YTUC" 712;
+    text-align: center;
+}
+
+
+.wrapper .main .login form a:hover{
+    background-color: #5F446F;
+}
+
+.wrapper .main .login form i:nth-of-type(1){
+    font-size: 20px;
+    color: #2F475D;
+    position: absolute;
+    transform: translate(150%, 40%);
+}
+
+.wrapper .main .login form i:nth-of-type(2){
+    font-size: 20px;
+    color: #2F475D;
+    position: absolute;
+    transform: translate(150%, 280%);
+}
+
+.wrapper .main .login div:nth-of-type(2){
+    /* border: 3px solid black; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 164px;
+    justify-content: center;
+    gap: 32px;
+}
+
+.wrapper .main .login div:nth-of-type(2) p{
+    font-family: "Roboto Flex", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-variation-settings: 
+    "slnt" 0,
+    "wdth" 100,
+    "GRAD" 0,
+    "XOPQ" 96,
+    "XTRA" 468,
+    "YOPQ" 79,
+    "YTAS" 750,
+    "YTDE" -203,
+    "YTFI" 738,
+    "YTLC" 514,
+    "YTUC" 712;
+    color: #2F475D;
+    line-height: 140%;
+    /* padding-top: 20px; */
+    /* height: 68px; */
+}
+
+
+.wrapper .main .login div:nth-of-type(2) p+ul+a{
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: none;
+    text-decoration-thickness: auto;
+    text-underline-offset: auto;
+    text-underline-position: from-font;
+    color: #FEFBF1;
+    
+    font-family: "Roboto Flex", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-variation-settings: 
+    "slnt" 0,
+    "wdth" 100,
+    "GRAD" 0,
+    "XOPQ" 96,
+    "XTRA" 468,
+    "YOPQ" 79,
+    "YTAS" 750,
+    "YTDE" -203,
+    "YTFI" 738,
+    "YTLC" 514,
+    "YTUC" 712;
+    line-height: 140%;
+}
+
+.wrapper .main .login div:nth-of-type(2) p+ul+a:hover{
+    color: #5F446F;
+}
+
+.wrapper .main .login div:nth-of-type(2) ul{
+    display: flex;
+    gap: 24px;
+}
+
+
+.wrapper .main .login div:nth-of-type(2) ul li i{
+    font-size: 24px;
+    color: #2F475D;
+    /* padding-bottom: 40px; */
+}
+
+
+.wrapper .main .login div:nth-of-type(2) ul li i:hover{
+    color: #5F446F;
+}
+
+
+
+
+
+
+
+
+
+
+/* -------------------ABOUT US------------------------- */
+
+
+.fullBanner{
+    background-image: url(img/wild-geese-1150000_1920.jpg);
+    width: 100%;
+    height: 180px;
+    background-position: 0 380px;
+    background-size: cover;
+}
+
+.fullBanner>div{
+    max-width: 1200px;
+    margin: 0 auto;
+    /* border: .5px solid red; */
+    height: 180px;
+    display: flex;
+    align-items: center;
+
+    font-family: "Roboto Flex", sans-serif;
+    font-optical-sizing: auto;
+    font-variation-settings: 
+    "slnt" 0,
+    "wdth" 100,
+    "GRAD" 0,
+    "XOPQ" 96,
+    "XTRA" 468,
+    "YOPQ" 79,
+    "YTAS" 750,
+    "YTDE" -203,
+    "YTFI" 738,
+    "YTLC" 514,
+    "YTUC" 712;
+}
+
+.fullBanner>div>div:first-child{
+    /* border: .5px solid blue; */
+    width: 350px;
+}
+
+.fullBanner>div>div:last-child{
+    /* border: 5px solid black; */
+    margin-left: auto;
+    width: 350px;
+    position: relative;
+}
+
+.fullBanner>div>div>h2{
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 140%;
+    letter-spacing: 2px;
+    color: #FEFBF1;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.fullBanner>div>div>h4{
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #FEFBF1;
+    line-height: 140%;
+}
+
+
+.fullBanner>div>div:last-child>a{
+    display: block;
+    /* border: 2px solid green; */
+    width: 45%;
+    text-align: center;
+    font-family: "Roboto Flex", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-variation-settings: 
+    "slnt" 0,
+    "wdth" 100,
+    "GRAD" 0,
+    "XOPQ" 96,
+    "XTRA" 468,
+    "YOPQ" 79,
+    "YTAS" 750,
+    "YTDE" -203,
+    "YTFI" 738,
+    "YTLC" 514,
+    "YTUC" 712;
+
+    font-size: 26px;
+    color: #EFE09A;
+    text-decoration: none;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    position: absolute;
+
+    bottom: 45px;
+    right: 43px;
+
+    z-index: 1;
+}
+
+.fullBanner>div>div>img{
+    display: block;
+    /* border: 5px solid green; */
+    width: 243px;
+    height: 100px;
+    rotate: 10deg;
+    margin-left: 100px;
+    margin-top: 40px;
+    opacity: 75%;
+    margin-bottom: 10px;
+}
+
+
+.main{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+/* ---------------- 中間文字區 ------------------- */
+.fullBanner+.main{
+    font-family: "Roboto Flex", sans-serif;
+    font-optical-sizing: auto;
+    font-variation-settings: 
+    "slnt" 0,
+    "wdth" 100,
+    "GRAD" 0,
+    "XOPQ" 96,
+    "XTRA" 468,
+    "YOPQ" 79,
+    "YTAS" 750,
+    "YTDE" -203,
+    "YTFI" 738,
+    "YTLC" 514,
+    "YTUC" 712;
+    color: #2F475D;
+    /* border: 2px solid red; */
+    box-sizing: border-box;
+
+    display: flex;
+}
+
+
+.fullBanner+.main>div:nth-of-type(1) .keyPoints{
+    list-style: disc;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 200%;
+    max-width: 60%;
+    margin: 60px 0 30px 20px;
+    /* border: 3px solid blue; */
+}
+
+
+.fullBanner+.main div:nth-of-type(1) div{
+    /* border: 3px solid green; */
+    max-width: 66%;
+    position: relative;
+}
+
+.fullBanner+.main div:nth-of-type(1) div p{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 160%;
+    width: auto;
+    margin-bottom: 30px;
+    /* border: 3px solid green; */
+}
+
+
+.fullBanner+.main div:nth-of-type(1) div>p+p+a{
+    display: block;
+    width: 168px;
+    height: 46px;
+    background-color: #2F475D;
+    border-radius: 999px;
+    color: #FEFBF1;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 46px;
+    text-align: center;
+    text-decoration: none;
+    /* border: 0.5px solid #B29671; */
+    box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.25);
+    
+    position: absolute;
+    bottom: -35%;
+    left: 32%;
+    }
+
+.fullBanner+.main .bgi{
+    /* border: 2px solid brown; */
+    font-family: "Roboto Flex", sans-serif;
+    font-optical-sizing: auto;
+    font-variation-settings: 
+    "slnt" 0,
+    "wdth" 100,
+    "GRAD" 0,
+    "XOPQ" 96,
+    "XTRA" 468,
+    "YOPQ" 79,
+    "YTAS" 750,
+    "YTDE" -203,
+    "YTFI" 738,
+    "YTLC" 514,
+    "YTUC" 712;
+
+    background: linear-gradient(180deg, rgba(254, 251, 241, 0.23) 0%, rgba(225, 227, 159, 0.46) 50%, rgba(211, 229, 164, 0.69) 100%);
+    /* width: 29%; */
+    display: block;
+    padding-left: 400px;
+
+
+    /* 測試 */
+    height: 800px;
+    /* height: 1680px; */
+
+    z-index: -1;
+
+    position: relative;
+    
+}
+
+.fullBanner+.main .bgi h1{
+    font-size: 72px;
+    font-style: italic;
+    line-height: 120%;
+    text-align: left;
+    font-weight: 700;
+    letter-spacing: 10px;
+    color: #92C1CBCC;
+    padding-top: 20%;
+    box-sizing: border-box;
+    opacity: 0.2;
+
+    position: absolute;
+    top: 2%;
+    left: -53%;
+    z-index: -2;
+}
+
+.fullBanner+.main .bgi>img{
+    box-sizing: border-box;
+    position:absolute;
+    left: -345px;
+    top: 30px;
+    object-fit: fill;
+    height: 1660px;
+    z-index: -2;
+}
+
+/* 測試  藍底滿版橫幅 分隔用*/
+/* .fullBanner+.main+div{
+    width: 100%;
+    height: 80px;
+    background-color: #2F475D;
+    z-index: -3;
+} */
+
+
+/* ------------------下部文字區----------------------- */
+
+.support{
+    max-width: 1200px;
+    margin: 0 auto;
+
+    font-family: "Roboto Flex", sans-serif;
+    font-optical-sizing: auto;
+    font-variation-settings: 
+    "slnt" 0,
+    "wdth" 100,
+    "GRAD" 0,
+    "XOPQ" 96,
+    "XTRA" 468,
+    "YOPQ" 79,
+    "YTAS" 750,
+    "YTDE" -203,
+    "YTFI" 738,
+    "YTLC" 514,
+    "YTUC" 712;   
+    
+    color: #2F475D;
+
+    /* border: 3px solid blue; */
+    
+
+
+
+    /* 測試 */
+    /* position: absolute;
+    top: 1000px;
+    right: 0;
+    left: 0;
+    margin: auto; */
+}
+
+
+.support>div>div{
+    max-width: 46%;
+    /* border: 3px solid green; */
+}
+
+.support>div>div>h2{
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 140%;
+    letter-spacing: 2px;
+    color: #2F475D;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-top: 120px;
+}
+
+.support>div>div>h4{
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #2F475D;
+    line-height: 140%;
+    margin-bottom: 40px;
+}
+
+
+.support>div div>p{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 160%;
+    margin-bottom: 30px;
+
+}
+
+.support>div ul{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 3px solid green; */
+    max-width: 46%;
+}
+
+
+.support>div ul li{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 30px 50px 30px;
+    box-sizing: border-box;
+}
+
+.support>div ul li i{
+    font-size: 40px;
+    color: #FEFBF1;
+    padding-bottom: 50px;
+    box-sizing: border-box;
+
+    position: relative;
+}
+
+.support>div ul li i::after{
+    content: "";
+    display: block;
+    width: 100px;
+    height: 100px;
+    background-color: #2F475D;
+    border-radius: 50%;
+
+    position: absolute;
+
+
+    top: -28px;
+    bottom: 35px;
+    right: -27px;
+
+    z-index: -2;
+}
+
+
+
+
+
+
+.support>div ul li a{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 36px;
+    color: #FEFBF1;
+    border-radius: 999px;
+    display: block;
+    width: 124px;
+    height: 36px;
+    background-color: #2F475D;
+    text-align: center;
+    text-decoration: none;
+
+    box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.25);
+}
+
+
+body .footer{
+    position: static; /* 恢复为正常流布局 */
+    bottom: auto; /* 移除底部固定 */
+    width: 100%; /* 确保占满宽度 */
+    margin-top: auto; /* 如果需要和内容间留白 */
+
+}
+

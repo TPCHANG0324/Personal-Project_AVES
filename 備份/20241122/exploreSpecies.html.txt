@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AVES-鳥種探索</title>
+
+    <link rel="stylesheet" href="basic.css">
+    <link rel="stylesheet" href="explore.css">
+
+
+
+    <!-- font-awesome icons Libraries 匯入 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"> 
+
+    <!-- Google 字體: Roboto Flex -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+     <!-- Header -->
+     <div class="scroll-nav">
+        <div class="nav">
+            <a href="#">
+                <img src="img/AVES_LOGO_horizontal.png" alt="">
+            </a>
+            <ul class="main-sel">
+                <li class="title">
+                    <a href="#">相關消息</a>
+                </li>
+
+                <li class="title">
+                    <a href="#">提交發現</a>
+                    <a href="#">
+                        <i class="fa-solid fa-caret-down">
+                        </i>
+                    </a>
+                    <div class="sec-sel">
+                        <a href="#">我的紀錄</a>
+                    </div>
+                </li>
+
+                <li class="title">
+                    <a href="#">資料探索</a>
+                    <a href="#">
+                        <i class="fa-solid fa-caret-down"></i>
+                    </a>
+                    <div class="sec-sel">
+                        <a href="#">探索鳥種</a>
+                        <a href="#">地區探索</a>
+                    </div>
+                </li>
+
+                <li class="title">
+                    <a href="#">關於我們</a>
+                </li>
+
+                <li class="title">
+                    <a href="loginAccount.html">會員登入</a>
+                    <a href="#">
+                        <i class="fa-solid fa-caret-down"></i>
+                    </a>
+                    <div class="sec-sel">
+                        <a href="#">登出</a>
+                    </div>
+                </li>
+                <div>
+                    <a class="language" href="#">
+                        <i class="fa-solid fa-globe"></i>
+                        <i class="fa-solid fa-caret-down"></i>
+                    </a>
+                    <div class="sec-sel">
+                        <a href="#">English</a>
+                        <a href="#">日本語</a>
+                        <a href="#">繁體中文</a>
+                    </div>
+                </div>
+
+            </ul>
+        </div>
+    </div>
+
+   
+    <div class="speciesWrapper">
+
+        <!-- 鳥種照片 -->
+        <div class="speciesPhoto">
+
+            <div class="introduceLeft">
+                <div class="introduceName">
+                    <h4>黑面琵鷺</h4>
+                    <h5>Platalea minor</h5>
+                    <ul>
+                        <li>EN</li>
+                        <li>瀕危</li>
+                        <li><a href="https://www.iucnredlist.org/"><i class="fa-solid fa-circle-info"></i></a></li>
+                    </ul>
+                    
+                    <ul>
+                        <li>
+                            <i class="fa-solid fa-eye"></i>
+                            <p>看見</p>
+                        </li>
+
+                        <li>
+                            <i class="fa-solid fa-camera-retro"></i>
+                            <p>照片</p>
+                        </li>
+
+                        <li>
+                            <i class="fa-solid fa-volume-high"></i>
+                            <p>錄音</p>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <div>
+                    <a href="#"><i class="fa-solid fa-volume-high">最新錄音</i></a>
+                    <a href="#">查看更多</a>
+                </div>
+
+
+
+            </div>
+
+            <div class="introduceRight">
+                
+                <a href="#">
+                    <p>變更鳥種</p>
+                    <i class="fa-solid fa-caret-down"></i>
+                </a>
+                
+                    
+                <ul>
+                    <a href="#">
+                        <i class="fa-solid fa-circle-chevron-left"></i>
+                    </a>
+                    <li>
+                        <a href="./img/1800 (6).jpg">
+                            <img src="./img/1800 (6).jpg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./img/1800 (7).jpg">
+                            <img src="./img/1800 (7).jpg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./img/1800 (8).jpg">
+                            <img src="./img/1800 (8).jpg" alt="">
+                        </a>
+                    </li>
+                    <a href="#">
+                        <i class="fa-solid fa-circle-chevron-right"></i>
+                    </a>
+                </ul>
+
+                
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+        <!-- 鳥種特徵 -->
+        <div class="feature">
+            <div>
+                <h5>特徵</h5>
+                <p>大型白色水鳥，有長的飯匙狀的嘴。繁殖期成鳥頭部有長飾羽，胸部有黃色。整個面部為黑色裸皮，使其與白琵鷺區分開，白琵鷺是其棲地範圍內唯一的其他琵鷺。經常聚集成大群，偶爾與白琵鷺混在一起。在泥灘，河口，湖泊和大型草本沼澤地覓食，經常在水中橫向掃動來篩捕水生無脊椎動物。</p>
+            </div>
+
+
+
+            <div>
+                <div>
+                    <h6>統計</h6>
+                    <ul>
+                        <li>
+                            <p>你</p>
+                            <p>AVES</p>
+                        </li>
+
+
+                        <li>
+                            <p><i class="fa-solid fa-eye"></i>觀察紀錄</p>
+                            <p>100</p>
+                            <p>36,559</p>
+
+
+                        </li>
+
+
+                        <li>
+                            <p><i class="fa-solid fa-camera-retro"></i>附照片
+                            </p>
+                            <p>152</p>
+                            <p>3623</p>
+
+                        </li>
+
+
+
+                        <li>    
+                            <p><i class="fa-solid fa-volume-high"></i>附錄音
+                            </p>
+                            <p>20</p>
+                            <p>14</p>
+                        </li>
+                    </ul>
+
+
+
+                </div>
+
+
+
+                <div>
+                    <h6>分類</h6>
+                    <p>鵜形目 Pelecaniformes</p>
+                    <p>䴉科 Threskiornithidae   </p>
+                    <p>琵琶屬 <span>Platalea</span></p>
+
+                </div>
+
+
+
+                <div>
+                    <div>
+                        <h6>每週條形圖</h6>
+                        <i class="fa-solid fa-circle-info"></i>
+                    </div>
+                    <a href="#"><span>選擇一個地區</span>來檢視</a>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+        <!-- 鳥種分布 -->
+        <div class="distribution">
+            <h5>分布地區</h5>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d48986563.17278518!2d125.05858295272371!3d22.1018266442465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1szh-TW!2stw!4v1732103393930!5m2!1szh-TW!2stw" width="1100" height="440" style="border:0;" frameborder="0" allowfullscreen="yes" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+
+
+        <!-- 最佳照片 -->
+        <div class="bestPhoto">
+            <div>
+                <i class="fa-solid fa-camera-retro"></i>
+                <h5>最佳照片</h5>
+                <a href="#">檢視全部</a>
+                <p>Taiwan</p>
+            </div>
+
+
+            <ul>
+                <li class="photoList">
+                    <img src="./img/1800 (9).jpg" alt="">
+                    <h6 class="vernacularNname">黑面琵鷺</h6>
+                    <h6 class="scientificName">Platalea minor</h6>
+                    <p class="explorer">©作者</p>
+                    <p class="place">嘉義鰲鼓濕地IBA-全區(Aogu Wetland IBA), Chiayi County, Taiwan</p>
+                    <p class="date">2024年11月1日</p>
+                </li>
+
+                <li class="photoList">
+                    <img src="./img/1800 (10).jpg" alt="">
+                    <h6 class="vernacularNname">黑面琵鷺</h6>
+                    <h6 class="scientificName">Platalea minor</h6>
+                    <p class="explorer">©作者</p>
+                    <p class="place">嘉義鰲鼓濕地IBA-全區(Aogu Wetland IBA), Chiayi County, Taiwan</p>
+                    <p class="date">2024年11月1日</p>
+                </li>
+
+                <li class="photoList">
+                    <img src="./img/1800 (11).jpg" alt="">
+                    <h6 class="vernacularNname">黑面琵鷺</h6>
+                    <h6 class="scientificName">Platalea minor</h6>
+                    <p class="explorer">©作者</p>
+                    <p class="place">嘉義鰲鼓濕地IBA-全區(Aogu Wetland IBA), Chiayi County, Taiwan</p>
+                    <p class="date">2024年11月1日</p>
+                </li>
+
+                <li class="photoList">
+                    <img src="./img/1800 (12).jpg" alt="">
+                    <h6 class="vernacularNname">黑面琵鷺</h6>
+                    <h6 class="scientificName">Platalea minor</h6>
+                    <p class="explorer">©作者</p>
+                    <p class="place">嘉義鰲鼓濕地IBA-全區(Aogu Wetland IBA), Chiayi County, Taiwan</p>
+                    <p class="date">2024年11月1日</p>
+                </li>
+            </ul>
+            <img src="./img/Frame 313310.svg" alt="">
+        </div>
+
+
+    
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- 最佳影片 -->
+        <div class="bestVideo">
+            <div>
+                <i class="fa-solid fa-video"></i>
+                <h5>最佳影片</h5>
+                <a href="#">檢視全部</a>
+                <p>Taiwan</p>
+            </div>
+
+            <ul>
+                <li class="videoList">
+                    <a href="#">
+                        <i class="fa-regular fa-circle-play"></i>
+                        <img src="./img/1800 (9).jpg" alt="">
+                    </a>
+                    <h6 class="vernacularNname">黑面琵鷺</h6>
+                    <h6 class="scientificName">Platalea minor</h6>
+                    <p class="explorer">©作者</p>
+                    <p class="place">嘉義鰲鼓濕地IBA-全區(Aogu Wetland IBA), Chiayi County, Taiwan</p>
+                    <p class="date">2024年11月1日</p>
+                </li>
+
+                <li class="videoList">
+                    <a href="#">
+                        <i class="fa-regular fa-circle-play"></i>
+                        <img src="./img/1800 (10).jpg" alt="">
+                    </a>
+                    <h6 class="vernacularNname">黑面琵鷺</h6>
+                    <h6 class="scientificName">Platalea minor</h6>
+                    <p class="explorer">©作者</p>
+                    <p class="place">嘉義鰲鼓濕地IBA-全區(Aogu Wetland IBA), Chiayi County, Taiwan</p>
+                    <p class="date">2024年11月1日</p>
+                </li>
+
+                <li class="videoList">
+                    <a href="#">
+                        <i class="fa-regular fa-circle-play"></i>
+                        <img src="./img/1800 (11).jpg" alt="">
+                    </a>
+                    <h6 class="vernacularNname">黑面琵鷺</h6>
+                    <h6 class="scientificName">Platalea minor</h6>
+                    <p class="explorer">©作者</p>
+                    <p class="place">嘉義鰲鼓濕地IBA-全區(Aogu Wetland IBA), Chiayi County, Taiwan</p>
+                    <p class="date">2024年11月1日</p>
+                </li>
+
+                <li class="videoList">
+                    <a href="#">
+                        <i class="fa-regular fa-circle-play"></i>
+                        <img src="./img/1800 (12).jpg" alt="">
+                    </a>
+                    <h6 class="vernacularNname">黑面琵鷺</h6>
+                    <h6 class="scientificName">Platalea minor</h6>
+                    <p class="explorer">©作者</p>
+                    <p class="place">嘉義鰲鼓濕地IBA-全區(Aogu Wetland IBA), Chiayi County, Taiwan</p>
+                    <p class="date">2024年11月1日</p>
+                </li>
+            </ul>
+            <img src="./img/Frame 313310.svg" alt="">
+        </div>
+
+
+    </div>
+        
+
+
+    <div class="gotop">
+        <a href="#">
+            <i class="fa-solid fa-circle-up"></i>
+        </a>
+    </div>
+
+
+
+     <!-- Footer -->
+     <div class="footer">
+
+        <div class="footer-bg">
+            <div class="main-footer">
+                <div class="footer-logo">
+                    <a href="#">
+                        <img src="./img/AVES_LOGO_horizontal.png" alt="">
+                    </a>
+                    <p>4F., No. 219, Sec. 3, Nanjing E. Rd., Zhongshan Dist., Taipei City 104506, Taiwan (R.O.C.)</p>
+                </div>
+
+                <ul>
+                    <li class="footer-list">
+                        <a class="heading-link" href="#">相關消息</a>
+                    </li>
+                    <li class="footer-list">
+                        <a class="heading-link" href="#">提交發現</a>
+                        <a href="#">我的紀錄</a>
+                    </li>
+                    <li class="footer-list">
+                        <a class="heading-link" href="#">資料探索</a>
+                        <a href="#">探索地區</a>
+                        <a href="#">鳥種探索</a>
+                    </li>
+                    <li class="footer-list">
+                        <a class="heading-link" href="#">關於我們</a>
+                    </li>
+                    <li class="footer-list">
+                        <a class="heading-link" href="loginAccount.html">會員登入</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+
+
+        <div>
+            <div class="copyright">
+                <p>Copyright © 2024 WiEdu Co. All rights reserved.</p>
+                <div>
+                    <a href="https://www.facebook.com/ebird/">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="https://x.com/team_ebird/">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a href="https://www.instagram.com/team_ebird/">
+                        <i class="fa-brands fa-square-instagram"></i>
+                    </a>
+                    
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

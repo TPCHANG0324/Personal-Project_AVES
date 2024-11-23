@@ -1,0 +1,2140 @@
+
+body{
+    box-sizing: border-box;
+}
+
+.fullBanner{
+    /* border: 2px solid black; */
+    background-image: url(./img/nature-7015669_1920.jpg);
+    width: 100%;
+    height: 180px;
+    background-size: 100%;
+    background-position: 0px 381px;
+}
+
+.fullBanner>div{
+    color: #FEFBF1;
+    font-weight: 700;
+    max-width: 1200px;
+    height: 180px;
+    margin: 0 auto;
+    /* border: 2px solid brown; */
+    display: flex;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    position: relative;
+}
+
+.fullBanner>div h1:nth-of-type(1){
+    font-size: 72px;
+    line-height: 140%;
+    letter-spacing: 2px;
+    height: 100px;
+    
+    position: absolute;
+
+    /* border: 2px solid brown; */
+    top: 15px;
+    left: 370px;
+
+}
+
+.fullBanner>div h1:nth-of-type(2){
+    font-size: 40px;
+    line-height: 140%;
+    letter-spacing: 1px;
+    height: 56px;
+    /* border: 2px solid brown; */
+
+    position: absolute;
+    bottom: 15px;
+    right: 370px;
+}
+
+
+
+
+
+/* --------------- 切換頁籤demo--------------------------- */
+
+
+.explore{
+    /* border: 3px solid red; */
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    height: 700px;
+    margin-top: 100px;
+
+    position: relative;
+    
+}
+
+
+/* 探索鳥種整體外框 */
+.explore>div:nth-of-type(1){
+    /* border: 3px solid pink; */
+    width: 1110px;
+    position: absolute;
+
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: auto;
+
+    height: 600px;
+
+    
+    z-index: 1;
+    
+}
+
+
+/* 地區探索整體外框 */
+.explore>div:nth-of-type(2){
+    width: 1110px;
+    /* border: 2px solid black; */
+    height: 500px;
+
+
+    position: absolute;
+
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: auto;
+
+    z-index: 0;
+}
+
+
+
+.explore div:nth-of-type(1) label{
+    /* border: 2px solid green; */
+    /* margin-right: 44px; */
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 140%;
+    letter-spacing: 1px;
+    height: 50px;
+    width: 148px;
+    display: block;
+    position: relative;
+    top: -80px;
+    text-align: center;
+
+    
+}
+
+.explore div:nth-of-type(1) label:hover::after{
+    content: "";
+    display: block;
+    border: 2px solid #F5D367;
+    width: 148px;
+}
+
+
+
+.explore div:nth-of-type(2) label{
+    /* border: 3px solid green; */
+    margin-left: 200px;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 140%;
+    letter-spacing: 1px;
+    text-align: center;
+    height: 50px;
+    width: 154px;
+    display: block;
+    position: relative;
+    top: -80px;
+
+    box-sizing: border-box;
+
+}
+
+
+.explore div:nth-of-type(2) label:hover::after{
+    content: "";
+    display: block;
+    border: 2px solid #F5D367;
+    width: 148px;
+}
+
+
+/* checkbox按鈕隱藏控制及位置調整 */
+
+.explore>div:nth-of-type(1) .btn1, .btn2{
+    display: none;
+}
+
+.explore>div:nth-of-type(1) .btn1{
+    position: relative;
+    top: -85px;
+    left: -92px;
+}
+
+.explore>div:nth-of-type(2) .btn2{
+    position: relative;
+    top: -85px;
+    right: 92px;
+
+}
+
+
+
+
+.control-species{
+    display: none;
+}
+
+.control-regions{
+    display: none;
+    
+}
+
+#explore-species:checked ~ .control-species,
+#explore-regions:checked ~ .control-regions{
+    display: block;
+
+}
+
+
+/*------------------------ 框內布置 ------------------------*/
+
+
+/*------ 鳥種探索 -------*/
+.explore div:nth-of-type(1) .control-species .search-bg{
+    background-image: url(./img/common-rosefinch-4834076_1920.jpg);
+    max-width: 1110px;
+    height: 620px;
+    background-size: 120%;
+    background-position: -80px -140px;
+    transform: translateY(-52px);
+    display: flex;
+}
+
+
+.explore div:nth-of-type(1) .control-species .search-bg .left-block{
+    background: rgba(238, 238, 238, 0.60);
+    backdrop-filter:blur(2px);
+    height: 620px;
+    width: 460px;
+    overflow: hidden;
+}
+
+
+.explore div:nth-of-type(1) .control-species .search-bg .left-block h1{
+    font-size: 96px;
+    font-weight: 700;
+    line-height: 140%;
+    color: #2F475D;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);
+
+    /* border: 2px solid #2F475D; */
+    width: 370px;
+    margin-top: 160px;
+    margin-left: 70px;
+    letter-spacing: 3px;
+}
+
+.explore div:nth-of-type(1) .control-species .search-bg .right-block h1{
+    font-size: 128px;
+    font-weight: 700;
+    line-height: 140%;
+    letter-spacing: 3px;
+    color: #FEFBF1;
+    margin-left: 20px;
+    margin-top: 230px;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);
+
+}
+
+
+.explore div:nth-of-type(1) .control-species .search-bg .left-block form>div{
+    /* border: 2px solid red; */
+    margin-top: 140px;
+    /* height: 176px; */
+
+    position: relative;
+}
+
+.explore div:nth-of-type(1) .control-species .search-bg .left-block form i{
+    font-size: 28px;
+    color: #2F475D;
+    /* border: 1px solid green; */
+
+    position: absolute;
+    top: 18px;
+    left: 40px;
+}
+
+
+.explore div:nth-of-type(1) .control-species .search-bg .left-block form p{
+    font-size: 20px;
+    color: #2F475D;
+    font-weight: 400;
+    line-height: 140%;
+    margin: 30px 30px;
+    
+}
+
+
+.explore div:nth-of-type(1) .control-species .search-bg .left-block form .search-btn{
+    width: 350px;
+    height: 64px;
+    border: none;
+    /* border: 1px solid green; */
+    font-size: 32px;
+    padding-left: 50px;
+    border-radius: 999px;
+    margin-left: 25px;
+    color: #2F475D;
+}
+
+
+
+.explore div:nth-of-type(1) .control-species .search-bg .left-block form .search-btn::placeholder{
+    /* border: 1px solid green; */
+    line-height: 140%;
+    height: auto;
+    max-width: 320px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    color: #ACB4B3;
+    
+}
+
+.explore div:nth-of-type(1) .control-species .search-bg .left-block form .search-btn:focus{
+    outline: 2px solid #5F446F;
+}
+
+
+
+/*------ 探索地區 -------*/
+
+
+
+
+.explore div:nth-of-type(2) .control-regions .search-bg{
+    background-image: url(./img/white-tailed-eagle-8640046.jpg);
+    max-width: 1110px;
+    height: 620px;
+    background-size:cover;
+    background-position: 0 -120px;
+    transform: translateY(-52px);
+    display: flex;
+    overflow: hidden;
+}
+
+
+
+
+.explore div:nth-of-type(2) .control-regions .search-bg .right-block{
+    background: rgba(238, 238, 238, 0.60);
+    backdrop-filter:blur(2px);
+    height: 620px;
+    width: 460px;
+    overflow: hidden;
+    margin-left: auto;
+    margin-top: -16px;
+}
+
+.explore div:nth-of-type(2) .control-regions .search-bg .right-block h1{
+    font-size: 96px;
+    font-weight: 700;
+    line-height: 140%;
+    color: #2F475D;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);
+
+    /* border: 2px solid #ffffff; */
+    width: 370px;
+    margin-top: 160px;
+    margin-left: 20px;
+    letter-spacing: 3px;
+}
+
+.explore div:nth-of-type(2) .control-regions .search-bg .left-block h1{
+    font-size: 128px;
+    font-weight: 700;
+    line-height: 140%;
+    letter-spacing: 3px;
+    color: #FEFBF1;
+    margin-left: 100px;
+    margin-top: 230px;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);
+    /* border: 1px solid red; */
+    width: auto;
+}
+
+
+.explore div:nth-of-type(2) .control-regions .search-bg .right-block form>div{
+    /* border: 2px solid red; */
+    margin-top: 140px;
+    /* height: 176px; */
+
+    position: relative;
+}
+
+.explore div:nth-of-type(2) .control-regions .search-bg .right-block form i{
+    font-size: 28px;
+    color: #2F475D;
+    /* border: 1px solid green; */
+
+    position: absolute;
+    top: 18px;
+    left: 40px;
+}
+
+.explore div:nth-of-type(2) .control-regions .search-bg .right-block form p{
+    font-size: 20px;
+    color: #2F475D;
+    font-weight: 400;
+    line-height: 140%;
+    margin: 30px 30px;
+    
+}
+
+
+.explore div:nth-of-type(2) .control-regions .search-bg .right-block form .search-btn{
+    width: 350px;
+    height: 64px;
+    border: none;
+    /* border: 1px solid green; */
+    font-size: 32px;
+    padding-left: 50px;
+    border-radius: 999px;
+    margin-left: 25px;
+    color: #2F475D;
+}
+
+
+
+.explore div:nth-of-type(2) .control-regions .search-bg .right-block form .search-btn::placeholder{
+    /* border: 1px solid green; */
+    line-height: 140%;
+    height: auto;
+    max-width: 320px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    color: #ACB4B3;
+    
+}
+
+.explore div:nth-of-type(2) .control-regions .search-bg .right-block form .search-btn:focus{
+    outline: 2px solid #5F446F;
+}
+
+
+
+
+.footer{
+    position: static;
+}
+
+
+
+
+/* ----------------------探索地區 頁面-------------------------- */
+
+*{
+    box-sizing: border-box;
+}
+
+
+
+/* -------- banner ------- */
+
+
+.banner{
+    /* min-width: 1440px; */
+    background-size: cover;
+    background-image: url(./img/1800.jpg);
+    height: 288px;
+    width: auto;
+    background-position: 0 26% ;
+    display: block;
+
+    /* border: 5px solid blue; */
+}
+
+
+.banner .fixBanner{
+    width: 1200px;
+    margin: 0 auto;
+    height: 288px;
+    /* border: 1px solid red; */
+    position: relative;
+    
+}
+
+.banner .fixBanner>h1{
+    color: #F5D367;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);
+    font-size: 64px;
+    font-weight: 600;
+    line-height: 140%;
+    letter-spacing: 1px;
+    margin-left: 100px;
+    padding-top: 40px;
+
+}
+
+.banner .fixBanner a{
+    text-decoration: none;
+    display: flex;
+    /* border: 2px solid red; */
+    width: 115px;
+    justify-content: center;
+    position: absolute;
+    top: 24px;
+    right: 8px;
+    
+    z-index: 0;
+}
+
+.banner .fixBanner a:hover p, .banner .fixBanner a:hover i{
+    color: #5F446F;
+}
+
+.banner .fixBanner>a>p{
+    color: #FEFBF1;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+
+.banner .fixBanner a i{
+    font-size: 20px;
+    /* border: 2px solid red; */
+    margin-left: 8px;
+    color: #FEFBF1;
+    padding-top: 4px;
+}
+
+
+.banner .fixBanner .table{
+    /* border: 3px solid yellow; */
+    width: 580px;
+    border-radius: 4px;
+    background: rgba(254, 251, 241, 0.50);
+    justify-content: flex-end;
+    align-items: center;
+    backdrop-filter: blur(1px);
+
+    margin-top: 24px;
+    margin-left: 78px;
+}
+
+
+
+.banner .fixBanner .table ul{
+    display: flex;
+    /* border: 3px solid yellow; */
+    height: 104px;
+    align-items: center;
+    width: 540px;
+    gap: 56px;
+    padding-left: 33px;
+    position: relative;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+
+.banner .fixBanner .table ul li .data {
+    /* border: 1px solid blue; */
+    width: 140px;
+    display: flex;
+    
+    align-items: center;
+}
+
+
+.banner .fixBanner .table ul li .data img{
+    display: block;
+    padding-right: 16px;
+    width: 52px;  
+}
+
+.banner .fixBanner .table ul li .data i{
+    display: block;
+    float: left;
+    font-size: 28px;
+    padding-right: 16px;
+    line-height: 160%;
+    color: #2F475D;
+}
+
+.banner .fixBanner .table ul li .data p{
+    font-size: 28px;
+    font-weight: 600;
+    word-spacing: 1px;
+    line-height: 160%;
+    color: #363A3A;
+    
+}
+
+.banner .fixBanner .table ul li{
+    /* border: 2px solid green; */
+    display: flex;
+    flex-direction: column;
+    height: 84px;
+    justify-content: center;
+
+    position: relative;
+    
+}
+
+.banner .fixBanner .table ul li p{
+    color: #363A3A;
+    font-size: 24px;
+    word-spacing: 1px;
+    line-height: 160%;
+    font-family: "Roboto Flex", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings: 
+    "slnt" 0,
+    "wdth" 100,
+    "GRAD" 0,
+    "XOPQ" 96,
+    "XTRA" 468,
+    "YOPQ" 79,
+    "YTAS" 750,
+    "YTDE" -203,
+    "YTFI" 738,
+    "YTLC" 514,
+    "YTUC" 712;
+    
+}
+
+/* 裝飾分隔線 */
+.banner .fixBanner .table ul li::after{
+    content: "";
+    border-right: 1px solid #B29671 ;
+    height: 80px;
+    width: 40px;
+    position: absolute;
+    right: -28px;
+}
+
+
+.regionsWrapper{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows:  auto auto auto;
+   
+    grid-template-areas: "schedule schedule schedule partners"  
+                        "rareSpecies rareSpecies rareSpecies rareSpecies"
+                        "recentlyAdd recentlyAdd popularSpots popularSpots";
+
+    max-width: 1200px;
+    margin: 0 auto;
+
+
+}
+
+
+/* ------------------- 本月地區進度 ------------------------- */
+
+
+.regionsWrapper .schedule{
+    grid-area: schedule;
+    /* background-color: green; */
+    /* border: 5px solid green; */
+    margin: 0 auto;
+    margin: 54px;
+}
+
+
+
+.regionsWrapper .schedule .table{
+    /* border: 3px solid yellow; */
+    display: flex;
+    width: 704px;
+    height: 220px;
+    border-radius: 7px;
+    background: #EFE09A;
+    justify-content: flex-end;
+    align-items: center;
+    box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.25);
+
+    padding: 38px 62px 39px 62px;
+
+    flex-direction: column;
+}
+
+.regionsWrapper .schedule .table div:nth-of-type(1){
+    /* border: 2px solid red; */
+    display: flex;
+    margin-bottom: 12px;
+}
+
+.regionsWrapper .schedule .table div:nth-of-type(1) h5{
+    color: #2F475D;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 140%;
+    letter-spacing: 1px;
+}
+
+.regionsWrapper .schedule .table div:nth-of-type(1) p{
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 1px;
+    color: #B29671;
+    /* border: 2px solid red; */
+    height: 20px;
+    align-self: center;
+    margin-left: 16px;
+    
+}
+
+
+
+
+.regionsWrapper .schedule .table ul{
+    display: flex;
+    /* border: 3px solid yellow; */
+    align-items: center;
+    gap: 56px;
+    position: relative;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+
+.regionsWrapper .schedule .table ul li .data {
+    /* border: 1px solid blue; */
+    width: 140px;
+    display: flex;
+    
+    align-items: center;
+}
+
+
+.regionsWrapper .schedule .table ul li .data img{
+    display: block;
+    padding-right: 16px;
+    width: 52px;  
+}
+
+.regionsWrapper .schedule .table ul li .data i{
+    display: block;
+    float: left;
+    font-size: 28px;
+    padding-right: 16px;
+    line-height: 160%;
+    color: #2F475D;
+}
+
+.regionsWrapper .schedule .table ul li .data p{
+    font-size: 28px;
+    font-weight: 600;
+    word-spacing: 1px;
+    line-height: 44px;
+    color: #363A3A;
+    height: 44px;
+    
+}
+
+.regionsWrapper .schedule .table ul li{
+    /* border: 2px solid green; */
+    display: flex;
+    flex-direction: column;
+    height: 84px;
+    justify-content: center;
+
+    position: relative;
+    
+}
+
+.regionsWrapper .schedule .table ul li p{
+    color: #363A3A;
+    font-size: 24px;
+    word-spacing: 1px;
+    line-height: 160%;
+    font-family: "Roboto Flex", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings: 
+    "slnt" 0,
+    "wdth" 100,
+    "GRAD" 0,
+    "XOPQ" 96,
+    "XTRA" 468,
+    "YOPQ" 79,
+    "YTAS" 750,
+    "YTDE" -203,
+    "YTFI" 738,
+    "YTLC" 514,
+    "YTUC" 712;
+    
+}
+
+/* 裝飾分隔線 */
+.regionsWrapper .schedule .table ul li::after{
+    content: "";
+    border-right: 1.5px solid #B29671 ;
+    height: 80px;
+    width: 40px;
+    position: absolute;
+    right: -28px;
+}
+
+
+.regionsWrapper .schedule .table ul li:nth-of-type(3):after{
+    display: none;
+}
+
+
+
+
+
+
+
+/* ------------------- 合作夥伴 ------------------------- */
+
+.regionsWrapper .partners{
+    grid-area: partners;
+    background-color: #D3E5A4;
+    width: 368px;
+    height: 326px;
+    border-radius: 0px 0px 40px 40px;
+
+    position: relative;
+}
+
+.regionsWrapper .partners p{
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 1px;
+    color: #2F475D;
+
+    text-align: center;
+    margin: 32px 0 18px 0;
+}
+
+
+.regionsWrapper .partners a{
+    text-decoration: none;
+}
+
+.regionsWrapper .partners i{
+    font-size: 50px;
+    color: #B29671;
+    display: block;
+    background-color: #FEFBF1;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+
+}
+
+.regionsWrapper .partners i:hover{
+    color: #2F475D;
+}
+
+.regionsWrapper .partners .left{
+    position: absolute;
+    bottom: 105px;
+    left: 18px;
+
+}
+
+.regionsWrapper .partners .right{
+    position: absolute;
+    right: 18px;
+    bottom: 105px;
+}
+
+.regionsWrapper .partners img{
+    width: 200px;
+    height: 200px;
+    margin: 1px 85px;
+    object-fit: cover;
+    object-position: 100%;
+}
+
+
+
+
+
+
+
+
+/* ------------------- 稀有鳥種 ------------------------- */
+
+
+.regionsWrapper .rareSpecies{
+    grid-area: rareSpecies;
+    /* background-color: blue; */
+    /* border: 5px solid blue; */
+    box-sizing: border-box;
+
+}
+
+.regionsWrapper .rareSpecies div{
+    display: flex;
+    width: 302px;
+    height: 45px;
+    align-items: center;
+    justify-content: center;
+
+    /* border: 1px solid green; */
+    margin-bottom: 20px;
+
+}   
+
+.regionsWrapper .rareSpecies div>h5{
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 140%;
+    color: #2F475D;
+    margin-right: 16px;
+}
+
+.regionsWrapper .rareSpecies div>a{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 140%;
+    color: #2F475D;
+    text-decoration: none;
+    margin-right: 16px;
+
+}
+
+.regionsWrapper .rareSpecies div>a:hover{
+    color: #B29671;
+}
+
+.regionsWrapper .rareSpecies div>p{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 140%;
+    color: #F5D367;
+}
+
+
+.regionsWrapper .rareSpecies ul{
+    /* border: 3px solid black; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.regionsWrapper .rareSpecies ul .rare{
+    height: 316px;
+    width: 244px;
+    background-color: #2F475D;
+    padding: 0 12px;
+    border-radius: 5px;
+    /* border: 1px solid yellow; */
+    position: relative;
+}
+
+
+.regionsWrapper .rareSpecies ul .rare img{
+    width: 220px;
+    height: 150px;
+    border-radius: 5px;
+    margin-bottom: 18px;
+    margin-top: 12px;
+    display: block;
+    
+}
+
+
+.regionsWrapper .rareSpecies ul .rare>.vernacularNname{
+    color: #F5D367;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 140%;
+}
+
+.regionsWrapper .rareSpecies ul .rare>.scientificName{
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 140%;
+    color: #FEFBF1;
+}
+
+.regionsWrapper .rareSpecies ul .rare>.explorer, .place{
+    color: #FEFBF1;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 140%;
+}
+
+
+.regionsWrapper .rareSpecies ul .rare>.date{
+    color: #FEFBF1;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 140%;
+
+
+    position: absolute;
+    top: 168px;
+    right: 16px;
+}
+
+.regionsWrapper .rareSpecies div+ul+img{
+    display: block;
+    margin-left: 968px;
+    margin-top: 16px;
+}
+
+
+
+
+
+
+
+
+
+/* ------------------- 最近新增 ------------------------- */
+
+.regionsWrapper .recentlyAdd{
+    grid-area: recentlyAdd;
+    /* background-color: gray; */
+
+    /* border: 3px solid gray; */
+
+    display: flex;
+
+    margin: 0 auto;
+}
+
+.regionsWrapper .recentlyAdd > div > .add{
+    display: flex;
+    width: 310px;
+    height: 45px;
+    align-items: center;
+    justify-content: left;
+
+    /* border: 1px solid green; */
+    margin-bottom: 20px;
+}   
+
+.regionsWrapper .recentlyAdd > div > div:first-child h5{
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 140%;
+    color: #2F475D;
+    margin-right: 16px;
+}
+
+.regionsWrapper .recentlyAdd > div > div:first-child a{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 140%;
+    color: #2F475D;
+    text-decoration: none;
+    margin-right: 16px;
+}
+
+.regionsWrapper .recentlyAdd > div > div:first-child a:hover{
+    color: #B29671;
+}
+
+
+.regionsWrapper .recentlyAdd > div > ul{
+    /* border: 2px solid red; */
+    width: 532px;
+    height: 392px;
+    padding: 24px 28px 28px 24px;
+    background-color: #D3E5A4;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 68px;
+}
+
+
+
+.regionsWrapper .recentlyAdd > div > ul > li > div:first-child{
+    width: 476px;
+    height: 48px;
+
+    /* border: 1px solid brown; */
+
+    display: flex;
+    align-items: center;
+}
+
+
+
+.regionsWrapper .recentlyAdd > div > ul >  li  h5{
+    /* width: 104px; */
+    height: 32px;
+    /* border: 1px solid brown; */
+    text-align: left;
+    line-height: 32px;
+    font-size: 24px;
+    color: #2F475D;
+    font-weight: 400;
+    margin-right: 16px;
+}
+
+
+
+.regionsWrapper .recentlyAdd > div > ul > li h6{
+    /* width: 112px; */
+    height: 32px;
+    /* border: 1px solid brown; */
+    text-align: left;
+    line-height: 32px;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 400;
+    color: #B29671;
+}
+
+
+
+.regionsWrapper .recentlyAdd > div > ul > li .icons{
+    /* border: 1px solid green; */
+    /* width: 128px; */
+    height: 32px;
+    text-align: right;
+    line-height: 32px;
+    margin-left: auto;
+    display: flex;
+}
+
+.regionsWrapper .recentlyAdd > div > ul > li .icons a{
+    /* border: 1px solid red; */
+    text-align: center;
+    color: #2F475D;
+    text-decoration: none;
+    font-size: 24px;
+    color: #2F475D;
+    margin-left: 15px;
+    display: block;
+    
+}
+
+.regionsWrapper .recentlyAdd > div > ul > li .icons a:hover{
+    color: #B29671;
+}
+
+.regionsWrapper .recentlyAdd > div > ul > li > div:nth-of-type(2){
+    /* border: 1px solid black; */
+    width: 382px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    /* margin-top: 12px; */
+    color: #2F475D;
+    font-weight: 400;
+    line-height: 140%;
+}
+
+.regionsWrapper .recentlyAdd > div > ul > li > div:nth-of-type(2) p {
+    margin-right: 24px;
+}
+
+.regionsWrapper .recentlyAdd > div > ul > li > div:nth-of-type(2) i{
+    margin-right: 4px;
+}
+
+
+
+.regionsWrapper .recentlyAdd > div > ul > li > div:nth-of-type(3){
+    /* border: 1px solid red; */
+    width: 382px;
+    height: auto;
+    color: #2F475D;
+    font-weight: 400;
+    line-height: 140%;
+
+}
+
+.regionsWrapper .recentlyAdd > div > ul > li > div:nth-of-type(3) i{
+    margin-right: 4px;
+    margin-top: 8px;
+}
+
+
+.regionsWrapper .recentlyAdd > div > ul > li::after{
+    content: "";
+    display: block;
+    border-top: 2px solid #B29671;
+    width: 440px;
+    margin: 12px auto;
+}
+
+
+.regionsWrapper .recentlyAdd > div > ul > li:nth-of-type(3):after{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------- 熱門鳥點 ------------------------- */
+
+.regionsWrapper .popularSpots{
+    grid-area: popularSpots;
+
+    /* border: 3px solid brown; */
+    height: 200px;
+
+    margin: 0 auto;
+    
+    
+}
+
+.regionsWrapper .popularSpots > div:first-child{
+    display: flex;
+    width: 310px;
+    height: 45px;
+    align-items: center;
+    justify-content: left;
+
+    /* border: 1px solid green; */
+    margin-bottom: 20px;
+}   
+
+.regionsWrapper .popularSpots > div:first-child h5{
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 140%;
+    color: #2F475D;
+    margin-right: 16px;
+}
+
+.regionsWrapper .popularSpots > div:first-child a{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 140%;
+    color: #2F475D;
+    text-decoration: none;
+    margin-right: 16px;
+}
+
+.regionsWrapper .popularSpots > div:first-child a:hover{
+    color: #B29671;
+}
+
+
+.regionsWrapper .popularSpots  ol{
+    background-color: #D3E5A4;
+    width: 532px;
+    height: 392px;
+    padding: 24px 28px 28px 24px;
+    margin-bottom: 68px;
+
+    display: grid;
+    grid-auto-rows: 96px;
+}
+
+.regionsWrapper .popularSpots ol .spots{
+    /* border: 1px solid red; */
+    margin-bottom: 16px;
+}
+
+
+.regionsWrapper .popularSpots ol .spots .chAddr{
+    display: flex;
+}
+
+
+.regionsWrapper .popularSpots ol .spots .chAddr p{
+    color: #2F475D;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 140%;
+}
+
+
+.regionsWrapper .popularSpots ol .spots .chAddr div{
+    display: flex;
+    margin-left: auto;
+}
+
+
+.regionsWrapper .popularSpots ol .spots .chAddr div p{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 1px;
+    margin-left: 8px;
+    /* border: 1px solid red; */
+    height: 32px;
+}
+
+
+.regionsWrapper .popularSpots ol .spots .chAddr div img{
+    height: 32px;
+}
+
+
+.regionsWrapper .popularSpots ol .spots div div:last-child{
+    color: #2F475D;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 140%;
+}
+
+
+
+
+
+/* --------------- GOTOP ------------------ */
+
+
+.gotop a{
+    display: block;
+    position: fixed;
+    bottom: 40px;
+    right: 20px;
+    background-color: #FEFBF1;
+    border-radius: 50px;
+    box-sizing: border-box;
+    box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.25);
+    border: 1px solid transparent;
+}
+
+.gotop i{
+    font-size: 48px;
+    color: #B29671;
+}
+
+.gotop i:hover{
+    color: #363A3A;
+    border-radius: 50px;
+}
+
+
+
+
+
+
+/* ---------------------- 鳥種探索 -------------------------- */
+
+
+
+.speciesWrapper{
+    max-width: 1200px;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+    margin: 0 auto;
+
+    grid-template-areas: "speciesPhoto"
+                        "feature"
+                        "distribution"
+                        "bestPhoto"
+                        "bestVideo";
+                        
+}
+
+
+/* ------------------鳥種照片-------------------- */
+.speciesPhoto{
+    grid-area: speciesPhoto;
+    /* background-color: #ccff00; */
+    /* border: 5px solid red; */
+
+    height: 704px;
+    display: flex;
+    z-index: 0;
+}
+
+
+
+.introduceLeft{
+    /* border: 3px solid blue; */
+    width: 328px;
+}
+
+.introduceLeft .introduceName{
+    width: 448px;
+    height: 336px;
+    /* border: 3px solid blue; */
+    z-index: 0;
+    background: var(--AVES, linear-gradient(180deg, #EFE09A 0%, #D3E5A4 100%));
+    box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin-top: 160px;
+}
+
+.introduceLeft .introduceName h4{
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 1px;
+    color: #2F475D;
+    padding-top: 28px;
+    margin-left: 50px;
+    margin-bottom: 10px;
+}
+
+.introduceLeft .introduceName h5{
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 140%; 
+    letter-spacing: 1px;
+    color: #2F475D;
+    margin-left: 50px;
+    margin-bottom: 10px;
+}
+
+.introduceLeft .introduceName ul{
+    display: flex;
+    margin-left: 50px;
+    gap: 12px;
+}
+
+.introduceLeft .introduceName ul li{
+    font-size: 24px;
+    color: #2F475D;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 1px;
+
+}
+
+
+.introduceLeft .introduceName > ul:nth-of-type(1) > li:first-child{
+    display: block;
+    background-color: #FEFBF1;
+    border-radius: 999px;
+    width: 64px;
+    height: 32px;
+    text-align: center;
+    line-height: 32px;
+}
+
+
+.introduceLeft .introduceName > ul:nth-of-type(1) > li:nth-of-type(3) a{
+    color: #363A3A;
+}
+
+
+
+.introduceLeft .introduceName > ul:nth-of-type(2){
+    /* border: 2px solid black; */
+    width: 184px;
+    height: 60px;
+    text-align: center;
+    margin-top: 32px;
+    margin-left: 56px;
+}
+
+
+.introduceLeft .introduceName > ul:nth-of-type(2) > li{
+    margin: 0 auto;
+}
+
+
+
+.introduceLeft > div:last-child{
+    /* border: 2px solid red; */
+    width: 300px;
+    display: flex;
+    align-items: center;
+    margin-top: 64px;
+    margin-left: 28px;
+}
+
+
+.introduceLeft > div:last-child > a:first-child{
+    display: block;
+    width: auto;
+    height: 80px;
+    background-color: #2F475D;
+    color: #FEFBF1;
+    border-radius: 999px;
+    box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.25);
+}
+
+.introduceLeft > div:last-child > a:first-child > i{
+    font-size: 24px;
+    text-align: center;
+    line-height: 80px;
+    /* border: 2px solid red; */
+    margin-left: 28px;
+    padding-right: 28px;
+}
+
+.introduceLeft > div:last-child > a:first-child:hover{
+    background-color: #5F446F;
+}
+
+.introduceLeft > div:last-child > a:first-child > .fa-volume-high:before, .fa-volume-up:before{
+    margin-right: 12px;
+    
+}
+
+.introduceLeft > div:last-child > a:last-child{
+    margin-left: 18px;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 28px */
+    letter-spacing: 1px;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: none;
+    text-decoration-thickness: auto;
+    text-underline-offset: auto;
+    text-underline-position: from-font;
+    color:#2F475D;
+    
+}
+
+
+.introduceLeft > div:last-child > a:last-child:hover{
+    color: #5F446F;
+}
+
+
+
+.introduceRight{
+    /* border: 3px solid green; */
+    width: 872px;
+    height: 568px;
+    margin-left: auto;
+    background-image: url(./img/1800\ \(5\).jpg);
+    background-size: cover;
+    background-position: 0 -50px;
+
+    z-index: -1;
+}
+
+
+.introduceRight > a:first-child{
+    font-size: 20px;
+    color: #FEFBF1;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 1px;
+    text-decoration: none;
+    align-items: center;
+    width: 108px;
+    /* border: 1px solid red; */
+    margin-left: auto;
+    margin-top: 24px;
+    margin-right: 10px;
+    display: flex;
+}
+
+.introduceRight > a:first-child:hover{
+    color: #5F446F;
+}
+
+.introduceRight > a:first-child > p{
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);
+}
+
+.introduceRight a + ul{
+    /* border: 3px solid green; */
+    width: 616px;
+    height: 152px;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 196px;
+    margin-top: 480px;
+}
+
+.introduceRight a + ul li{
+    /* border: 3px solid rgb(25, 47, 168); */
+    width: 200px;
+    height: 152px;
+}
+
+.introduceRight a + ul li > a > img{
+    width: 200px;
+    height: 152px;
+    box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.25);
+    border: 0.05px solid #ACB4B3;
+}
+
+.introduceRight a + ul a i{
+    color: #B29671;
+    font-size: 40px;
+}
+
+.introduceRight a + ul a i:hover{
+    color: #2F475D;
+}
+
+
+
+.introduceRight > a:first-child > i{
+    margin-left: 8px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------鳥種特徵-------------------- */
+.feature{
+    grid-area: feature;
+    /* border: 5px solid #791818; */
+    height: 660px;
+    max-width: 1200px;
+}
+
+
+.feature > div:first-child{
+    background-color: #4B5353;
+    height: 284px; 
+    padding: 28px 64px 40px 0;
+    display: flex;
+}
+
+
+.feature > div:first-child > h5{
+    color: #F5D367;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 140%; 
+    letter-spacing: 1px;
+    /* border: 1px solid red; */
+    width: 108px;
+    height: 56px;
+    margin: 0 64px;
+    text-align: center;
+}
+
+.feature > div:first-child > p{
+    color: #FEFBF1;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 1px;
+    width: 926px;
+    height: 216px;
+    /* border: 1px solid rgb(119, 110, 110); */
+    }
+
+
+.feature > div:nth-child(2){
+    /* border: 3px solid rgb(27, 57, 205); */
+    position: relative;
+    display: flex;
+}
+
+.feature > div:nth-child(2) > div:first-child{
+    background-color: #2F475D;
+    height: 368px;
+    width: 748px;
+}
+
+
+.feature > div:nth-child(2) > div:first-child h6{
+    color: #F5D367;
+    font-size: 32px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    /* border: 3px solid rgb(106, 138, 32); */
+    width: 108px;
+    height: auto;
+    text-align: center;
+    line-height: 45px;
+    padding-left: 36px;
+    padding-top: 36px;
+}
+
+
+.feature > div:nth-child(2) > div:first-child ul{
+    /* border: 3px solid rgb(228, 137, 17); */
+    display: flex;
+    justify-content: center;
+    padding-right: 60px;
+    padding-left: 20px;
+    align-items: flex-end;
+    margin-bottom: 20px;
+    height: 210px;
+}
+
+.feature > div:nth-child(2) > div:first-child ul> li{
+    /* border: 3px solid rgb(137, 3, 48); */
+    height: 210px;
+    justify-content: center;
+}
+
+.feature > div:nth-child(2) > div:first-child ul> li p{
+    font-size: 28px;
+    color: #FEFBF1;
+    text-align: right;
+    padding-top: 40px;
+    font-weight: 400;
+    padding-left: 40px;
+}
+
+.feature > div:nth-child(2) > div:first-child ul> li p i{
+    margin-right: 16px;
+}
+
+
+.feature > div:nth-child(2) > div:first-child ul> li:first-child{
+    display: block;
+    padding-top: 68px;
+}
+
+
+.feature > div:nth-child(2) > div:first-child ul> li:first-child p:last-child{
+    color: #FEFBF1;
+    font-size: 28px;
+    padding-top: 48px;
+}
+
+.feature > div:nth-child(2) > div:first-child ul> li  p:nth-of-type(2){
+    color: #F5D367;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 1px;
+    padding-top: 12px;
+}
+
+.feature > div:nth-child(2) > div:first-child ul> li > p:first-child{
+    padding-top: 12px;
+}
+
+
+
+
+.feature > div:nth-child(2) > div:nth-child(2){
+    /* border: 5px solid red; */
+    width: 460px;
+    height: 280px;
+    background-color: #B29671;
+    position: absolute;
+    top: -30px;
+    right: 16px;
+    color: #FEFBF1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+    border-radius: 10px;
+    box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.25);
+}
+
+
+.feature > div:nth-child(2) > div:nth-child(2) > h6{
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 140%; 
+    letter-spacing: 1px;
+    margin-top: 15px;
+    width: 100%;
+    text-align: center;
+}
+
+.feature > div:nth-child(2) > div:nth-child(2) > p{
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 140%; 
+    letter-spacing: 1px;
+    /* border: 2px solid red; */
+    padding-left: 23%;
+    width: 100%;
+}
+
+.feature > div:nth-child(2) > div:nth-child(2) > p > span{
+    font-style: italic;
+}
+
+.feature > div:nth-child(2) > div:nth-child(3) {
+    /* border: 3px solid red; */
+    width: 400px;
+    height: 100px;
+    margin-top: 260px;
+    margin-left: 20px;
+}
+
+.feature > div:nth-child(2) > div:nth-child(3) > div{
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.feature > div:nth-child(2) > div:nth-child(3) > div > h6{
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 140%;
+}
+
+.feature > div:nth-child(2) > div:nth-child(3) > div > i{
+    font-size: 20px;
+}
+
+
+.feature > div:nth-child(2) > div:nth-child(3) > a{
+    display: block;
+    width: 380px;
+    height: 50px;
+    background-color: #EFE09A;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+    font-weight: 400;
+    text-decoration: none;
+    color:#2F475D;
+}
+
+
+.feature > div:nth-child(2) > div:nth-child(3) > a > span{
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: none;
+    text-decoration-thickness: auto;
+    text-underline-offset: auto;
+    text-underline-position: from-font;
+}
+
+.feature > div:nth-child(2) > div:nth-child(3) > a > span:hover{
+    color: #B29671;
+}
+
+
+
+
+
+
+/* ------------------鳥種分布-------------------- */
+.distribution{
+    grid-area: distribution;
+    /* border: 3px solid #a09a24; */
+}
+
+.distribution h5{
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 140%;
+    color: #2F475D;
+    margin: 20px 0 20px 40px;
+}
+
+.distribution iframe{
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+/* ------------------最佳照片-------------------- */
+.bestPhoto{
+    grid-area: bestPhoto;
+    /* border: 5px solid #879aa2; */
+}
+
+.bestPhoto div{
+    display: flex;
+    width: auto;
+    height: 45px;
+    align-items: center;
+    justify-content: flex-start;
+
+    /* border: 1px solid green; */
+    margin-bottom: 20px;
+    padding-left: 40px;
+
+}   
+
+.bestPhoto div>i{
+    font-size: 20px;
+    color: #2F475D;
+    margin-right: 16px;
+}
+
+.bestPhoto div>h5{
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 140%;
+    color: #2F475D;
+    margin-right: 16px;
+}
+
+.bestPhoto div>a{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 140%;
+    color: #2F475D;
+    text-decoration: none;
+    margin-right: 16px;
+
+}
+
+.bestPhoto div>a:hover{
+    color: #B29671;
+}
+
+.bestPhoto div>p{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 140%;
+    color: #F5D367;
+}
+
+
+
+.bestPhoto ul{
+    /* border: 3px solid black; */
+    display: flex;
+    justify-content: center;
+    gap: 44px;
+    
+}
+
+.bestPhoto ul .photoList{
+    height: 316px;
+    width: 244px;
+    background-color: #2F475D;
+    padding: 0 12px;
+    border-radius: 5px;
+    /* border: 1px solid yellow; */
+    position: relative;
+}
+
+
+.bestPhoto ul .photoList img{
+    width: 220px;
+    height: 150px;
+    border-radius: 5px;
+    margin-bottom: 18px;
+    margin-top: 12px;
+    display: block;
+    
+}
+
+
+.bestPhoto ul .photoList > .vernacularNname{
+    color: #F5D367;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 140%;
+}
+
+.bestPhoto ul .photoList > .scientificName{
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 140%;
+    color: #FEFBF1;
+}
+
+.bestPhoto ul .photoList > .explorer, .place{
+    color: #FEFBF1;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 140%;
+}
+
+
+.bestPhoto ul .photoList > .date{
+    color: #FEFBF1;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 140%;
+
+
+    position: absolute;
+    top: 168px;
+    right: 16px;
+}
+
+.bestPhoto div+ul+img{
+    display: block;
+    margin-left: 920px;
+    margin-top: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------最佳影片-------------------- */
+.bestVideo{
+    grid-area: bestVideo;
+    /* background-color: #25b873; */
+}
+
+
+
+.bestVideo div{
+    display: flex;
+    width: auto;
+    height: 45px;
+    align-items: center;
+    justify-content: flex-start;
+
+    /* border: 1px solid green; */
+    margin-bottom: 20px;
+    padding-left: 40px;
+
+}   
+
+.bestVideo div>i{
+    font-size: 20px;
+    color: #2F475D;
+    margin-right: 12px;
+    padding-left: 6px;
+}
+
+.bestVideo div>h5{
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 140%;
+    color: #2F475D;
+    margin-right: 16px;
+}
+
+.bestVideo div>a{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 140%;
+    color: #2F475D;
+    text-decoration: none;
+    margin-right: 16px;
+
+}
+
+.bestVideo div>a:hover{
+    color: #B29671;
+}
+
+.bestVideo div>p{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 140%;
+    color: #F5D367;
+}
+
+
+
+.bestVideo ul{
+    /* border: 3px solid black; */
+    display: flex;
+    justify-content: center;
+    gap: 44px;
+    
+}
+
+.bestVideo ul .videoList{
+    height: 316px;
+    width: 244px;
+    background-color: #2F475D;
+    padding: 0 12px;
+    border-radius: 5px;
+    /* border: 1px solid yellow; */
+    position: relative;
+}
+
+.bestVideo ul .videoList a {
+    position: relative;
+}
+
+.bestVideo ul .videoList a i{
+    position: absolute;
+    font-size: 48px;
+    top: 32%;
+    left: 36%;
+    color: #363A3A;
+}
+
+
+.bestVideo ul .videoList a img{
+    width: 220px;
+    height: 150px;
+    border-radius: 5px;
+    margin-bottom: 18px;
+    margin-top: 12px;
+    display: block;
+    
+}
+
+
+.bestVideo ul .videoList > .vernacularNname{
+    color: #F5D367;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 140%;
+}
+
+.bestVideo ul .videoList > .scientificName{
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 140%;
+    color: #FEFBF1;
+}
+
+.bestVideo ul .videoList > .explorer, .place{
+    color: #FEFBF1;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 140%;
+}
+
+
+.bestVideo ul .videoList > .date{
+    color: #FEFBF1;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 140%;
+
+
+    position: absolute;
+    top: 168px;
+    right: 16px;
+}
+
+.bestVideo div+ul+img{
+    display: block;
+    margin-left: 920px;
+    margin-top: 16px;
+    margin-bottom: 60px;
+}

@@ -1,0 +1,1841 @@
+* {
+    box-sizing: border-box;
+}
+
+
+/* ------------------------ 提交發現 --------------------------- */
+
+
+.fullBanner{
+    background-image: url(./img/dunlins-7560078_1920.jpg);
+    width: 100%;
+    background-size: cover;
+    background-position: 0 490px; 
+}
+
+.fullBanner>div{
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 180px;
+    position: relative;
+}
+
+.fullBanner h1{
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 140%;
+    letter-spacing: 2px;
+    color: #FEFBF1;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    position: absolute;
+    top: 15px;
+    left: 370px;
+
+}
+
+.fullBanner h2{
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 140px;
+    letter-spacing: 1px;
+    color: #FEFBF1;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    position: absolute;
+    bottom: 15px;
+    right: 370px;
+}
+
+
+.submitWrapper{
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 48px;
+}
+
+
+
+
+/* ---------------------- 賞鳥的地點 -------------------------- */
+
+/* .submitWrapper .location{
+    border: 5px solid red;
+} */
+
+.submitWrapper .location h5{
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 140%; 
+    color: #2F475D;
+    margin-bottom: 16px;
+}
+
+.submitWrapper .location > div {
+    position: relative;
+}
+
+.submitWrapper .location > div > .yourLocation{
+    background: rgba(254, 251, 241, 0.50);
+    /* border: 2px solid red; */
+    border-radius: 8px;
+    position: absolute;
+    width: 1040px;
+    height: 48px;
+    top: 16px;
+    right: 12px;
+    color: #2F475D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.submitWrapper .location > div > .yourLocation > label{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 140%;
+    padding: 0 8px;
+    color: #FEFBF1;
+}
+
+
+.submitWrapper .location > div > .yourLocation > select{
+    border: 1px solid #ACB4B3;
+    height: 32px;
+    width: 200px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #2F475D;
+    line-height: 32px; 
+    text-align: center;
+    border-radius: 4px;
+    background-color: #FEFBF1;
+}
+
+.submitWrapper .location div .yourLocation select:focus{
+    outline: 2px solid #5F446F;
+    
+}
+
+.submitWrapper .location > div > .yourLocation > i{
+    font-size: 20px;
+    position: absolute;
+    top: 12px;
+    right: 488px;
+}
+
+.submitWrapper .location > div > .yourLocation > input{
+    height: 32px;
+    width: 356px;
+    box-sizing: border-box;
+    line-height: 32px; 
+    padding-left: 36px;
+    padding-top: 4px;
+    border-radius: 4px;
+    border: 1px solid #ACB4B3;
+}
+
+
+.submitWrapper .location > div > .yourLocation > input::placeholder{
+    font-size: 16px;
+    font-weight: 400;
+    color: #ACB4B3;
+    line-height: 32px; 
+    /* border: 1px solid blue; */
+    width: 300px;
+
+}
+
+
+/* -------- 輸入框:focus ----------- */
+.submitWrapper .location div .yourLocation input[type="text"] {
+    border: 1px solid #ACB4B3; 
+    background-color: #FEFBF1;
+}
+
+.submitWrapper .location div .yourLocation input[type="text"]:focus{
+    outline: 2px solid #5F446F; 
+}
+
+
+
+.submitWrapper .location > div iframe{
+    border: 5px solid blue;
+    display: block;
+    margin: 0 auto;
+}
+
+
+.submitWrapper .location form > .btn{
+
+    background-color: #2F475D;
+    color: #FEFBF1; 
+    font-size: 16px;  
+    font-weight: 400;  
+    height: 32px;
+    width: 56px;
+    border-radius: 4px;
+    cursor: pointer; 
+    margin-left: 12px;
+    outline: none;
+    box-shadow: none;
+    border: 0;
+    box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.25);
+}
+
+.submitWrapper .location form > .btn:hover{
+    background-color: #5F446F;
+}
+
+
+.submitWrapper .location div > a{
+    font-size: 36px;
+    /* border: 2px solid red; */
+    display: block;
+    color: #F5D367;
+    position: absolute;
+    bottom: 120px;
+    right: 12px;
+}
+
+.submitWrapper .location div > a:hover{
+    color: #5F446F;
+}
+
+
+/* ------------------ 賞鳥的日期與類型 -------------------------- */
+
+
+.submitWrapper .dateType{
+    /* border: 5px solid blue; */
+    margin-top: 44px;
+    display: flex;
+}
+
+.dateType > div:first-child{
+    /* border: 3px solid red; */
+    width: 400px;
+}
+
+.dateType div h5{
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 140%;
+    color: #2F475D;
+    /* border: 2px solid brown; */
+}
+
+
+
+.dateType div .date{
+    width: 300px;
+    /* border: 3px solid black; */
+    margin-top: 48px;
+    margin-left: 32px;
+}
+
+
+/* ----------------- 日曆樣式 ---------------------- */
+
+
+.dateType .date label{
+    font-size: 16px;
+    font-weight: 600;
+    color: #1E2E3F;
+}
+
+.dateType .date .ui-datepicker {
+    width: 284px; /* 設定日曆寬度 */
+    height: 276px; /* 設定日曆高度 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 日曆陰影 */
+    background-color: #FEFBF1; 
+  }
+
+
+.dateType .date .ui-datepicker-header {
+    height: 50px;
+    background: #2F475D; /* 上方區域背景顏色 */
+    margin-bottom: 10px;
+    
+}
+
+.dateType .date .ui-datepicker-prev,
+.dateType .date .ui-datepicker-next {
+    width: 20px;
+    height: 20px;
+    text-indent: 9999px;
+    border: 1px solid #ACB4B3;
+    border-radius: 100%;
+    cursor: pointer;
+    overflow: hidden;
+    margin: 12px 10px;
+    box-sizing: border-box;
+    background-color: #FEFBF1;
+
+}
+.dateType .date .ui-datepicker-prev:hover,
+.dateType .date .ui-datepicker-next:hover {
+    border-color: #ACB4B3;
+}
+
+.dateType .date .ui-datepicker-title {
+    text-align: center;
+   
+}
+.dateType .date .ui-datepicker-calendar {
+    width: 100%;
+    height: 190px; /* 調整日曆表格高度 */
+    text-align: center;
+    background-color: #FEFBF1; /* 下方區塊背景顏色 */
+    color: #2F475D; /* 文字顏色 */
+
+}
+.dateType .date .ui-datepicker-calendar td {
+    width: 28px; /* 縮小每個日期單元格的寬度 */
+    height: 28px; /* 縮小每個日期單元格的高度 */
+    text-align: center;
+    vertical-align: middle;
+    padding: 0; /* 去掉多餘的內邊距 */
+    
+}
+.dateType .date .ui-datepicker-calendar a {
+    display: inline-block;
+    width: 28px; /* 縮小日期的寬度 */
+    height: 28px; /* 縮小日期的高度 */
+    line-height: 28px;
+    text-align: end;
+    color: #2F475D;
+    text-decoration: none;
+}
+.dateType .date .ui-datepicker-calendar a:hover {
+    background-color: #2F475D; /* 懸停時背景顏色 */
+    color: #FEFBF1; /* 懸停時文字顏色 */
+}
+.dateType .date .ui-datepicker-calendar a.ui-state-active {
+    background-color: #B29671; /* 選中日期的背景顏色 */
+    color: #FEFBF1; /* 選中日期的文字顏色 */
+}
+
+#datepicker{
+    width: 120px;
+    text-align: center;
+    background-color: #FEFBF1;
+    border: .5px solid #ACB4B3;
+    height: 24px;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+#datepicker::placeholder{
+    font-size: 16px;
+    color: #ACB4B3;
+}
+
+#datepicker:focus{
+    outline: 2px solid #5F446F;
+}
+
+.dateType div .date .hasDatepicker .ui-datepicker .ui-datepicker-title .ui-datepicker-month{
+    background-color: #FEFBF1;
+    color: #1E2E3F;
+    margin-top: 10px;
+}
+
+.dateType  div  .date  .hasDatepicker .ui-datepicker .ui-datepicker-title .ui-datepicker-year{
+    background-color: #FEFBF1;
+    color: #1E2E3F;
+    margin-top: 10px;
+}
+
+.hasDatepicker{
+    margin-top: 4px;
+}
+
+
+.date > .hasDatepicker > .ui-corner-all{
+    border: .5px solid #1E2E3F;
+}
+
+
+
+
+
+
+
+
+/* -------------------- 紀錄類型 ------------------------ */
+.type{
+    /* border: 3px solid green; */
+    margin-left: 50px;
+    width: 100%;
+    margin-top: 56px;
+}
+
+
+.type > div:first-child{
+    display: flex;
+    /* border: 2px solid red; */
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.type > div:first-child > div{
+    margin-right: 32px;
+    /* border: 1px solid red; */
+    height: 40px;
+
+}
+
+.type > div:first-child > div > a{
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 40px;
+    color: #2F475D;
+    text-decoration: none;
+    position: relative;
+}
+
+.type > div:first-child > div > a:hover::before{
+    content: "";
+    display: block;
+    height: 10px;
+    width: 96px;
+    border-bottom: 3px solid #F5D367;
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+}
+
+
+.type > div:first-child > div > i{
+    font-size: 20px;
+    margin-left: 8px;
+    line-height: 40px;
+    /* border: 1px solid green; */
+}
+
+.type > div:nth-of-type(2){
+    position: relative;
+    /* border: 2px solid red; */
+    display: flex;
+    margin-top: 24px;
+    justify-content: center;
+}
+
+
+.type > div:nth-of-type(2) > p{
+    background-color: #2F475D;
+    width: 348px;
+    height: 252px;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 140%;
+    padding: 25px;
+    box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.25);
+    color: #FEFBF1;
+    border-radius: 4px;
+
+}
+
+.type > div:nth-of-type(2) > form{
+    background-color: #B29671;
+    box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.25);
+    width: 348px;
+    height: 252px;
+    padding: 36px 0 36px 36px;
+    color: #FEFBF1;
+    font-size: 24px;
+    font-weight: 400;
+    margin-left: 20px;
+    border-radius: 4px;
+}
+
+
+.type > div:nth-of-type(2) > form > div{
+    /* border: 1px solid red; */
+    margin-bottom: 8px;
+    width: 280px;
+}
+
+.type > div:nth-of-type(2) > form > div:first-child > #starTime{
+    width: 150px;
+    height: 32px;
+}
+
+.type > div:nth-of-type(2) > form > div:first-child > #starTime[type="time"]{
+    font-size: 20px;
+    color: #2F475D;
+    border: 0;
+    border-radius: 4px;
+    padding-left: 16px;
+    margin-left: 8px;
+    font-family: "Roboto Flex", sans-serif;
+    background-color: #FEFBF1;
+    box-sizing: border-box;
+}
+
+.type > div:nth-of-type(2) > form div:first-child >  #starTime[type="time"]:focus {
+    outline: 2px solid #5F446F;
+}
+
+
+
+.type > div:nth-of-type(2) > form div:nth-of-type(2){
+    display: flex;
+    align-items: center;
+}
+
+.type > div:nth-of-type(2) > form div:nth-of-type(2) input{
+    width: 44px;
+    height: 28px;
+    margin-left: 12px;
+    margin-right: 8px;
+}
+
+.type > div:nth-of-type(2) > form div:nth-of-type(2) input[type="number"]{
+    font-size: 20px;
+    color: #2F475D;
+    border: 0;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: "Roboto Flex", sans-serif;
+    text-align: center;
+    padding: 0;
+}
+
+.type > div:nth-of-type(2) > form > div:nth-of-type(2)  input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+.type > div:nth-of-type(2) > form > div:nth-of-type(2) input[type="number"]:focus{
+    outline: 2px solid #5F446F;
+}
+
+
+
+.type > div:nth-of-type(2) > form > div:nth-of-type(3){
+    display: flex;
+    align-items: center;
+}
+
+
+.type > div:nth-of-type(2) > form > div:nth-of-type(3) > input{
+    margin-left: 12px;
+    height: 28px;
+    width: 80px;
+    text-align: center;
+    border: 0;
+    border-radius: 4px;
+}
+
+
+.type > div:nth-of-type(2) > form > div:nth-of-type(3) > input[type="number"]{
+    font-size: 20px;
+    color: #2F475D;
+    font-family: "Roboto Flex", sans-serif;
+    background-color: #FEFBF1;
+}
+
+.type > div:nth-of-type(2) > form > div:nth-of-type(3) > input[type="number"]:focus{
+    outline: 2px solid #5F446F;
+}
+
+.type > div:nth-of-type(2) > form > div:nth-of-type(3) > input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+.type > div:nth-of-type(2) > form > div:nth-of-type(3) > select{
+    margin-left: 12px;
+    height: 28px;
+    width: 60px;
+    text-align: center;
+    font-size: 16px;
+    border: 0;
+    border-radius: 4px;
+    color: #2F475D;
+    background-color: #FEFBF1;
+}
+
+
+.type > div:nth-of-type(2) > form > div:nth-of-type(3) > select:focus{
+    outline: 2px solid #5F446F;
+}
+
+
+
+.type > div:nth-of-type(2) > form > div:nth-of-type(4){
+    display: flex;
+    align-items: center;
+}
+
+.type > div:nth-of-type(2) > form > div:nth-of-type(4) > input{
+    margin-left: 12px;
+    height: 28px;
+    width: 60px;
+    text-align: center;
+    border: 0;
+    border-radius: 4px;
+    font-size: 20px;
+    color: #2F475D;
+    font-family: "Roboto Flex", sans-serif;
+    background-color: #FEFBF1;
+}
+
+
+.type > div:nth-of-type(2) > form > div:nth-of-type(4) > input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+.type > div:nth-of-type(2) > form > div:nth-of-type(4) input[type="number"]:focus{
+    outline: 2px solid #5F446F;
+}
+
+
+
+
+.type > div:nth-of-type(2) > form > div:nth-of-type(5){
+    display: flex;
+    align-items: center;
+}
+
+.type > div:nth-of-type(2) > form > div:nth-of-type(5) > input{
+    margin-left: 12px;
+    height: 28px;
+    width: 200px;
+    padding-left: 8px;
+    border: 0;
+    border-radius: 4px;
+    font-size: 20px;
+    color: #2F475D;
+    font-family: "Roboto Flex", sans-serif;
+    background-color: #FEFBF1;
+}
+
+
+.type > div:nth-of-type(2) > form > div:nth-of-type(5) > input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+.type > div:nth-of-type(2) > form > div:nth-of-type(5) input[type="number"]:focus{
+    outline: 2px solid #5F446F;
+}
+
+
+
+
+
+
+/* ------------------ 觀察到什麼? ---------------------- */
+
+
+.observe{
+    margin: 0 auto;
+    border: 1px solid #2F475D;
+    border-radius: 4px;
+    margin-top: 40px;
+    width: 1100px;
+    height: 932px;
+    margin-bottom: 60px;
+    background: linear-gradient(90deg, #EFE09A 0%, #D3E5A4 100%);
+}
+
+.observe h5{
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 140%;
+    color: #2F475D;
+    text-align: center;
+    margin-top: 16px;
+    margin-bottom: 28px;
+}
+
+.observe > div {
+    display: flex;
+    position: relative;
+}
+
+
+
+.selectSpecies{
+    /* border: 5px solid green; */
+    height: 844px;
+    width: 800px;
+}
+
+.selectSpecies > div > h6{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 140%;
+    color: #2F475D;
+    margin-left: 24px;
+    margin-bottom: 12px;
+    margin-top: 16px;
+}
+
+
+
+.selectSpecies > div > ul{
+    /* border: 3px solid red; */
+    height: auto;
+    width: 680px;
+    margin: 0 auto;
+}
+
+.selectSpecies > div > ul > li{
+    background: #677372;
+    border-radius: 999px;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 4px;
+}
+
+
+.selectSpecies > div > ul > li .number-input{
+    /* border: 1px solid blue; */
+    width: 104px;
+    display: flex;
+    margin-left: 12px;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+.selectSpecies > div > ul > li .number-input > button{
+    width: 20px;
+    height: 20px;
+    border: 0;
+    cursor: pointer;
+    fill: none;
+    background-color: transparent;
+    color: #FEFBF1;
+
+}
+
+.selectSpecies > div > ul > li .number-input > button:hover{
+    color: #5F446F;
+}
+
+
+.selectSpecies > div > ul > li .number-input > input{
+    width: 48px;
+    height: 24px;
+    color: #2F475D;
+    background-color: #FEFBF1;
+    border: 0;
+    border-radius: 4px;
+}
+
+
+
+.selectSpecies > div > ul > li .number-input > input[type="number"]{
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    background-color: #FEFBF1;
+}
+
+.selectSpecies > div > ul > li .number-input > input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.selectSpecies > div > ul > li .number-input > input[type="number"]:focus{
+    outline: 1px solid #5F446F;
+}
+
+
+
+
+/*---------- 稀有鳥種標示 ----------*/
+
+
+.observe > div > .selectSpecies > div:nth-of-type(2) > ul > li:nth-of-type(3) > div:nth-of-type(2) > span::after{
+    content: "●";
+    margin-left: 12px;
+    font-size: 28px;
+    color: #B29671;
+}
+
+.observe > div > .selectSpecies > div:nth-of-type(2) > ul > li:nth-of-type(4) > div:nth-of-type(2) > span::after{
+    content: "●";
+    margin-left: 12px;
+    font-size: 28px;
+    color: #B29671;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.selectSpecies > div > ul > li > div:nth-of-type(2){
+    display: flex;
+    margin-left: 20px;
+    align-items: center;
+}
+
+.selectSpecies > div > ul > li > div:nth-of-type(2) > p{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 140%;
+    color: #F5D367;
+    /* border: 1px solid red; */
+}
+
+
+.selectSpecies > div > ul > li > div:nth-of-type(2) > span{
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 500;
+    line-height: 140%;
+    letter-spacing: 1px;
+    color: #FEFBF1;
+    margin-left: 20px;
+    /* border: 1px solid red; */
+
+}
+
+.selectSpecies > div > ul > li > .detail-btn{
+    margin-left: auto;
+    margin-right: 24px;
+    box-sizing: border-box;
+    cursor: pointer;
+    border: 0;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #2F475D;
+    background-color: #FEFBF1;
+}
+
+
+.selectSpecies > div > ul > li > .detail-btn:hover{
+    background-color: #5F446F;
+    color: #FEFBF1;
+}
+
+
+
+
+
+
+
+
+
+.submitBox{
+    border: .5px solid #2F475D;
+    height: 708px;
+    width: 280px;
+    text-align: center;
+    background-color: #92C1CB;
+    border-radius: 8px;
+    margin-right: 40px;
+}
+
+.submitBox > div{
+    font-size: 20px;
+    font-weight: 400;
+    color: #2F475D;
+    /* border: 1px solid red; */
+}
+
+
+.submitBox > div:nth-of-type(1){
+    margin-bottom: 28px;
+    margin-top: 24px;
+    position: relative;
+}
+
+.submitBox > div:nth-of-type(2){
+    margin-bottom: 32px;
+    position: relative;
+}
+
+
+
+.submitBox > div > i{
+    font-size: 24px;
+
+    position: absolute;
+
+    top: 4px;
+    left: 40px;
+}
+
+
+.submitBox > div:nth-of-type(1) > input, div:nth-of-type(2) > input{
+    width: 212px;
+    height: 32px;
+    padding-left: 36px;
+    padding-top: 4px;
+    border: 1px solid #2F475D;
+    border-radius: 4px;
+    background-color: #FEFBF1;
+}
+
+
+.submitBox > div:nth-of-type(1) > input::placeholder, div:nth-of-type(2) > input::placeholder{
+    /* border: 1px solid blue; */
+    font-size: 16px;
+    width: 160px;
+    color: #ACB4B3;
+    font-family: "Roboto Flex";
+    font-weight: 400;
+    box-sizing: border-box;
+
+}
+
+
+.submitBox > div:nth-of-type(1) > input:focus, div:nth-of-type(2) > input:focus{
+    outline: 1px solid #5F446F;
+}
+
+
+
+.submitBox > div:nth-of-type(3){
+    height: 36px;
+    line-height: 36px;
+    margin-bottom: 4px;
+}
+
+
+
+.submitBox > div:nth-of-type(4){
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 222px;
+    margin-left: 56px;
+    color: #2F475D;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+
+
+.submitBox > div:nth-of-type(3) > label{
+    cursor: pointer;
+}
+
+.submitBox > div:nth-of-type(4) > label{
+    margin-left: 4px;
+    cursor: pointer;
+}
+
+.submitBox > div:nth-of-type(4)::after{
+    content: "●";
+    font-size: 28px;
+    padding-bottom: 6px;
+    padding-left: 8px;
+    color: #B29671;
+}
+
+
+.submitBox > .submit-btn{
+    margin-top: 380px;
+    width: 152px;
+    height: 68px;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 110%;
+    background-color: #2F475D;
+    color: #FEFBF1;
+    border: 0;
+    border-radius: 8px;
+    box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+
+.submitBox > .submit-btn:hover{
+    background-color: #5F446F;
+}
+
+
+/* 詳細資料 */
+
+.detail {
+    font-family: "Roboto Flex";
+    background-color: #2F475D;
+    border-radius: 8px;
+    padding: 20px;
+    width: 480px;
+    height: 480px;
+    box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.25);
+
+    position: absolute;
+    top: 120px;
+    right: 300px;
+}
+
+
+
+.detail > div:first-child {
+    display: flex;
+    font-family: "Roboto Flex";
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 140%;
+    justify-content: center;
+    color: #FEFBF1;
+    margin-bottom: 12px;
+}
+
+.detail > div:first-child > span{
+    font-style: italic;
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin-left: 20px;
+}
+
+
+.description{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.description label{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 140%;
+    color: #FEFBF1;
+    /* border: 2px solid red; */
+    padding-top: 4px;
+    margin-right: 12px;
+}
+
+
+textarea {
+    width: 392px;
+    height: 60px;
+    border-radius: 4px;
+    padding: 8px;
+    resize: none;
+    border: .5px solid #ACB4B3;
+    background-color: #FEFBF1;
+    font-size: 16px;
+}
+
+textarea:focus{
+    outline: 2px solid #5F446F;
+}
+
+textarea::placeholder{
+    font-size: 16px;
+    color: #ACB4B3;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-weight: 400;
+    line-height: 140%;
+}
+
+
+
+table {
+    width: 100%;
+    margin-bottom: 20px;
+    color: #FEFBF1;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 160%;
+}
+
+
+table > caption{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 140%;
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 16px;
+}
+
+
+.detail table > th, td {
+    /* border: 1px solid #2F475D; */
+    text-align: center;
+    padding: 8px;
+}
+
+
+table tr td:first-child{
+    text-align: right;
+    padding-right: 20px;
+}
+
+
+
+.detail table input {
+    width: 40px;
+    text-align: center;
+    border: 1px solid #ACB4B3;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 140%;
+    color: #1E2E3F;
+    background-color: #FEFBF1;
+}
+
+.detail table input:focus{
+    outline: 2px solid #5F446F;
+}
+
+
+.detail table input[type="number"]::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+}
+
+
+.detail .confirm-btn {
+    display: block;
+    width: 72px;
+    margin: 0 auto;
+    height: 44px;
+    line-height: 44px;
+    background-color: #FEFBF1;
+    color: #1E2E3F;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 32px;
+}
+
+.detail .confirm-btn:hover {
+    background-color: #5F446F;
+    color: #FEFBF1;
+}
+
+
+
+
+/* --------------------- 我的紀錄 -------------------------- */
+.profile{
+    max-width: 1200px;
+    margin: 0 auto;
+    /* border: 5px solid red; */
+    display: flex;
+    position: relative;
+}
+
+.profile .information {
+    /* border: 5px solid red; */
+    width: 320px;
+    height: 572px;
+    text-align: center;
+    padding: 16px 40px 28px;
+    margin-left: 32px;
+    margin-top: 100px;
+    position: relative;
+}
+
+
+.profile .information::before{
+    content: "";
+    display: block;
+    border-top: 8px solid #F5D367;
+    border-left: 8px solid #F5D367;
+    height: 164px;
+    width: 164px;
+    position: absolute;
+    top: -20px;
+    left: 20px;
+
+    z-index: -1;
+}
+
+
+.profile .information > a:first-child{
+    /* border: 1px solid red; */
+    display: block;
+    width: 200px;
+    height: 200px;    
+    border-radius: 50%;
+    margin-left: 20px;
+}
+
+.profile .information > a:first-child i{
+    font-size: 200px;
+    color: #2F475D;
+}
+
+.profile .information > h5{
+    color: #2F475D;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 140%;
+    letter-spacing: 1px;
+    margin-top: 12px;
+}
+
+.profile .information > p{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 140%;
+    color: #2F475D;
+    /* border: 5px solid red; */
+    padding-right: 60px;
+}
+
+
+
+.profile .information > div:nth-of-type(1) {
+    display: flex;
+    /* border: 5px solid red; */
+    padding-left: 44px;
+    width: 250px;
+    margin-top: 4px;
+}
+
+
+.profile .information > div:nth-of-type(1) a{
+    display: flex;
+    /* border: 1px solid blue; */
+    margin-left: 12px;
+    color: #2F475D;
+    text-decoration: none;
+    height: 24px;
+}
+
+.profile .information > div:nth-of-type(1) a:hover{
+    color: #B29671;
+}
+
+.profile .information > div:nth-of-type(1) a i{
+    font-size: 24px;
+    margin-right: 4px;
+}
+
+.profile .information > div:nth-of-type(1) a p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.profile .information > h6{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 140%;
+    color: #2F475D;
+    margin: 10px 0;
+}
+
+
+.profile .information > h6+a{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 140%;
+    color: #92C1CB;
+    text-decoration: none;
+    width: 100%;
+    /* border: 1px solid blue; */
+    padding-left: 54px;
+    overflow-wrap: break-word
+}
+
+.profile .information > h6+a:hover{
+    color: #B29671;
+}
+
+.profile .information h6+a+i{
+    font-size: 100px;
+    margin-top: 12px;
+    display: block;
+    color: #92C1CB;
+
+}
+
+
+
+
+/* ------------------ 我的紀錄標題 --------------------- */
+
+
+.profile .profileBanner{
+    /* border: 1px solid blue; */
+    width: 696px;
+    height: 236px;
+    margin-left: 56px;
+    margin-top: 68px;
+    background-image: url(./img/birds-8837326.jpg);
+    background-size: cover;
+    background-position: center center;
+    text-align: end;
+    border-radius: 20px;
+}
+
+
+.profile .profileBanner h4{
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 140%;
+    letter-spacing: 2px;
+    color: #FEFBF1;
+    padding-top: 16px;
+    padding-right: 28px;
+}
+
+.profile .profileBanner h5{
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 140%;
+    letter-spacing: 1px;
+    color: #FEFBF1;
+    padding-right: 28px;
+}
+
+
+
+
+
+/* ------------------ 個人數據 ----------------------- */
+
+.profileData{
+    /* border: 5px solid gray; */
+    position: absolute;
+    width: 832px;
+    height: 280px;
+    bottom: 40px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profileData ul{
+    display: flex;
+    /* border: 1px solid green;    */
+    gap: 56px;
+    align-items: flex-start;
+    position: relative;
+}
+
+.profileData ul::after{
+    content: "";
+    display: block;
+    border-right: 8px solid #F5D367;
+    border-bottom: 8px solid #F5D367;
+    height: 120px;
+    width: 120px;
+    position: absolute;
+    bottom: -58px;
+    right: -58px;
+}
+
+
+.profileData ul li div {
+    /* border: 1px solid blue; */
+    width: 140px;
+    display: flex;  
+    align-items: flex-end;
+    justify-content: center;
+}
+
+
+.profileData ul li div img{
+    display: block;
+    padding-right: 20px;
+    width: 64px; 
+    padding-bottom: 18px;
+}
+
+.profileData ul li div i{
+    display: block;
+    float: left;
+    font-size: 36px;
+    padding-right: 20px;
+    line-height: 160%;
+    color: #2F475D;
+    padding-bottom: 12px;
+}
+
+.profileData ul li div p{
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    color: #363A3A;
+}
+
+.profileData ul li{
+    /* border: 2px solid green; */
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
+}
+
+.profileData ul li p{
+    color: #363A3A;
+    font-size: 24px;
+    word-spacing: 1px;
+    line-height: 160%;
+    font-weight: 500;
+}
+
+.profileData ul li div+p+p{
+    font-weight: 400;
+    font-size: 20px;
+}
+
+/* 裝飾分隔線 */
+.profileData ul li::after{
+    content: "";
+    border-right: 1.5px solid #B29671 ;
+    height: 80px;
+    width: 40px;
+    position: absolute;
+    right: -28px;
+}
+
+
+.profileData ul li:nth-of-type(4):after{
+    display: none;
+}
+
+
+
+
+
+
+
+
+/* --------------------- recordList ----------------------- */
+
+.recordList{
+    /* border: 5px solid red; */
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.recordList .multiMedia{
+    color: #2F475D;
+    width: 868px;
+    background: linear-gradient(90deg, #EFE09A 0%, #D3E5A4 100%);
+}
+
+
+.recordList .multiMedia .newPhoto > div, .newRecording > div{
+    display: flex;
+    font-size: 24px;
+    font-weight: 700;
+    height: 40px;
+    /* border: 1px solid rebeccapurple; */
+    align-items: center;
+    /* line-height: 40px; */
+    margin-top: 8px;
+}
+
+.recordList .multiMedia .newPhoto > div i, .newRecording > div i{
+    margin: 0 8px;
+}
+
+.recordList .multiMedia .newPhoto > div > a, .newRecording > div > a{
+    display: block;
+    height: 28px;
+    width: 100px;
+    font-weight: 600;
+    background-color:#2F475D ;
+    border: 0.5px solid #FEFBF1;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+    text-decoration: none;
+    color: #FEFBF1;
+    border-radius: 999px;
+    margin-left: auto;
+    margin-right: 8px;
+    box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.25);
+}
+
+.recordList .multiMedia .newPhoto > div > a:hover, .newRecording > div > a:hover{
+    background-color: #5F446F;
+}
+
+.recordList .multiMedia ul{
+    display: flex;
+    justify-content: space-between;
+    margin: 8px 8px 8px;
+}
+
+.recordList .multiMedia ul li{
+    /* border: 2px solid red; */
+    width: 160px;
+    text-align: center;
+
+
+    position: relative;
+}
+
+
+.recordList .multiMedia ul li img{
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border: 0.5px solid #2F475D;
+    margin: 0 auto;
+    object-position: center center;
+}
+
+.recordList .multiMedia ul li p{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 140%;
+    width: 160px;
+    overflow-wrap: break-word;
+    padding: 8px 0 4px 0;
+}
+
+.recordList .multiMedia ul li span{
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 140%;
+    width: 160px;
+    overflow-wrap: break-word;
+    /* border: 1px solid red; */
+}
+
+
+
+.newRecording ul li a i{
+    content: "";
+    display: block;
+    color: #363A3A;
+    position: absolute;
+    top:24%;
+    left: 40%;
+    font-size: 40px;
+}
+
+
+
+/* ---------------- 最近記錄清單 ------------------------- */
+
+.newRecord{
+    background-color: #677372;
+    width: 296px;
+    height: 568px;
+    margin-top: 20px;
+    margin-left: 24px;
+}
+
+
+.newRecord div{
+    display: flex;
+    height: auto;
+    /* border: 1px solid rebeccapurple; */
+    align-items: center;
+    margin-top: 16px;
+}
+
+.newRecord div h6{
+    color: #FEFBF1;
+    font-size: 24px;
+    font-weight: 400;
+    margin-left: 12px;
+}
+
+.newRecord div a{
+    display: block;
+    height: 28px;
+    width: 100px;
+    font-weight: 600;
+    background-color:#2F475D ;
+    border: 0.5px solid #FEFBF1;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+    text-decoration: none;
+    color: #FEFBF1;
+    border-radius: 999px;
+    margin-left: auto;
+    margin-right: 12px;
+    box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.25);
+}
+
+.newRecord div a:hover{
+    background-color: #5F446F;
+}
+
+.newRecord > ul{
+    /* border: 2px solid green; */
+    height: 528px;
+} 
+
+.newRecord > ul li{
+    /* border: 2px solid black; */
+    display: flex;
+    height: 80px;
+    align-items: center;
+    padding-right: 8px;
+    box-sizing: border-box;
+    margin-top: 20px;
+}
+
+.newRecord > ul li > div:first-child{
+    flex-direction: column;
+    flex-basis: 84px;
+}
+
+.newRecord > ul li > div:first-child > p:nth-of-type(1){
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 140%;
+    color: #FEFBF1;
+}
+
+.newRecord > ul li > div:first-child > p:nth-of-type(2){
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 140%;
+    color: #FEFBF1;
+
+}
+
+
+.newRecord > ul li > div:nth-of-type(2){
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 12px;
+    width: 100%;
+
+    position: relative;
+}
+
+.newRecord > ul li > div:nth-of-type(2) > p:nth-of-type(1){
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 140%;
+    color: #FEFBF1;
+}
+
+.newRecord > ul li > div:nth-of-type(2) > p{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 140%;
+    color: #FEFBF1;
+}
+
+
+.newRecord > ul li > div:nth-of-type(2)::before{
+    content: "";
+    display: block;
+    height: 36px;
+    border: 1px solid #B29671;
+
+    position: absolute;
+    top: 12px;
+    left: -16px;
+}
+
+
+/* -------------------- 我的地點 ---------------------- */
+
+
+
+.myPlace{
+    max-width: 1200px;
+    margin: 0 auto;
+    /* border: 5px solid rebeccapurple; */
+    margin-top: 80px;
+    margin-bottom: 100px;
+}
+
+
+.myPlace > div:first-child{
+    display: flex;
+    height: auto;
+    /* border: 1px solid rebeccapurple; */
+    align-items: center;
+    margin-top: 16px;
+}
+
+.myPlace div h6{
+    color: #2F475D;
+    font-size: 24px;
+    font-weight: 400;
+    margin-left: 32px;
+    line-height: 140%;
+}
+
+.myPlace div a{
+    display: block;
+    height: 28px;
+    width: 100px;
+    font-weight: 600;
+    background-color:#2F475D ;
+    border: 0.5px solid #FEFBF1;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+    text-decoration: none;
+    color: #FEFBF1;
+    border-radius: 999px;
+    margin-left: auto;
+    margin-right: 44px;
+    box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.25);
+}
+
+.myPlace div a:hover{
+    background-color: #5F446F;
+}
+
+.myPlace > ul{
+    /* border: 1px solid red; */
+    margin: 8px 0 8px 32px;
+
+    position: relative;
+}
+
+.myPlace > ul::before{
+    content: "";
+    display: block;
+    width: 148px;
+    height: 148px;
+    border-top: 8px solid #F5D367;
+    border-left: 8px solid #F5D367;
+
+    position: absolute;
+    top: -72px;
+    left: -40px;
+
+    z-index: -1;
+}
+
+.myPlace > ul::after{
+    content: "";
+    display: block;
+    width: 148px;
+    height: 148px;
+    border-bottom: 8px solid #F5D367;
+    border-right: 8px solid #F5D367;
+
+
+    position: absolute;
+    bottom: -20px;
+    right: 20px;
+
+    /* z-index: -1; */
+
+}
+
+.myPlace > ul li{
+    display: flex;
+    margin: 8px 0;
+}
+
+.myPlace ul li > p:nth-of-type(1) , .myPlace ul li > p:nth-of-type(2){
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 1px;
+    color: #2F475D;
+    /* border: 1px solid red; */
+}
+
+
+.myPlace ul li > p:nth-of-type(1){
+    width: 350px;
+    margin-right: 40px;
+}
+
+.myPlace ul li > p:nth-of-type(2){
+    width: 600px;
+}
+
+.myPlace ul li > div{
+    /* border: 1px solid red; */
+    display: flex;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 1px;
+    color: #2F475D;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 32px;
+    width: 100px;
+    padding-left: 16px;
+    
+}
+
+.myPlace ul li > div > p{
+    margin-left: 8px;
+}
+
+
+
+
+
+
+
+
+
+/* --------------- GOTOP ------------------ */
+
+
+.gotop a{
+    display: block;
+    position: fixed;
+    bottom: 40px;
+    right: 20px;
+    background-color: #FEFBF1;
+    border-radius: 50px;
+    box-sizing: border-box;
+    box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.25);
+    border: 1px solid transparent;
+}
+
+.gotop i{
+    font-size: 48px;
+    color: #B29671;
+}
+
+.gotop i:hover{
+    color: #363A3A;
+    border-radius: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer{
+    position: static;
+}

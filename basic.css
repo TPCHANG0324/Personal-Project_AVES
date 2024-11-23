@@ -1,0 +1,386 @@
+@import url(reset.css);
+
+body{
+    background-color: #FEFBF1;
+    font-family: "Roboto Flex", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings: 
+    "slnt" 0,
+    "wdth" 100,
+    "GRAD" 0,
+    "XOPQ" 96,
+    "XTRA" 468,
+    "YOPQ" 79,
+    "YTAS" 750,
+    "YTDE" -203,
+    "YTFI" 738,
+    "YTLC" 514,
+    "YTUC" 712;
+}
+
+/* -----------------------主選單------------------------ */
+
+/* Header 做滿版 */
+.scroll-nav{
+    background-color: #2F475D;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    /* overflow: hidden; */
+
+}
+
+/* Header */
+.nav{
+    margin: 0 auto;
+    /* border: 2px solid blue; */
+    height: 80px;
+    width: 1200px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    flex-shrink: 1;
+
+    font-size: 0;
+}
+
+/* Logo圖 */
+.nav img{
+    display: inline-block;
+    width: 180px;
+}
+
+/* ul標籤 */
+.nav .main-sel{
+    display: flex;
+    margin-left: auto ;
+
+    position: relative;
+
+    z-index: 10;
+}
+
+/* 文字主標籤 */
+.nav .main-sel .title{
+    margin-left: 40px;
+    height: 32px;
+    line-height: 32px;
+
+    position: relative;
+
+    /* border: 1px solid green; */
+}
+
+/* 標籤做鏈結 */
+.nav .main-sel .title a{
+    text-decoration: none;
+    font-weight: 700;
+    color: #EFE09A;
+    font-size: 20px;
+
+
+    position: relative;
+
+    /* border: 1px solid black; */
+}
+
+
+/* 控制li下的所有第一個a標籤hover(顯示底線) */
+.nav .main-sel .title>a:first-of-type:hover::after{
+    content: "";
+    border-bottom: 3px solid #92C1CB;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 28px;
+}
+
+
+/* 控制li下的所有第2個a標籤hover(顯示底線) */
+.nav .main-sel .title > a:nth-of-type(2):hover::after{
+    content: "";
+    border-bottom: 3px solid #92C1CB;
+    position: absolute;
+    left: 4px;
+    right: -8px;
+    top: 28px;
+}
+
+/* li中所有icons控制, 偽元素 */
+.nav .main-sel i::before{
+    display: block;
+    height: 40px;
+
+    font-size: 24px; 
+    margin-left: 8px;
+
+
+    /* border: 2px solid red; */
+}
+
+
+/* 選擇語言icons設定 */
+.nav .main-sel .language{
+    color: #EFE09A;
+    display: block;
+    height: 32px;
+    text-decoration: none;
+    margin-left: 40px;
+
+    
+    /* border: 1px solid black; */
+    /* margin-right: 56px; */
+}
+
+
+
+/* 選擇語言垂直置中對齊 */
+.nav .main-sel i+i::before{
+    line-height: 28px;
+}
+
+
+.nav .main-sel .language:last-of-type{
+    position: relative;
+
+}
+
+/* 更換語言icons偽元素hover (顯示底線)*/
+.nav .main-sel .language:last-of-type:hover::after{
+    content: "";
+    border-bottom: 3px solid #92C1CB;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: -3px;
+    
+}
+
+
+.nav .main-sel .language:hover + .sec-sel{
+    display: block;
+}
+
+
+
+
+/* -----------------子選單------------------ */
+
+.scroll-nav .nav .main-sel .sec-sel{
+
+    height: auto;
+    width: 126px;
+    position: absolute;
+    top: 140%;
+    left: -10px;
+
+    /* z-index: 1; */
+
+    display: none;
+}
+
+.scroll-nav .nav .main-sel .title a:nth-of-type(2):hover + .sec-sel{
+    display: block;
+}
+
+
+
+/* 提交發現、資料探索 子選單 */
+.scroll-nav .nav .main-sel .sec-sel a{
+    display: block;
+    padding-left: 8px;
+    background-color: #2F475D;
+    border: 1px solid #FEFBF1;
+}
+
+
+/* 會員登入子選單 */
+.scroll-nav .nav .main-sel .title:nth-of-type(5) .sec-sel a{
+    padding-left: 0;
+    text-align: center;
+}
+
+/* 所有子選單:hover */
+.scroll-nav .nav .main-sel .sec-sel a:hover{
+    background-color: #5F446F;
+}
+
+/* 更換語言 子選單 */
+
+.scroll-nav .nav .main-sel div .sec-sel{
+    left: 654px;
+   
+
+    /* border: 2px solid red; */
+}
+
+
+.scroll-nav .nav .main-sel div .sec-sel a {
+   
+    font-family: "Roboto Flex", sans-serif; 
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings: 
+    "slnt" 0,
+    "wdth" 100,
+    "GRAD" 0,
+    "XOPQ" 96,
+    "XTRA" 468,
+    "YOPQ" 79,
+    "YTAS" 750,
+    "YTDE" -203,
+    "YTFI" 738,
+    "YTLC" 514,
+    "YTUC" 712;
+
+
+    text-decoration: none;
+    height: 32px;
+    line-height: 32px;
+    font-size: 20px;
+    color: #EFE09A;
+}
+
+
+
+
+
+
+/* ----------------- Footer ----------------------- */
+
+
+.footer{
+    /* border: 5px solid green; */
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+
+}
+
+.footer .footer-bg{
+    width: 100%;
+    background-color: #2F475D;
+}
+
+.footer div .main-footer{
+    width: 1200px;
+    height: 240px;
+    background-color: #2F475D;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.footer div .main-footer .footer-logo{
+    /* border: 2px solid red; */
+    width: 270px;
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding-left: 48px;
+}
+
+.footer div .main-footer .footer-logo p{
+    /* border: 2px s87olid #FEFBF1; */
+    font-size: 14px;
+    color: #FEFBF1;
+    font-weight: 500;
+    line-height: 140%;
+    letter-spacing: 1px;
+    text-align: left;
+    width: 270px;
+    padding: 16px 0;
+    left: auto;
+    top: auto;
+    bottom: auto;
+    right: auto;
+}
+
+.footer div .main-footer a img{
+    width: 180px;
+    height: 56px;
+}
+
+
+.footer .main-footer>ul{
+    display: flex;
+    gap: 80px;
+
+    /* border: 2px solid green; */
+    margin-left: 86px;
+}
+
+.footer .main-footer>ul>li>a{
+    color: #FEFBF1;
+    line-height: 28px;
+    text-decoration: none;
+    display: block;
+    /* border: 2px solid #FEFBF1; */
+    width: 84px;
+    height: 28px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.footer .main-footer>ul>li>a:hover{
+    color: #EFE09A;
+}
+
+.footer .main-footer>ul>li>.heading-link{
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+
+.footer .main-footer>ul>li>.heading-link:hover{
+    color: #EFE09A;
+}
+
+/* ------ copyright--------- */
+
+
+.footer .copyright{
+    /* border: 5px solid purple; */
+    height: 80px;
+    color: #2F475D;
+    /* border: 5px solid brown; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 600px ;
+}
+
+.footer .copyright p{
+    line-height: 80px;
+    font-weight: 500;
+    line-height: 140%;
+    font-size: 16px;
+}
+
+.footer .copyright div a{
+    text-decoration: none;
+    margin-left: 24px;
+    display: inline-block;
+    height: 40px;
+    /* border: 3px solid red; */
+    line-height: 40px;
+    text-align: center;
+}
+
+.footer .copyright div a i:hover{
+    color: #B29671;
+}
+
+
+.footer .copyright div a i{
+    font-size: 40px;
+    color: #2F475D;
+}
