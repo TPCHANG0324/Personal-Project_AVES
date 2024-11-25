@@ -625,10 +625,11 @@
 .type > div:nth-of-type(2) > form > div:nth-of-type(5) > input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button {
     -webkit-appearance: none;
     margin: 0;
+
 }
 
 
-.type > div:nth-of-type(2) > form > div:nth-of-type(5) input[type="number"]:focus{
+.type > div:nth-of-type(2) > form > div:nth-of-type(5) input:focus{
     outline: 2px solid #5F446F;
 }
 
@@ -638,6 +639,62 @@
 
 
 /* ------------------ 觀察到什麼? ---------------------- */
+
+.screen {
+    display: none;
+}
+
+#submitFirst {
+    display: block; 
+}
+
+.submitWrapper #submitFirst > button{
+    border: none;
+    background-color: #2F475D;
+    color: #FEFBF1;
+    display: block;
+    margin: 0 auto;
+    margin-top: 80px;
+    margin-bottom: 40px;
+    height: 44px;
+    width: 120px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.25);
+    font-family: "Roboto Flex";
+    font-weight: 500;
+}
+
+.submitWrapper #submitFirst > button:hover{
+    background-color: #5F446F;
+}
+
+.submitWrapper #submitSec > .observe > div > .submitBox > div > button:first-of-type {
+    border: none;
+    background-color: #2F475D;
+    color: #FEFBF1;
+    display: block;
+    height: 44px;
+    width: 120px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.25);
+    font-family: "Roboto Flex";
+    font-weight: 500;
+}
+
+.submitWrapper #submitSec > .observe > div > .submitBox > div > button:first-of-type:hover{
+    background-color: #5F446F;
+}
+
+.submitWrapper #submitSec > .observe > div > .submitBox > div:nth-of-type(5){
+    display: flex;
+    margin-top: 400px;
+    justify-content: center;
+    gap: 10px;
+}
 
 
 .observe{
@@ -649,6 +706,7 @@
     height: 932px;
     margin-bottom: 60px;
     background: linear-gradient(90deg, #EFE09A 0%, #D3E5A4 100%);
+
 }
 
 .observe h5{
@@ -952,12 +1010,11 @@
 }
 
 
-.submitBox > .submit-btn{
-    margin-top: 380px;
-    width: 152px;
-    height: 68px;
-    font-size: 40px;
-    font-weight: 400;
+.submitBox > div >.submit-btn{
+    width: 120px;
+    height: 44px;
+    font-size: 16px;
+    font-weight: 500;
     line-height: 110%;
     background-color: #2F475D;
     color: #FEFBF1;
@@ -967,7 +1024,7 @@
     cursor: pointer;
 }
 
-.submitBox > .submit-btn:hover{
+.submitBox > div >.submit-btn:hover{
     background-color: #5F446F;
 }
 

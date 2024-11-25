@@ -101,472 +101,485 @@
 
     <div class="submitWrapper">
 
-        <!-- 賞鳥的地點 -->
-        <div class="location">
-            <h5>賞鳥的地點</h5>
-
-            <div>
-                <form action="yourLocation" class="yourLocation">
-                    <label for="yourPlace">由你的地點選擇</label>
-                    <select id="yourPlace" name="yourPlace">
-                        <option value=" ">------- 請選擇地點 -------</option>
-                        <option value="1">大安森林公園</option>
-                        <option value="2">羅山林道</option>
-                        <option value="3">輔仁大學</option>
-                        <option value="4">緯育TibaMe</option>
-                    </select>
-                    
-                    <label for="mapSelect">利用地圖選取</label>
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                    <input type="text" name="mapSelect" id="mapSelect" placeholder="輸入國家、縣市名稱或使用緯度/經度">
-
-                    <button class="btn">鎖定</button>
-                    <button class="btn">變更</button>
-
-                </form>
-
-                
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d48986563.17278518!2d125.05858295272371!3d22.1018266442465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1szh-TW!2stw!4v1732103393930!5m2!1szh-TW!2stw" width="1200" height="664" style="border:0;" frameborder="0" allowfullscreen="yes" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-                <a href="#">
-                    <i class="fa-solid fa-location-crosshairs"></i>
-                </a>
-            </div>
-        </div>
-      
-        
-        <!-- 賞鳥的日期與類型 -->
-        <div class="dateType">
-
-            <div>
-                <h5>賞鳥的日期與類型</h5>
+        <div id="submitFirst" class="screen">
+            <!-- 賞鳥的地點 -->
+            <div class="location">
+                <h5>賞鳥的地點</h5>
     
-    
-                <div class="date">
-                    <label for="datepicker">選擇日期：</label>
-                    <input type="text" id="datepicker" placeholder="請選擇日期" readonly>
-                    <div id="calendar"></div>
-                </div>
-            </div>
-
-
-
-            <div class="type">
                 <div>
-                    <div>
-                        <a href="#">行進計數</a>
-                        <i title="在一特定距離和時間進行賞鳥記錄。例如一般野外邊行進邊看鳥、沿著小徑行進或開車在保護區繞圈。" class="fa-solid fa-circle-info"></i>
-                    </div>
-                    <div>
-                        <a href="#">定點計數</a>
-                        <i title="在一固定位置(移動不超過30公尺)觀察一段時間。例如: 定點數鷹、數海鳥或觀察住家窗外野鳥。" class="fa-solid fa-circle-info"></i>
-                    </div>
-                    <div>
-                        <a href="#">附帶紀錄</a>
-                        <i title="賞鳥不是你的主要目的。例如開車上班途中看到空中飛過的魚鷹。" class="fa-solid fa-circle-info"></i>
-                    </div>
-                </div>
-
-                <div>
-                    <p>你行進一特定距離— 如沿著步道行走、開車繞了某個保護區一圈或在田間邊走邊賞鳥。</p>
-                    
-                    <form action="recordType">
-
-                        <div>
-                            <label for="starTime">開始時間</label>
-                            <input type="time" name="starTime" id="starTime" value="12:00">
-                        </div>
-
-                        <div>
-                            <p>持續時間</p>
-                            <input type="number" min="0" id="hour">
-                            <label for="hour">時</label>
-                            <input type="number" max="59" min="00" id="minute">
-                            <label for="minute">分</label>
-                        </div>
-
-                        <div>
-                            <label for="distance">距離</label>
-                            <input type="number" name="distance" id="distance" min="1" step="0.1">
-                            <select>
-                                <option value="km">km</option>
-                                <option value="m" selected>m</option>
-                            </select>
-                        </div>
-                        <div>
-                            <label for="people">人數</label>
-                            <input type="number" id="people" name="people">
-                        </div>
-
-                        <div>
-                            <label for="note">備註</label>
-                            <input type="text" id="note" name="note">
-                        </div>
-
-
-                    </form>
-                </div>
-            </div>
-
-        </div>
-
-
-
-        <!-- 觀察到什麼? -->
-         <div class="observe">
-            <h5>觀察到什麼?</h5>
-
-            <div>
-                <div class="selectSpecies">
-                    <div>
-                        <h6>此地區常見 (10%或更多)</h6>
-                        <ul>
-                            <li>
-                                <div>
-                                    <div class="number-input">
-                                        <button class="plus"><i class="fa-solid fa-plus"></i></button>
-                                        <input type="number" value="0" min="0" max="100">
-                                        <button class="subtract"><i class="fa-solid fa-minus"></i></button>
-                                    </div>
-                                </div>
-
-                                <div>
-                                    <p>紅尾伯勞</p>
-                                    <span>Lanius cristatus</span>
-                                </div>
-
-                                <button class="detail-btn">詳細資料</button>
-                            </li>
-
-                            <li>
-                                <div>
-                                    <div class="number-input">
-                                        <button class="plus"><i class="fa-solid fa-plus"></i></button>
-                                        <input type="number" value="0" min="0" max="100">
-                                        <button class="subtract"><i class="fa-solid fa-minus"></i></button>
-                                    </div>
-                                </div>
-
-                                <div>
-                                    <p>小水鴨</p>
-                                    <span>Anas crecca</span>
-                                </div>
-
-                                <button class="detail-btn">詳細資料</button>
-                            </li>
-
-                            <li>
-                                <div>
-                                    <div class="number-input">
-                                        <button class="plus"><i class="fa-solid fa-plus"></i></button>
-                                        <input type="number" value="0" min="0" max="100">
-                                        <button class="subtract"><i class="fa-solid fa-minus"></i></button>
-                                    </div>
-                                </div>
-
-                                <div>
-                                    <p>珠頸斑鳩</p>
-                                    <span>Spilopelia chinensis</span>
-                                </div>
-
-                                <button class="detail-btn">詳細資料</button>
-                            </li>
-
-                            <li>
-                                <div>
-                                    <div class="number-input">
-                                        <button class="plus"><i class="fa-solid fa-plus"></i></button>
-                                        <input type="number" value="0" min="0" max="100">
-                                        <button class="subtract"><i class="fa-solid fa-minus"></i></button>
-                                    </div>
-                                </div>
-
-                                <div>
-                                    <p>大捲尾</p>
-                                    <span>Dicrurus macrocercus</span>
-                                </div>
-
-                                <button class="detail-btn">詳細資料</button>
-                            </li>
-
-                            <li>
-                                <div>
-                                    <div class="number-input">
-                                        <button class="plus"><i class="fa-solid fa-plus"></i></button>
-                                        <input type="number" value="0" min="0" max="100">
-                                        <button class="subtract"><i class="fa-solid fa-minus"></i></button>
-                                    </div>
-                                </div>
-
-                                <div>
-                                    <p>小白鷺</p>
-                                    <span>Egretta garzetta</span>
-                                </div>
-
-                                <button class="detail-btn">詳細資料</button>
-                            </li>
-
-                            <li>
-                                <div>
-                                    <div class="number-input">
-                                        <button class="plus"><i class="fa-solid fa-plus"></i></button>
-                                        <input type="number" value="0" min="0" max="100">
-                                        <button class="subtract"><i class="fa-solid fa-minus"></i></button>
-                                    </div>
-                                </div>
-
-                                <div>
-                                    <p>黃頭鷺</p>
-                                    <span>Ardea coromanda</span>
-                                </div>
-
-                                <button class="detail-btn">詳細資料</button>
-                            </li>
-
-                            <li>
-                                <div>
-                                    <div class="number-input">
-                                        <button class="plus"><i class="fa-solid fa-plus"></i></button>
-                                        <input type="number" value="0" min="0" max="100">
-                                        <button class="subtract"><i class="fa-solid fa-minus"></i></button>
-                                    </div>
-                                </div>
-
-                                <div>
-                                    <p>蒼鷺</p>
-                                    <span>Ardea cinerea</span>
-                                </div>
-
-                                <button class="detail-btn">詳細資料</button>
-                            </li>
-
-                            <li>
-                                <div>
-                                    <div class="number-input">
-                                        <button class="plus"><i class="fa-solid fa-plus"></i></button>
-                                        <input type="number" value="0" min="0" max="100">
-                                        <button class="subtract"><i class="fa-solid fa-minus"></i></button>
-                                    </div>
-                                </div>
-
-                                <div>
-                                    <p>大冠鷲</p>
-                                    <span>Spilornis cheela</span>
-                                </div>
-
-                                <button class="detail-btn">詳細資料</button>
-                            </li>
-
-                            <li>
-                                <div>
-                                    <div class="number-input">
-                                        <button class="plus"><i class="fa-solid fa-plus"></i></button>
-                                        <input type="number" value="0" min="0" max="100">
-                                        <button class="subtract"><i class="fa-solid fa-minus"></i></button>
-                                    </div>
-                                </div>
-
-                                <div>
-                                    <p>磯鷸</p>
-                                    <span>Actitis hypoleucos</span>
-                                </div>
-
-                                <button class="detail-btn">詳細資料</button>
-                            </li>
-
-                            <li>
-                                <div>
-                                    <div class="number-input">
-                                        <button class="plus"><i class="fa-solid fa-plus"></i></button>
-                                        <input type="number" value="0" min="0" max="100">
-                                        <button class="subtract"><i class="fa-solid fa-minus"></i></button>
-                                    </div>
-                                </div>
-
-                                <div>
-                                    <p>白鶺鴒</p>
-                                    <span>Motacilla alba</span>
-                                </div>
-
-                                <button class="detail-btn">詳細資料</button>
-                            </li>
-                        </ul>
-                    </div>
-    
-    
-                    <div>
-                        <h6>此地區不常見 (0% ~10%)</h6>
-                        <ul>
-                            <li>
-                                <div>
-                                    <div class="number-input">
-                                        <button class="plus"><i class="fa-solid fa-plus"></i></button>
-                                        <input type="number" value="0" min="0" max="100">
-                                        <button class="subtract"><i class="fa-solid fa-minus"></i></button>
-                                    </div>
-                                </div>
-
-                                <div>
-                                    <p>白腹鶇</p>
-                                    <span>Turdus pallidus</span>
-                                </div>
-
-                                <button class="detail-btn">詳細資料</button>
-                            </li>
-
-                            <li>
-                                <div>
-                                    <div class="number-input">
-                                        <button class="plus"><i class="fa-solid fa-plus"></i></button>
-                                        <input type="number" value="0" min="0" max="100">
-                                        <button class="subtract"><i class="fa-solid fa-minus"></i></button>
-                                    </div>
-                                </div>
-
-                                <div>
-                                    <p>黑枕藍鶲</p>
-                                    <span>Hypothymis azurea</span>
-                                </div>
-
-                                <button class="detail-btn">詳細資料</button>
-                            </li>
-
-                            <li>
-                                <div>
-                                    <div class="number-input">
-                                        <button class="plus"><i class="fa-solid fa-plus"></i></button>
-                                        <input type="number" value="0" min="0" max="100">
-                                        <button class="subtract"><i class="fa-solid fa-minus"></i></button>
-                                    </div>
-                                </div>
-
-                                <div>
-                                    <p>埃及聖䴉</p>
-                                    <span>Threskiornis aethiopicus</span>
-                                </div>
-
-                                <button class="detail-btn">詳細資料</button>
-                            </li>
-
-                            <li>
-                                <div>
-                                    <div class="number-input">
-                                        <button class="plus"><i class="fa-solid fa-plus"></i></button>
-                                        <input type="number" value="0" min="0" max="100">
-                                        <button class="subtract"><i class="fa-solid fa-minus"></i></button>
-                                    </div>
-                                </div>
-
-                                <div>
-                                    <p>黑鳶</p>
-                                    <span>Milvus migrans</span>
-                                </div>
-
-                                <button class="detail-btn">詳細資料</button>
-                            </li>
-
-                            <li>
-                                <div>
-                                    <div class="number-input">
-                                        <button class="plus"><i class="fa-solid fa-plus"></i></button>
-                                        <input type="number" value="0" min="0" max="100">
-                                        <button class="subtract"><i class="fa-solid fa-minus"></i></button>
-                                    </div>
-                                </div>
-
-                                <div>
-                                    <p>小彎嘴</p>
-                                    <span>Pomatorhinus musicus</span>
-                                </div>
-
-                                <button class="detail-btn">詳細資料</button>
-                            </li>
-                        </ul>    
-                    </div>
-                </div>
-    
-
-
-    
-                <form action="" class="submitBox">
-                    <div>
+                    <form action="yourLocation" class="yourLocation">
+                        <label for="yourPlace">由你的地點選擇</label>
+                        <select id="yourPlace" name="yourPlace">
+                            <option value=" ">------- 請選擇地點 -------</option>
+                            <option value="1">大安森林公園</option>
+                            <option value="2">羅山林道</option>
+                            <option value="3">輔仁大學</option>
+                            <option value="4">緯育TibaMe</option>
+                        </select>
+                        
+                        <label for="mapSelect">利用地圖選取</label>
                         <i class="fa-solid fa-magnifying-glass"></i>
-                        <input type="text" placeholder="搜尋鳥種">
-                    </div>
+                        <input type="text" name="mapSelect" id="mapSelect" placeholder="輸入國家、縣市名稱或使用緯度/經度">
     
-                    <div>
-                        <i class="fa-solid fa-plus"></i>
-                        <input type="text" placeholder="新增鳥種">
-                    </div>
+                        <button class="btn">鎖定</button>
+                        <button class="btn">變更</button>
     
+                    </form>
     
-                    <div>
-                        <input type="checkbox" name="checkBirds" id="checkBirds">
-                        <label for="checkBirds">最有可能的鳥種</label>
-                    </div>
-    
-                    <div>
-                        <input type="checkbox" name="checkrare" id="checkrare">
-                        <label for="checkrare">顯示稀有鳥種</label>
-                    </div>
                     
-                    <button class="submit-btn">提交</button>
-                </form>
-
-                <!-- 詳細資料 -->
-                <div class="detail">
-                    <div>
-                        <p>紅尾伯勞</p>
-                        <span>Lanius cristatus</span>
-                    </div>
-
-
-                    <div class="description">
-                        <label for="explain">說明</label>
-                        <textarea name="explain" id="explain" placeholder="新增文字、照片、錄音或影片"></textarea>
-                    </div>
-                    <table>
-                        <caption>年齡與性別</caption>
-                        <tr>
-                            <th></th>
-                            <th>成鳥</th>
-                            <th>亞成鳥</th>
-                            <th>幼鳥</th>
-                            <th>年齡未知</th>
-                        </tr>
-                        <tr>
-                            <td>雄性</td>
-                            <td><input type="number" value="0" min="0"></td>
-                            <td><input type="number" value="0" min="0"></td>
-                            <td><input type="number" value="0" min="0"></td>
-                            <td><input type="number" value="0" min="0"></td>
-                        </tr>
-                        <tr>
-                            <td>雌性</td>
-                            <td><input type="number" value="0" min="0"></td>
-                            <td><input type="number" value="0" min="0"></td>
-                            <td><input type="number" value="0" min="0"></td>
-                            <td><input type="number" value="0" min="0"></td>
-                        </tr>
-                        <tr>
-                            <td>性別未知</td>
-                            <td><input type="number" value="0" min="0"></td>
-                            <td><input type="number" value="0" min="0"></td>
-                            <td><input type="number" value="0" min="0"></td>
-                            <td><input type="number" value="0" min="0"></td>
-                        </tr>
-                    </table>
-
-                    <a href="#" class="confirm-btn">確定</a>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d48986563.17278518!2d125.05858295272371!3d22.1018266442465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1szh-TW!2stw!4v1732103393930!5m2!1szh-TW!2stw" width="1200" height="664" style="border:0;" frameborder="0" allowfullscreen="yes" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    
+                    <a href="#">
+                        <i class="fa-solid fa-location-crosshairs"></i>
+                    </a>
                 </div>
-
-
+            </div>
+          
+            
+            <!-- 賞鳥的日期與類型 -->
+            <div class="dateType">
+    
+                <div>
+                    <h5>賞鳥的日期與類型</h5>
+        
+        
+                    <div class="date">
+                        <label for="datepicker">選擇日期：</label>
+                        <input type="text" id="datepicker" placeholder="請選擇日期" readonly>
+                        <div id="calendar"></div>
+                    </div>
+                </div>
+    
+    
+    
+                <div class="type">
+                    <div>
+                        <div>
+                            <a href="#">行進計數</a>
+                            <i title="在一特定距離和時間進行賞鳥記錄。例如一般野外邊行進邊看鳥、沿著小徑行進或開車在保護區繞圈。" class="fa-solid fa-circle-info"></i>
+                        </div>
+                        <div>
+                            <a href="#">定點計數</a>
+                            <i title="在一固定位置(移動不超過30公尺)觀察一段時間。例如: 定點數鷹、數海鳥或觀察住家窗外野鳥。" class="fa-solid fa-circle-info"></i>
+                        </div>
+                        <div>
+                            <a href="#">附帶紀錄</a>
+                            <i title="賞鳥不是你的主要目的。例如開車上班途中看到空中飛過的魚鷹。" class="fa-solid fa-circle-info"></i>
+                        </div>
+                    </div>
+    
+                    <div>
+                        <p>你行進一特定距離— 如沿著步道行走、開車繞了某個保護區一圈或在田間邊走邊賞鳥。</p>
+                        
+                        <form action="recordType">
+    
+                            <div>
+                                <label for="starTime">開始時間</label>
+                                <input type="time" name="starTime" id="starTime" value="12:00">
+                            </div>
+    
+                            <div>
+                                <p>持續時間</p>
+                                <input type="number" min="0" id="hour">
+                                <label for="hour">時</label>
+                                <input type="number" max="59" min="00" id="minute">
+                                <label for="minute">分</label>
+                            </div>
+    
+                            <div>
+                                <label for="distance">距離</label>
+                                <input type="number" name="distance" id="distance" min="1" step="0.1">
+                                <select>
+                                    <option value="km">km</option>
+                                    <option value="m" selected>m</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="people">人數</label>
+                                <input type="number" id="people" name="people">
+                            </div>
+    
+                            <div>
+                                <label for="note">備註</label>
+                                <input type="text" id="note" name="note">
+                            </div>
+    
+    
+                        </form>
+                    </div>
+                </div>
+    
             </div>
 
+            <button onclick="showScreen('submitSec')">下一步</button>
+        </div>
 
-         </div>
 
+        <div id="submitSec" class="screen">
+            <!-- 觀察到什麼? -->
+             <div class="observe">
+                <h5>觀察到什麼?</h5>
+    
+                <div>
+                    <div class="selectSpecies">
+                        <div>
+                            <h6>此地區常見 (10%或更多)</h6>
+                            <ul>
+                                <li>
+                                    <div>
+                                        <div class="number-input">
+                                            <button class="plus"><i class="fa-solid fa-plus"></i></button>
+                                            <input type="number" value="0" min="0" max="100">
+                                            <button class="subtract"><i class="fa-solid fa-minus"></i></button>
+                                        </div>
+                                    </div>
+    
+                                    <div>
+                                        <p>紅尾伯勞</p>
+                                        <span>Lanius cristatus</span>
+                                    </div>
+    
+                                    <button class="detail-btn">詳細資料</button>
+                                </li>
+    
+                                <li>
+                                    <div>
+                                        <div class="number-input">
+                                            <button class="plus"><i class="fa-solid fa-plus"></i></button>
+                                            <input type="number" value="0" min="0" max="100">
+                                            <button class="subtract"><i class="fa-solid fa-minus"></i></button>
+                                        </div>
+                                    </div>
+    
+                                    <div>
+                                        <p>小水鴨</p>
+                                        <span>Anas crecca</span>
+                                    </div>
+    
+                                    <button class="detail-btn">詳細資料</button>
+                                </li>
+    
+                                <li>
+                                    <div>
+                                        <div class="number-input">
+                                            <button class="plus"><i class="fa-solid fa-plus"></i></button>
+                                            <input type="number" value="0" min="0" max="100">
+                                            <button class="subtract"><i class="fa-solid fa-minus"></i></button>
+                                        </div>
+                                    </div>
+    
+                                    <div>
+                                        <p>珠頸斑鳩</p>
+                                        <span>Spilopelia chinensis</span>
+                                    </div>
+    
+                                    <button class="detail-btn">詳細資料</button>
+                                </li>
+    
+                                <li>
+                                    <div>
+                                        <div class="number-input">
+                                            <button class="plus"><i class="fa-solid fa-plus"></i></button>
+                                            <input type="number" value="0" min="0" max="100">
+                                            <button class="subtract"><i class="fa-solid fa-minus"></i></button>
+                                        </div>
+                                    </div>
+    
+                                    <div>
+                                        <p>大捲尾</p>
+                                        <span>Dicrurus macrocercus</span>
+                                    </div>
+    
+                                    <button class="detail-btn">詳細資料</button>
+                                </li>
+    
+                                <li>
+                                    <div>
+                                        <div class="number-input">
+                                            <button class="plus"><i class="fa-solid fa-plus"></i></button>
+                                            <input type="number" value="0" min="0" max="100">
+                                            <button class="subtract"><i class="fa-solid fa-minus"></i></button>
+                                        </div>
+                                    </div>
+    
+                                    <div>
+                                        <p>小白鷺</p>
+                                        <span>Egretta garzetta</span>
+                                    </div>
+    
+                                    <button class="detail-btn">詳細資料</button>
+                                </li>
+    
+                                <li>
+                                    <div>
+                                        <div class="number-input">
+                                            <button class="plus"><i class="fa-solid fa-plus"></i></button>
+                                            <input type="number" value="0" min="0" max="100">
+                                            <button class="subtract"><i class="fa-solid fa-minus"></i></button>
+                                        </div>
+                                    </div>
+    
+                                    <div>
+                                        <p>黃頭鷺</p>
+                                        <span>Ardea coromanda</span>
+                                    </div>
+    
+                                    <button class="detail-btn">詳細資料</button>
+                                </li>
+    
+                                <li>
+                                    <div>
+                                        <div class="number-input">
+                                            <button class="plus"><i class="fa-solid fa-plus"></i></button>
+                                            <input type="number" value="0" min="0" max="100">
+                                            <button class="subtract"><i class="fa-solid fa-minus"></i></button>
+                                        </div>
+                                    </div>
+    
+                                    <div>
+                                        <p>蒼鷺</p>
+                                        <span>Ardea cinerea</span>
+                                    </div>
+    
+                                    <button class="detail-btn">詳細資料</button>
+                                </li>
+    
+                                <li>
+                                    <div>
+                                        <div class="number-input">
+                                            <button class="plus"><i class="fa-solid fa-plus"></i></button>
+                                            <input type="number" value="0" min="0" max="100">
+                                            <button class="subtract"><i class="fa-solid fa-minus"></i></button>
+                                        </div>
+                                    </div>
+    
+                                    <div>
+                                        <p>大冠鷲</p>
+                                        <span>Spilornis cheela</span>
+                                    </div>
+    
+                                    <button class="detail-btn">詳細資料</button>
+                                </li>
+    
+                                <li>
+                                    <div>
+                                        <div class="number-input">
+                                            <button class="plus"><i class="fa-solid fa-plus"></i></button>
+                                            <input type="number" value="0" min="0" max="100">
+                                            <button class="subtract"><i class="fa-solid fa-minus"></i></button>
+                                        </div>
+                                    </div>
+    
+                                    <div>
+                                        <p>磯鷸</p>
+                                        <span>Actitis hypoleucos</span>
+                                    </div>
+    
+                                    <button class="detail-btn">詳細資料</button>
+                                </li>
+    
+                                <li>
+                                    <div>
+                                        <div class="number-input">
+                                            <button class="plus"><i class="fa-solid fa-plus"></i></button>
+                                            <input type="number" value="0" min="0" max="100">
+                                            <button class="subtract"><i class="fa-solid fa-minus"></i></button>
+                                        </div>
+                                    </div>
+    
+                                    <div>
+                                        <p>白鶺鴒</p>
+                                        <span>Motacilla alba</span>
+                                    </div>
+    
+                                    <button class="detail-btn">詳細資料</button>
+                                </li>
+                            </ul>
+                        </div>
+        
+        
+                        <div>
+                            <h6>此地區不常見 (0% ~10%)</h6>
+                            <ul>
+                                <li>
+                                    <div>
+                                        <div class="number-input">
+                                            <button class="plus"><i class="fa-solid fa-plus"></i></button>
+                                            <input type="number" value="0" min="0" max="100">
+                                            <button class="subtract"><i class="fa-solid fa-minus"></i></button>
+                                        </div>
+                                    </div>
+    
+                                    <div>
+                                        <p>白腹鶇</p>
+                                        <span>Turdus pallidus</span>
+                                    </div>
+    
+                                    <button class="detail-btn">詳細資料</button>
+                                </li>
+    
+                                <li>
+                                    <div>
+                                        <div class="number-input">
+                                            <button class="plus"><i class="fa-solid fa-plus"></i></button>
+                                            <input type="number" value="0" min="0" max="100">
+                                            <button class="subtract"><i class="fa-solid fa-minus"></i></button>
+                                        </div>
+                                    </div>
+    
+                                    <div>
+                                        <p>黑枕藍鶲</p>
+                                        <span>Hypothymis azurea</span>
+                                    </div>
+    
+                                    <button class="detail-btn">詳細資料</button>
+                                </li>
+    
+                                <li>
+                                    <div>
+                                        <div class="number-input">
+                                            <button class="plus"><i class="fa-solid fa-plus"></i></button>
+                                            <input type="number" value="0" min="0" max="100">
+                                            <button class="subtract"><i class="fa-solid fa-minus"></i></button>
+                                        </div>
+                                    </div>
+    
+                                    <div>
+                                        <p>埃及聖䴉</p>
+                                        <span>Threskiornis aethiopicus</span>
+                                    </div>
+    
+                                    <button class="detail-btn">詳細資料</button>
+                                </li>
+    
+                                <li>
+                                    <div>
+                                        <div class="number-input">
+                                            <button class="plus"><i class="fa-solid fa-plus"></i></button>
+                                            <input type="number" value="0" min="0" max="100">
+                                            <button class="subtract"><i class="fa-solid fa-minus"></i></button>
+                                        </div>
+                                    </div>
+    
+                                    <div>
+                                        <p>黑鳶</p>
+                                        <span>Milvus migrans</span>
+                                    </div>
+    
+                                    <button class="detail-btn">詳細資料</button>
+                                </li>
+    
+                                <li>
+                                    <div>
+                                        <div class="number-input">
+                                            <button class="plus"><i class="fa-solid fa-plus"></i></button>
+                                            <input type="number" value="0" min="0" max="100">
+                                            <button class="subtract"><i class="fa-solid fa-minus"></i></button>
+                                        </div>
+                                    </div>
+    
+                                    <div>
+                                        <p>小彎嘴</p>
+                                        <span>Pomatorhinus musicus</span>
+                                    </div>
+    
+                                    <button class="detail-btn">詳細資料</button>
+                                </li>
+                            </ul>    
+                        </div>
+                    </div>
+        
+    
+    
+        
+                    <form action="" class="submitBox">
+                        <div>
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <input type="text" placeholder="搜尋鳥種">
+                        </div>
+        
+                        <div>
+                            <i class="fa-solid fa-plus"></i>
+                            <input type="text" placeholder="新增鳥種">
+                        </div>
+        
+        
+                        <div>
+                            <input type="checkbox" name="checkBirds" id="checkBirds">
+                            <label for="checkBirds">最有可能的鳥種</label>
+                        </div>
+        
+                        <div>
+                            <input type="checkbox" name="checkrare" id="checkrare">
+                            <label for="checkrare">顯示稀有鳥種</label>
+                        </div>
+                        
+                        <div>
 
+                            <button onclick="showScreen('submitFirst')">返回</button>
+                            <button class="submit-btn">提交</button>
+                        </div>
+                    </form>
+    
+                    <!-- 詳細資料 -->
+                    <div class="detail">
+                        <div>
+                            <p>紅尾伯勞</p>
+                            <span>Lanius cristatus</span>
+                        </div>
+    
+    
+                        <div class="description">
+                            <label for="explain">說明</label>
+                            <textarea name="explain" id="explain" placeholder="新增文字、照片、錄音或影片"></textarea>
+                        </div>
+                        <table>
+                            <caption>年齡與性別</caption>
+                            <tr>
+                                <th></th>
+                                <th>成鳥</th>
+                                <th>亞成鳥</th>
+                                <th>幼鳥</th>
+                                <th>年齡未知</th>
+                            </tr>
+                            <tr>
+                                <td>雄性</td>
+                                <td><input type="number" value="0" min="0"></td>
+                                <td><input type="number" value="0" min="0"></td>
+                                <td><input type="number" value="0" min="0"></td>
+                                <td><input type="number" value="0" min="0"></td>
+                            </tr>
+                            <tr>
+                                <td>雌性</td>
+                                <td><input type="number" value="0" min="0"></td>
+                                <td><input type="number" value="0" min="0"></td>
+                                <td><input type="number" value="0" min="0"></td>
+                                <td><input type="number" value="0" min="0"></td>
+                            </tr>
+                            <tr>
+                                <td>性別未知</td>
+                                <td><input type="number" value="0" min="0"></td>
+                                <td><input type="number" value="0" min="0"></td>
+                                <td><input type="number" value="0" min="0"></td>
+                                <td><input type="number" value="0" min="0"></td>
+                            </tr>
+                        </table>
+    
+                        <a href="#" class="confirm-btn">確定</a>
+                    </div>
+    
+    
+                </div>
+    
+    
+             </div>
+
+             
+        </div>
+
+        
+
+        
 
 
     </div>
@@ -676,6 +689,29 @@
 
 
 
+    <script>
+        function showScreen(screenId) {
+            // 隱藏SubmitFirst頁面
+            const screens = document.querySelectorAll('.screen');
+
+            screens.forEach(screen => {
+                screen.style.display = 'none';
+            });
+
+            // 顯示submitSec的頁面
+            const targetScreen = document.getElementById(screenId);
+
+            if (targetScreen) {
+                targetScreen.style.display = 'block';
+
+                // 跳轉後, 從Header開始
+                window.scrollTo(0, 0);
+            }
+        }
+
+    </script>
+
+      
 
 
 
