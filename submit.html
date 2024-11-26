@@ -185,29 +185,29 @@
                 <div class="type">
                     <div>
                         <div>
-                            <a href="#">行進計數</a>
+                            <a href="#" class="form-tab" data-form="form-moving">行進計數</a>
                             <i title="在一特定距離和時間進行賞鳥記錄。例如一般野外邊行進邊看鳥、沿著小徑行進或開車在保護區繞圈。" class="fa-solid fa-circle-info"></i>
                         </div>
                         <div>
-                            <a href="#">定點計數</a>
+                            <a href="#" class="form-tab" data-form="form-stationary">定點計數</a>
                             <i title="在一固定位置(移動不超過30公尺)觀察一段時間。例如: 定點數鷹、數海鳥或觀察住家窗外野鳥。" class="fa-solid fa-circle-info"></i>
                         </div>
                         <div>
-                            <a href="#">附帶紀錄</a>
+                            <a href="#" class="form-tab" data-form="form-incidental">附帶紀錄</a>
                             <i title="賞鳥不是你的主要目的。例如開車上班途中看到空中飛過的魚鷹。" class="fa-solid fa-circle-info"></i>
                         </div>
                     </div>
-    
-                    <div>
+                
+                    <!-- 行進計數表單 -->
+                    <div id="form-moving" class="form-content">
                         <p>你行進一特定距離— 如沿著步道行走、開車繞了某個保護區一圈或在田間邊走邊賞鳥。</p>
-                        
-                        <form action="recordType">
+                       <form action="recordType">
     
                             <div>
                                 <label for="starTime">開始時間</label>
                                 <input type="time" name="starTime" id="starTime" value="12:00">
                             </div>
-    
+
                             <div>
                                 <p>持續時間</p>
                                 <input type="number" min="0" id="hour">
@@ -215,7 +215,7 @@
                                 <input type="number" max="59" min="00" id="minute">
                                 <label for="minute">分</label>
                             </div>
-    
+
                             <div>
                                 <label for="distance">距離</label>
                                 <input type="number" name="distance" id="distance" min="1" step="0.1">
@@ -228,13 +228,62 @@
                                 <label for="people">人數</label>
                                 <input type="number" id="people" name="people">
                             </div>
-    
+
                             <div>
                                 <label for="note">備註</label>
                                 <input type="text" id="note" name="note">
                             </div>
     
+                        </form> 
+                    </div>
+                
+                    <!-- 定點計數表單 -->
+                    <div id="form-stationary" class="form-content" style="display: none;">
+                        <p>你停留在一固定地點 — 如看窗外的鳥、定點猛禽觀察及定點看海上的鳥等。</p>
+                        <form action="recordTypeStationary">
+                            <div>
+                                <label for="starTime">開始時間</label>
+                                <input type="time" name="starTime" id="starTime" value="12:00">
+                            </div>
     
+                            <div>
+                                <p>持續時間</p>
+                                <input type="number" min="0" id="hour">
+                                <label for="hour">時</label>
+                                <input type="number" max="59" min="00" id="minute">
+                                <label for="minute">分</label>
+                            </div>
+
+                            <div>
+                                <label for="people">人數</label>
+                                <input type="number" id="people" name="people">
+                            </div>
+    
+                            <div>
+                                <label for="note">備註</label>
+                                <input type="text" id="note" name="note">
+                            </div>
+                        </form>
+                    </div>
+                
+                    <!-- 附帶紀錄表單 -->
+                    <div id="form-incidental" class="form-content" style="display: none;">
+                        <p>賞鳥不是你的主要目的 — 如開車或整理花園時看見某一種鳥。</p>
+                        <form action="recordTypeIncidental">
+                            <div>
+                                <label for="starTime">開始時間</label>
+                                <input type="time" name="starTime" id="starTime" value="12:00">
+                            </div>
+
+                            <div>
+                                <label for="people">人數</label>
+                                <input type="number" id="people" name="people">
+                            </div>
+    
+                            <div>
+                                <label for="note">備註</label>
+                                <input type="text" id="note" name="note">
+                            </div>
                         </form>
                     </div>
                 </div>
@@ -801,6 +850,33 @@
     });
     </script>
 
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+    // 获取所有 tab 和表单内容
+    const tabs = document.querySelectorAll(".form-tab");
+    const forms = document.querySelectorAll(".form-content");
+
+    // 给每个 tab 绑定点击事件
+    tabs.forEach(tab => {
+        tab.addEventListener("click", event => {
+            event.preventDefault(); // 阻止默认跳转
+
+            // 获取对应表单的 ID
+            const targetFormId = tab.getAttribute("data-form");
+
+            // 遍历表单内容，设置显示或隐藏
+            forms.forEach(form => {
+                if (form.id === targetFormId) {
+                    form.style.display = "flex"; // 显示目标表单
+                } else {
+                    form.style.display = "none"; // 隐藏其他表单
+                }
+            });
+        });
+    });
+});
+    </script>
 
 </body>
 </html>

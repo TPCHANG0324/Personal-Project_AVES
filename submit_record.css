@@ -367,7 +367,7 @@
 
 /* -------------------- 紀錄類型 ------------------------ */
 .type{
-    /* border: 3px solid green; */
+    border: 3px solid green;
     margin-left: 50px;
     width: 100%;
     margin-top: 56px;
@@ -418,7 +418,8 @@
     /* border: 1px solid green; */
 }
 
-.type > div:nth-of-type(2){
+
+.type > .form-content{
     position: relative;
     /* border: 2px solid red; */
     display: flex;
@@ -427,7 +428,7 @@
 }
 
 
-.type > div:nth-of-type(2) > p{
+.type > .form-content > p{
     background-color: #2F475D;
     width: 348px;
     height: 252px;
@@ -441,7 +442,7 @@
 
 }
 
-.type > div:nth-of-type(2) > form{
+.type > .form-content > form{
     background-color: #B29671;
     box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.25);
     width: 348px;
@@ -455,18 +456,18 @@
 }
 
 
-.type > div:nth-of-type(2) > form > div{
+.type > .form-content > form > div{
     /* border: 1px solid red; */
     margin-bottom: 8px;
     width: 280px;
 }
 
-.type > div:nth-of-type(2) > form > div:first-child > #starTime{
+.type > .form-content > form > div:first-child > #starTime{
     width: 150px;
     height: 32px;
 }
 
-.type > div:nth-of-type(2) > form > div:first-child > #starTime[type="time"]{
+.type > .form-content > form > div:first-child > #starTime[type="time"]{
     font-size: 20px;
     color: #2F475D;
     border: 0;
@@ -478,25 +479,25 @@
     box-sizing: border-box;
 }
 
-.type > div:nth-of-type(2) > form div:first-child >  #starTime[type="time"]:focus {
+.type > .form-content > form div:first-child >  #starTime[type="time"]:focus {
     outline: 2px solid #5F446F;
 }
 
 
 
-.type > div:nth-of-type(2) > form div:nth-of-type(2){
+.type > .form-content > form div:nth-of-type(2){
     display: flex;
     align-items: center;
 }
 
-.type > div:nth-of-type(2) > form div:nth-of-type(2) input{
+.type > .form-content > form div:nth-of-type(2) input{
     width: 44px;
     height: 28px;
     margin-left: 12px;
     margin-right: 8px;
 }
 
-.type > div:nth-of-type(2) > form div:nth-of-type(2) input[type="number"]{
+.type > .form-content > form div:nth-of-type(2) input[type="number"]{
     font-size: 20px;
     color: #2F475D;
     border: 0;
@@ -507,25 +508,25 @@
     padding: 0;
 }
 
-.type > div:nth-of-type(2) > form > div:nth-of-type(2)  input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button {
+.type > .form-content > form > div:nth-of-type(2)  input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }
 
 
-.type > div:nth-of-type(2) > form > div:nth-of-type(2) input[type="number"]:focus{
+.type > .form-content > form > div:nth-of-type(2) input[type="number"]:focus{
     outline: 2px solid #5F446F;
 }
 
 
 
-.type > div:nth-of-type(2) > form > div:nth-of-type(3){
+.type > .form-content > form > div:nth-of-type(3){
     display: flex;
     align-items: center;
 }
 
 
-.type > div:nth-of-type(2) > form > div:nth-of-type(3) > input{
+.type > #form-moving > form > div:nth-of-type(3) > input{
     margin-left: 12px;
     height: 28px;
     width: 80px;
@@ -534,81 +535,16 @@
     border-radius: 4px;
 }
 
-
-.type > div:nth-of-type(2) > form > div:nth-of-type(3) > input[type="number"]{
-    font-size: 20px;
-    color: #2F475D;
-    font-family: "Roboto Flex", sans-serif;
-    background-color: #FEFBF1;
-}
-
-.type > div:nth-of-type(2) > form > div:nth-of-type(3) > input[type="number"]:focus{
-    outline: 2px solid #5F446F;
-}
-
-.type > div:nth-of-type(2) > form > div:nth-of-type(3) > input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-}
-
-
-.type > div:nth-of-type(2) > form > div:nth-of-type(3) > select{
+.type > #form-stationary > form > div:nth-of-type(3) > input{
     margin-left: 12px;
     height: 28px;
-    width: 60px;
-    text-align: center;
-    font-size: 16px;
-    border: 0;
-    border-radius: 4px;
-    color: #2F475D;
-    background-color: #FEFBF1;
-}
-
-
-.type > div:nth-of-type(2) > form > div:nth-of-type(3) > select:focus{
-    outline: 2px solid #5F446F;
-}
-
-
-
-.type > div:nth-of-type(2) > form > div:nth-of-type(4){
-    display: flex;
-    align-items: center;
-}
-
-.type > div:nth-of-type(2) > form > div:nth-of-type(4) > input{
-    margin-left: 12px;
-    height: 28px;
-    width: 60px;
+    width: 80px;
     text-align: center;
     border: 0;
     border-radius: 4px;
-    font-size: 20px;
-    color: #2F475D;
-    font-family: "Roboto Flex", sans-serif;
-    background-color: #FEFBF1;
 }
 
-
-.type > div:nth-of-type(2) > form > div:nth-of-type(4) > input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-}
-
-
-.type > div:nth-of-type(2) > form > div:nth-of-type(4) input[type="number"]:focus{
-    outline: 2px solid #5F446F;
-}
-
-
-
-
-.type > div:nth-of-type(2) > form > div:nth-of-type(5){
-    display: flex;
-    align-items: center;
-}
-
-.type > div:nth-of-type(2) > form > div:nth-of-type(5) > input{
+.type > #form-stationary > form > div:nth-of-type(4) > input, .type > #form-incidental > form > div:nth-of-type(3) > input{
     margin-left: 12px;
     height: 28px;
     width: 200px;
@@ -622,17 +558,105 @@
 }
 
 
-.type > div:nth-of-type(2) > form > div:nth-of-type(5) > input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button {
+
+
+.type > .form-content > form > div:nth-of-type(3) > input[type="number"], #form-incidental > form > div:last-child > #note{
+    font-size: 20px;
+    color: #2F475D;
+    font-family: "Roboto Flex", sans-serif;
+    background-color: #FEFBF1;
+}
+
+.type > .form-content > form > div:nth-of-type(3) > input[type="number"]:focus{
+    outline: 2px solid #5F446F;
+}
+
+.type > .form-content > form > div:nth-of-type(3) > input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+.type > .form-content > form > div:nth-of-type(3) > select{
+    margin-left: 12px;
+    height: 28px;
+    width: 60px;
+    text-align: center;
+    font-size: 16px;
+    border: 0;
+    border-radius: 4px;
+    color: #2F475D;
+    background-color: #FEFBF1;
+}
+
+
+.type > .form-content > form > div:nth-of-type(3) > select:focus{
+    outline: 2px solid #5F446F;
+}
+
+
+
+.type > .form-content > form > div:nth-of-type(4){
+    display: flex;
+    align-items: center;
+}
+
+.type > #form-moving > form > div:nth-of-type(4) > input{
+    margin-left: 12px;
+    height: 28px;
+    width: 60px;
+    text-align: center;
+    border: 0;
+    border-radius: 4px;
+    font-size: 20px;
+    color: #2F475D;
+    font-family: "Roboto Flex", sans-serif;
+    background-color: #FEFBF1;
+}
+
+
+.type > .form-content > form > div:nth-of-type(4) > input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+.type > .form-content > form > div:nth-of-type(4) input[type="number"]:focus, #form-stationary > form > div:last-child > #note:focus, #form-incidental > form > div:last-child > #note:focus{
+    outline: 2px solid #5F446F;
+}
+
+
+
+
+.type > .form-content > form > div:nth-of-type(5){
+    display: flex;
+    align-items: center;
+}
+
+.type > .form-content > form > div:nth-of-type(5) > input{
+    margin-left: 12px;
+    height: 28px;
+    width: 200px;
+    padding-left: 8px;
+    border: 0;
+    border-radius: 4px;
+    font-size: 20px;
+    color: #2F475D;
+    font-family: "Roboto Flex", sans-serif;
+    background-color: #FEFBF1;
+}
+
+
+.type > .form-content > form > div:nth-of-type(5) > input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button {
     -webkit-appearance: none;
     margin: 0;
 
 }
 
 
-.type > div:nth-of-type(2) > form > div:nth-of-type(5) input:focus{
+.type > .form-content > form > div:nth-of-type(5) input:focus{
     outline: 2px solid #5F446F;
 }
-
 
 
 
