@@ -25,10 +25,10 @@ body{
 /* Header 做滿版 */
 .scroll-nav{
     background-color: #2F475D;
-    width: 100%;
-    height: 80px;
-    display: flex;
-    justify-content: center;
+    max-width: 100%;
+    /* height: 80px; */
+    /* display: flex; */
+    /* justify-content: center; */
     /* overflow: hidden; */
 
 }
@@ -44,7 +44,6 @@ body{
     align-items: center;
     flex-shrink: 1;
 
-    font-size: 0;
 }
 
 /* Logo圖 */
@@ -53,198 +52,115 @@ body{
     width: 180px;
 }
 
-/* ul標籤 */
-.nav .main-sel{
-    display: flex;
-    margin-left: auto ;
-
-    position: relative;
-
-    z-index: 10;
-}
 
 /* 文字主標籤 */
-.nav .main-sel .title{
+.nav .main-sel{
     margin-left: 40px;
-    height: 32px;
-    line-height: 32px;
-
-    position: relative;
-
-    /* border: 1px solid green; */
-}
-
-/* 標籤做鏈結 */
-.nav .main-sel .title a{
-    text-decoration: none;
-    font-weight: 700;
-    color: #EFE09A;
+    /* border: 2px solid green; */
+    display: flex;
+    font-family: "Roboto Flex";
     font-size: 20px;
+    font-weight: 700;
+    line-height: 140%;
+    letter-spacing: 1px;
+    gap: 40px;
+    margin-left: auto;
+    z-index: 1;
+}
 
-
+.main-sel .title{
     position: relative;
-
-    /* border: 1px solid black; */
 }
 
-
-/* 控制li下的所有第一個a標籤hover(顯示底線) */
-.nav .main-sel .title>a:first-of-type:hover::after{
-    content: "";
-    border-bottom: 3px solid #92C1CB;
-    position: absolute;
-    right: 0;
-    left: 0;
-    top: 28px;
-}
-
-
-/* 控制li下的所有第2個a標籤hover(顯示底線) */
-.nav .main-sel .title > a:nth-of-type(2):hover::after{
-    content: "";
-    border-bottom: 3px solid #92C1CB;
-    position: absolute;
-    left: 4px;
-    right: -8px;
-    top: 28px;
-}
-
-/* li中所有icons控制, 偽元素 */
-.nav .main-sel i::before{
+.main-sel .title:hover ol{
     display: block;
-    height: 40px;
-
-    font-size: 24px; 
-    margin-left: 8px;
-
-
-    /* border: 2px solid red; */
+    
 }
 
-
-/* 選擇語言icons設定 */
-.nav .main-sel .language{
-    color: #EFE09A;
-    display: block;
-    height: 32px;
+.main-sel .title > a {
     text-decoration: none;
-    margin-left: 40px;
-
-    
-    /* border: 1px solid black; */
-    /* margin-right: 56px; */
+    color: #EFE09A;
+    align-items: center;
+    font-size: 20px;
+    text-align: center;
+   
 }
 
+.main-sel .title > a > p{
+    /* border: 1px solid red; */
 
+    padding: 4px 8px;
 
-/* 選擇語言垂直置中對齊 */
-.nav .main-sel i+i::before{
-    line-height: 28px;
-}
-
-
-.nav .main-sel .language:last-of-type{
     position: relative;
-
 }
 
-/* 更換語言icons偽元素hover (顯示底線)*/
-.nav .main-sel .language:last-of-type:hover::after{
+.main-sel .title > a > p:hover:after{
     content: "";
+    display: block;
+    width: 88px;
     border-bottom: 3px solid #92C1CB;
     position: absolute;
-    left: 0px;
-    right: 0px;
-    bottom: -3px;
-    
+
+    bottom: -4px;
+    left: 6px;
 }
 
-
-.nav .main-sel .language:hover + .sec-sel{
-    display: block;
-}
-
-
-
-
-/* -----------------子選單------------------ */
-
-.scroll-nav .nav .main-sel .sec-sel{
-
-    height: auto;
-    width: 126px;
+.main-sel .title > ol{
+    /* border: 1px solid blue; */
     position: absolute;
-    top: 140%;
+    padding-top: 22px;
     left: -10px;
-
-    /* z-index: 1; */
-
+    top: 36px;
+    width: 120px;
+    text-align: center;
     display: none;
 }
 
-.scroll-nav .nav .main-sel .title a:nth-of-type(2):hover + .sec-sel{
-    display: block;
+
+.main-sel .title > ol li{
+    background: rgba(47, 71, 93, 0.9);
+    padding: 4px 8px;
 }
 
-
-
-/* 提交發現、資料探索 子選單 */
-.scroll-nav .nav .main-sel .sec-sel a{
-    display: block;
-    padding-left: 8px;
-    background-color: #2F475D;
-    border: 1px solid #FEFBF1;
-}
-
-
-/* 會員登入子選單 */
-.scroll-nav .nav .main-sel .title:nth-of-type(5) .sec-sel a{
-    padding-left: 0;
-    text-align: center;
-}
-
-/* 所有子選單:hover */
-.scroll-nav .nav .main-sel .sec-sel a:hover{
+.main-sel .title > ol li:hover{
     background-color: #5F446F;
 }
 
-/* 更換語言 子選單 */
-
-.scroll-nav .nav .main-sel div .sec-sel{
-    left: 654px;
-   
-
-    /* border: 2px solid red; */
-}
-
-
-.scroll-nav .nav .main-sel div .sec-sel a {
-   
-    font-family: "Roboto Flex", sans-serif; 
-    font-optical-sizing: auto;
-    font-weight: 700;
-    font-style: normal;
-    font-variation-settings: 
-    "slnt" 0,
-    "wdth" 100,
-    "GRAD" 0,
-    "XOPQ" 96,
-    "XTRA" 468,
-    "YOPQ" 79,
-    "YTAS" 750,
-    "YTDE" -203,
-    "YTFI" 738,
-    "YTLC" 514,
-    "YTUC" 712;
-
-
-    text-decoration: none;
-    height: 32px;
-    line-height: 32px;
-    font-size: 20px;
+.main-sel .title > ol li a{
     color: #EFE09A;
+    text-decoration: none;
 }
 
+
+.main-sel .title:last-child{
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.main-sel .title:last-child > a > i{
+    font-size: 24px;
+    position: relative;
+}
+
+.main-sel .title:last-child > a > i:hover:after{
+    content: "";
+    display: block;
+    width: 25px;
+    border-top: 3px solid #92C1CB;
+    position: absolute;
+    right: 0;
+    bottom: -12px;
+}
+
+
+.main-sel .title:last-child > ol{
+    /* border: 1px solid red; */
+    position: absolute;
+    left: -92px;
+    top: 36px;
+}
 
 
 

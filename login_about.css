@@ -359,13 +359,13 @@
     margin-left: 48px;
 }
 
-.fullBanner>div>div:last-child{
-    /* border: 5px solid black; */
+/* .fullBanner>div>div:last-child{
+    border: 5px solid black;
     margin-left: auto;
     width: 350px;
     position: relative;
 
-}
+} */
 
 .fullBanner>div>div>h2{
     font-size: 72px;

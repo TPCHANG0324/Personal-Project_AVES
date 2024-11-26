@@ -27,65 +27,95 @@
 </head>
 <body>
     
-     <!-- Header -->
+      <!-- Header -->
     <div class="scroll-nav">
         <div class="nav">
             <a href="./index.html">
                 <img src="img/AVES_LOGO_horizontal.png" alt="">
             </a>
+
             <ul class="main-sel">
                 <li class="title">
-                    <a href="./events.html">相關消息</a>
-                </li>
-
-                <li class="title">
-                    <a href="./submit.html">提交發現</a>
-                    <a href="#">
-                        <i class="fa-solid fa-caret-down">
-                        </i>
+                    <a href="./events.html">
+                        <p>相關消息</p>
                     </a>
-                    <div class="sec-sel">
-                        <a href="./myRecord.html">我的紀錄</a>
-                    </div>
+
+                    <ol>
+                        <li>
+                            <a href="#">活動訊息</a>
+                        </li>
+                        <li>
+                            <a href="#">相關研究</a>
+                        </li>
+                    </ol>
                 </li>
 
                 <li class="title">
-                    <a href="./explore.html">資料探索</a>
-                    <a href="#">
-                        <i class="fa-solid fa-caret-down"></i>
+                    <a href="./submit.html">
+                        <p>提交發現</p>
                     </a>
-                    <div class="sec-sel">
-                        <a href="./exploreSpecies.html">探索鳥種</a>
-                        <a href="./exploreRegions.html">地區探索</a>
-                    </div>
+
+                    <ol>
+                        <li>
+                            <a href="./myRecord.html">我的紀錄</a>
+                        </li>
+                    </ol>
                 </li>
 
                 <li class="title">
-                    <a href="./about_support.html">關於我們</a>
-                </li>
-
-                <li class="title">
-                    <a href="loginAccount.html">會員登入</a>
-                    <a href="#">
-                        <i class="fa-solid fa-caret-down"></i>
+                    <a href="./explore.html">
+                        <p>資料探索</p>
                     </a>
-                    <div class="sec-sel">
-                        <!-- <a href="#">登出</a> -->
-                    </div>
+
+                    <ol>
+                        <li>
+                            <a href="./exploreSpecies.html">探索鳥種</a>
+                        </li>
+                        <li>
+                            <a href="./exploreRegions.html">地區探索</a>
+                        </li>
+                    </ol>
                 </li>
-                <div>
-                    <a class="language" href="#">
+
+                <li class="title">
+                    <a href="./about_support.html">
+                        <p>關於我們</p>
+                    </a>
+
+                    <ol>
+                        <li>
+                            <a href="#">支持我們</a>
+                        </li>
+                    </ol>
+                </li>
+
+                <li class="title">
+                    <a href="./loginAccount.html">
+                        <p>會員登入</p>
+                    </a>
+                </li>
+
+                <li class="title">
+                    <a href="#">
                         <i class="fa-solid fa-globe"></i>
-                        <i class="fa-solid fa-caret-down"></i>
                     </a>
-                    <div class="sec-sel">
-                        <a href="#">English</a>
-                        <a href="#">日本語</a>
-                        <a href="#">繁體中文</a>
-                    </div>
-                </div>
+
+                    <ol>
+                        <li>
+                            <a href="#">English</a>
+                        </li>
+                        <li>
+                            <a href="#">日本語</a>
+                        </li>
+                        <li>
+                            <a href="#">繁體中文</a>
+                        </li>
+                    </ol>
+                </li>
+
 
             </ul>
+
         </div>
     </div>
 
@@ -522,7 +552,7 @@
                     </form>
     
                     <!-- 詳細資料 -->
-                    <div class="detail">
+                    <div class="detail" id="showDetail">
                         <div>
                             <p>紅尾伯勞</p>
                             <span>Lanius cristatus</span>
@@ -711,8 +741,65 @@
 
     </script>
 
-      
 
+    <script>
+    // 選取所有的數量輸入框組
+    document.querySelectorAll('.number-input').forEach((numberInput) => {
+        const input = numberInput.querySelector('input'); // 找到 input 元素
+        const plusButton = numberInput.querySelector('.plus'); // 找到加號按鈕
+        const subtractButton = numberInput.querySelector('.subtract'); // 找到減號按鈕
+
+        // 設定加號按鈕的點擊事件
+        plusButton.addEventListener('click', () => {
+            let currentValue = parseInt(input.value) || 0; // 獲取當前值
+            let max = parseInt(input.max) || Infinity; // 獲取最大值
+            if (currentValue < max) {
+                input.value = currentValue + 1; // 增加值
+            }
+        });
+
+        // 設定減號按鈕的點擊事件
+        subtractButton.addEventListener('click', () => {
+            let currentValue = parseInt(input.value) || 0; // 獲取當前值
+            let min = parseInt(input.min) || 0; // 獲取最小值
+            if (currentValue > min) {
+                input.value = currentValue - 1; // 減少值
+            }
+        });
+    });
+
+    </script>
+
+
+
+    <script>
+
+    // 選擇所有.detail-btn的按鈕
+    const detailButtons = document.querySelectorAll('.detail-btn');
+    // 顯示detail視窗
+    const selectSpeciesDiv = document.querySelector('.detail');
+
+    // 每個按鈕設定點擊事件
+    detailButtons.forEach((button) => {
+        button.addEventListener('click', () => {
+            // 點擊事件後顯示
+            selectSpeciesDiv.style.display = 'block';
+        });
+    });
+
+
+    // 選擇.confirm-btn按鈕
+    const confirmBtn = document.querySelector('.confirm-btn');
+
+    // 選擇.detail
+    const detailDiv = document.querySelector('.detail');
+
+    // 設定點擊事件
+    confirmBtn.addEventListener('click', (event) => {
+        event.preventDefault(); // 防止a標籤跳轉
+        detailDiv.style.display = 'none'; //隱藏.detail
+    });
+    </script>
 
 
 </body>

@@ -589,16 +589,18 @@ body{
 }
 
 /* 按鈕 */
-.play .owl-carousel .owl-nav.disabled{
+/* .play .owl-carousel .owl-nav.disabled{
     display: block;
-}
+} */
 
 .play .owl-carousel .owl-nav .owl-next{
     color: #B29671;
+    display: none;
 }
 
 .play .owl-carousel .owl-nav .owl-prev{
     color: #B29671;
+    display: none;
 }
 
 /* 按鈕顏色 */

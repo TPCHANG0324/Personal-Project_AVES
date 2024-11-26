@@ -702,8 +702,8 @@
     border: 1px solid #2F475D;
     border-radius: 4px;
     margin-top: 40px;
-    width: 1100px;
-    height: 932px;
+    max-width: 1100px;
+    width: 100%;
     margin-bottom: 60px;
     background: linear-gradient(90deg, #EFE09A 0%, #D3E5A4 100%);
 
@@ -728,8 +728,9 @@
 
 .selectSpecies{
     /* border: 5px solid green; */
-    height: 844px;
-    width: 800px;
+    padding-bottom: 60px;
+    width: 100%;
+    max-width: 800px;
 }
 
 .selectSpecies > div > h6{
@@ -1043,6 +1044,8 @@
     position: absolute;
     top: 120px;
     right: 300px;
+
+    display: none;
 }
 
 
@@ -1189,6 +1192,8 @@ table tr td:first-child{
 
 
 
+
+
 /* --------------------- 我的紀錄 -------------------------- */
 .profile{
     max-width: 1200px;
@@ -1239,7 +1244,24 @@ table tr td:first-child{
     color: #2F475D;
 }
 
-.profile .information > h5{
+.profile .information > div:nth-of-type(1){
+    display: flex;
+    /* border: 1px solid red; */
+    align-items: center;
+    padding-left: 36px;
+    justify-content: center;
+}
+
+.profile .information > div:nth-of-type(1) > i{
+    /* border: 1px solid green; */
+    font-size: 24px;
+    color: #B29671;
+    margin-top: 8px;
+    margin-left: 8px;
+}
+
+
+.profile .information > div > h5{
     color: #2F475D;
     font-size: 32px;
     font-weight: 700;
@@ -1259,7 +1281,7 @@ table tr td:first-child{
 
 
 
-.profile .information > div:nth-of-type(1) {
+.profile .information > div:nth-of-type(2) {
     display: flex;
     /* border: 5px solid red; */
     padding-left: 44px;
@@ -1268,7 +1290,7 @@ table tr td:first-child{
 }
 
 
-.profile .information > div:nth-of-type(1) a{
+.profile .information > div:nth-of-type(2) a{
     display: flex;
     /* border: 1px solid blue; */
     margin-left: 12px;
@@ -1277,16 +1299,16 @@ table tr td:first-child{
     height: 24px;
 }
 
-.profile .information > div:nth-of-type(1) a:hover{
+.profile .information > div:nth-of-type(2) a:hover{
     color: #B29671;
 }
 
-.profile .information > div:nth-of-type(1) a i{
+.profile .information > div:nth-of-type(2) a i{
     font-size: 24px;
     margin-right: 4px;
 }
 
-.profile .information > div:nth-of-type(1) a p{
+.profile .information > div:nth-of-type(2) a p{
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
