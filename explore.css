@@ -52,310 +52,183 @@ body{
 }
 
 
-
-
-
-/* --------------- 切換頁籤demo--------------------------- */
-
-
 .explore{
-    /* border: 3px solid red; */
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    height: 700px;
-    margin-top: 100px;
-
-    position: relative;
-    
-}
-
-
-/* 探索鳥種整體外框 */
-.explore>div:nth-of-type(1){
-    /* border: 3px solid pink; */
-    width: 1110px;
-    position: absolute;
-
-    left: 0;
-    right: 0;
-    top: 0;
-    margin: auto;
-
-    height: 600px;
-
-    
-    z-index: 1;
-    
-}
-
-
-/* 地區探索整體外框 */
-.explore>div:nth-of-type(2){
-    width: 1110px;
-    /* border: 2px solid black; */
-    height: 500px;
-
-
-    position: absolute;
-
-    left: 0;
-    right: 0;
-    top: 0;
-    margin: auto;
-
-    z-index: 0;
-}
-
-
-
-.explore div:nth-of-type(1) label{
-    /* border: 2px solid green; */
-    /* margin-right: 44px; */
-    font-size: 36px;
-    font-weight: 500;
-    line-height: 140%;
-    letter-spacing: 1px;
-    height: 50px;
-    width: 148px;
-    display: block;
-    position: relative;
-    top: -80px;
-    text-align: center;
-
-    
-}
-
-.explore div:nth-of-type(1) label:hover::after{
-    content: "";
-    display: block;
-    border: 2px solid #F5D367;
-    width: 148px;
-}
-
-
-
-.explore div:nth-of-type(2) label{
-    /* border: 3px solid green; */
-    margin-left: 200px;
-    font-size: 36px;
-    font-weight: 500;
-    line-height: 140%;
-    letter-spacing: 1px;
-    text-align: center;
-    height: 50px;
-    width: 154px;
-    display: block;
-    position: relative;
-    top: -80px;
-
-    box-sizing: border-box;
-
-}
-
-
-.explore div:nth-of-type(2) label:hover::after{
-    content: "";
-    display: block;
-    border: 2px solid #F5D367;
-    width: 148px;
-}
-
-
-/* checkbox按鈕隱藏控制及位置調整 */
-
-.explore>div:nth-of-type(1) .btn1, .btn2{
-    display: none;
-}
-
-.explore>div:nth-of-type(1) .btn1{
-    position: relative;
-    top: -85px;
-    left: -92px;
-}
-
-.explore>div:nth-of-type(2) .btn2{
-    position: relative;
-    top: -85px;
-    right: 92px;
-
-}
-
-
-
-
-.control-species{
-    display: none;
-}
-
-.control-regions{
-    display: none;
-    
-}
-
-#explore-species:checked ~ .control-species,
-#explore-regions:checked ~ .control-regions{
-    display: block;
-
-}
-
-
-/*------------------------ 框內布置 ------------------------*/
-
-
-/*------ 鳥種探索 -------*/
-.explore div:nth-of-type(1) .control-species .search-bg{
-    background-image: url(./img/common-rosefinch-4834076_1920.jpg);
+    /* border: 2px solid red; */
     max-width: 1110px;
-    height: 620px;
-    background-size: 120%;
-    background-position: -80px -140px;
-    transform: translateY(-52px);
+    margin: 0 auto;
+    margin-top: 24px;
+}
+
+.explore > div:nth-of-type(1){
     display: flex;
 }
 
+.explore > div:nth-of-type(1) > button{
+    font-size: 36px;
+    text-decoration: none;
+    margin-right: 44px;
+    font-weight: 500;
+    line-height: 140%;
+    letter-spacing: 1px;
+    color: #2F475D;
+    border: 0;
+    background-color: #FEFBF1;
+    cursor: pointer;
 
-.explore div:nth-of-type(1) .control-species .search-bg .left-block{
-    background: rgba(238, 238, 238, 0.60);
-    backdrop-filter:blur(2px);
-    height: 620px;
-    width: 460px;
-    overflow: hidden;
+    position: relative;
+}
+
+.explore > div:nth-of-type(1) > button:hover::after{
+    content: "";
+    display: block;
+    width: 140px;
+    height: 20px;
+    border-bottom: 3px solid #F5D367;
+    position: absolute;
+    left: 8px;
+    bottom: -4px;
 }
 
 
-.explore div:nth-of-type(1) .control-species .search-bg .left-block h1{
+
+
+/* 鳥種探索 */
+
+.explore > .species-search-bg{
+    margin-top: 24px;
+    background-image: url(./img/common-rosefinch-4834076_1920.jpg);
+    background-position: center -80px;
+    background-size: cover;
+    height: 620px;
+    display: flex;
+
+    display: none;
+}
+
+
+
+
+.explore > .species-search-bg > .left-block{
+    background: rgba(238, 238, 238, 0.80);
+    width: 460px;
+    height: 620px;
+}
+
+
+.explore > .species-search-bg > .left-block > h1{
     font-size: 96px;
     font-weight: 700;
     line-height: 140%;
     color: #2F475D;
-    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);
-
-    /* border: 2px solid #2F475D; */
-    width: 370px;
     margin-top: 160px;
-    margin-left: 70px;
+    margin-left: 60px;
     letter-spacing: 3px;
-}
-
-.explore div:nth-of-type(1) .control-species .search-bg .right-block h1{
-    font-size: 128px;
-    font-weight: 700;
-    line-height: 140%;
-    letter-spacing: 3px;
-    color: #FEFBF1;
-    margin-left: 20px;
-    margin-top: 230px;
     text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);
-
 }
 
 
-.explore div:nth-of-type(1) .control-species .search-bg .left-block form>div{
-    /* border: 2px solid red; */
-    margin-top: 140px;
-    /* height: 176px; */
-
-    position: relative;
+.explore > .species-search-bg > .left-block > form{
+    /* border: 1px solid red; */
+    margin-top: 160px;
+    text-align: center;
 }
 
-.explore div:nth-of-type(1) .control-species .search-bg .left-block form i{
-    font-size: 28px;
-    color: #2F475D;
-    /* border: 1px solid green; */
-
-    position: absolute;
-    top: 18px;
-    left: 40px;
-}
-
-
-.explore div:nth-of-type(1) .control-species .search-bg .left-block form p{
-    font-size: 20px;
-    color: #2F475D;
-    font-weight: 400;
-    line-height: 140%;
-    margin: 30px 30px;
-    
-}
-
-
-.explore div:nth-of-type(1) .control-species .search-bg .left-block form .search-btn{
-    width: 350px;
+.explore > .species-search-bg > .left-block > form > .search-btn{
+    width: 400px;
     height: 64px;
-    border: none;
-    /* border: 1px solid green; */
-    font-size: 32px;
-    padding-left: 50px;
     border-radius: 999px;
-    margin-left: 25px;
+    border: 0;
+    font-size: 32px;
+    font-weight: 400;
+    padding-left: 52px;
     color: #2F475D;
+    background-color: #FEFBF1;
+    line-height: 64px;
+
 }
 
 
-
-.explore div:nth-of-type(1) .control-species .search-bg .left-block form .search-btn::placeholder{
-    /* border: 1px solid green; */
-    line-height: 140%;
-    height: auto;
-    max-width: 320px;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
+.explore > .species-search-bg > .left-block > form > .search-btn::placeholder{
     color: #ACB4B3;
-    
 }
 
-.explore div:nth-of-type(1) .control-species .search-bg .left-block form .search-btn:focus{
+.explore > .species-search-bg > .left-block > form > .search-btn:focus{
     outline: 2px solid #5F446F;
 }
 
 
+.explore > .species-search-bg > .left-block > form > a{
+    position: relative;
+}
 
-/*------ 探索地區 -------*/
+.explore > .species-search-bg > .left-block > form > a > i{
+    font-size: 24px;
+    color: #2F475D;
+    position: absolute;
+    left: 16px;
+    bottom: 2px;
+}
+
+
+.explore > .species-search-bg > .left-block > form > p{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 140%;
+    color: #2F475D;
+    text-align: left;
+    padding: 0 32px;
+    margin-top: 24px;
+}
 
 
 
+.species-search-bg > .right-block > h1{
+    font-size: 128px;
+    font-weight: 700;
+    line-height: 140px;
+    color: #FEFBF1;
+    margin-left: 28px;
+    margin-top: 260px;
+    letter-spacing: 3px;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);
+}
 
-.explore div:nth-of-type(2) .control-regions .search-bg{
+
+
+/* 探索地區頁籤 */
+
+.explore .regions-search-bg{
+    margin-top: 24px;
     background-image: url(./img/white-tailed-eagle-8640046.jpg);
-    max-width: 1110px;
+    background-position: center -120px;
+    background-size: cover;
     height: 620px;
-    background-size:cover;
-    background-position: 0 -120px;
-    transform: translateY(-52px);
     display: flex;
-    overflow: hidden;
+
+    display: none;
 }
 
-
-
-
-.explore div:nth-of-type(2) .control-regions .search-bg .right-block{
-    background: rgba(238, 238, 238, 0.60);
-    backdrop-filter:blur(2px);
-    height: 620px;
+.explore > .regions-search-bg > .right-block{
+    background: rgba(238, 238, 238, 0.80);
     width: 460px;
-    overflow: hidden;
+    height: 620px;
     margin-left: auto;
-    margin-top: -16px;
 }
 
-.explore div:nth-of-type(2) .control-regions .search-bg .right-block h1{
+
+.explore > .regions-search-bg > .right-block > h1{
     font-size: 96px;
     font-weight: 700;
     line-height: 140%;
     color: #2F475D;
     text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);
-
-    /* border: 2px solid #ffffff; */
     width: 370px;
     margin-top: 160px;
     margin-left: 20px;
     letter-spacing: 3px;
 }
 
-.explore div:nth-of-type(2) .control-regions .search-bg .left-block h1{
+.explore > .regions-search-bg > .left-block > h1{
     font-size: 128px;
     font-weight: 700;
     line-height: 140%;
@@ -364,67 +237,71 @@ body{
     margin-left: 100px;
     margin-top: 230px;
     text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);
+}
+
+.explore > .regions-search-bg > .right-block > form{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 140%;
+    color: #2F475D;
+    text-align: left;
+    padding: 0 32px;
+    margin-top: 140px;
     /* border: 1px solid red; */
-    width: auto;
 }
 
 
-.explore div:nth-of-type(2) .control-regions .search-bg .right-block form>div{
-    /* border: 2px solid red; */
-    margin-top: 140px;
-    /* height: 176px; */
 
+.explore > .regions-search-bg > .right-block > form > a{
     position: relative;
 }
 
-.explore div:nth-of-type(2) .control-regions .search-bg .right-block form i{
+.explore > .regions-search-bg > .right-block > form > a > i{
     font-size: 28px;
     color: #2F475D;
     /* border: 1px solid green; */
-
     position: absolute;
-    top: 18px;
-    left: 40px;
+    top: -8px;
+    left: 16px;
 }
 
-.explore div:nth-of-type(2) .control-regions .search-bg .right-block form p{
+.explore > .regions-search-bg > .right-block > form > .search-btn{
+    width: 400px;
+    height: 64px;
+    border-radius: 999px;
+    border: 0;
+    font-size: 32px;
+    font-weight: 400;
+    padding-left: 52px;
+    color: #2F475D;
+    background-color: #FEFBF1;
+    line-height: 64px;
+}
+
+.explore > .regions-search-bg > .right-block > form > .search-btn:focus{
+    outline: 2px solid #5F446F;
+}
+
+.explore > .regions-search-bg > .right-block > form > .search-btn::placeholder{
+    color: #ACB4B3;
+}
+
+
+.explore > .regions-search-bg > .right-block > form > p{
     font-size: 20px;
     color: #2F475D;
     font-weight: 400;
     line-height: 140%;
-    margin: 30px 30px;
-    
-}
-
-
-.explore div:nth-of-type(2) .control-regions .search-bg .right-block form .search-btn{
-    width: 350px;
-    height: 64px;
-    border: none;
-    /* border: 1px solid green; */
-    font-size: 32px;
-    padding-left: 50px;
-    border-radius: 999px;
-    margin-left: 25px;
-    color: #2F475D;
+    margin: 30px 0px;
+    width: 404px;
 }
 
 
 
-.explore div:nth-of-type(2) .control-regions .search-bg .right-block form .search-btn::placeholder{
-    /* border: 1px solid green; */
-    line-height: 140%;
-    height: auto;
-    max-width: 320px;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
-    color: #ACB4B3;
-    
-}
-
-.explore div:nth-of-type(2) .control-regions .search-bg .right-block form .search-btn:focus{
-    outline: 2px solid #5F446F;
+.explore > .species-search-bg.active,
+.explore > .regions-search-bg.active {
+    display: flex;
+    margin-bottom: 64px;
 }
 
 

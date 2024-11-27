@@ -1,220 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="basic.css">
-    <link rel="stylesheet" href="test.css">
-
-    <!-- font-awesome icons Libraries 匯入 -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"> 
-
-    <!-- Google icons Libraries 匯入 -->
-    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=patient_list" />
-
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=patient_list" /> -->
-
-
-    <!-- Google 字體: Roboto Flex -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>頁籤切換練習</title>
+  <link rel="stylesheet" href="test.css">
 </head>
 <body>
-    <!-- Header -->
-   <div class="scroll-nav">
-    <div class="nav">
-        <a href="./index.html">
-            <img src="img/AVES_LOGO_horizontal.png" alt="">
-        </a>
+  <div class="tabs">
+    <button class="tab-button" data-id="tab1">頁籤 1</button>
+    <button class="tab-button" data-id="tab2">頁籤 2</button>
+    <button class="tab-button" data-id="tab3">頁籤 3</button>
+  </div>
+  
+  <div class="tab-content" id="tab1">
+    <h2>這是頁籤 1 的內容</h2>
+    <p>內容 1</p>
+  </div>
+  
+  <div class="tab-content" id="tab2" style="display: none;">
+    <h2>這是頁籤 2 的內容</h2>
+    <p>內容 2</p>
+  </div>
+  
+  <div class="tab-content" id="tab3" style="display: none;">
+    <h2>這是頁籤 3 的內容</h2>
+    <p>內容 3</p>
+  </div>
 
-        <ul class="main-sel">
-            <li class="title">
-                <a href="./events.html">
-                    <p>相關消息</p>
-                </a>
+  <script>
+     document.addEventListener('DOMContentLoaded', function () {
+  // 取得所有的按鈕
+  const buttons = document.querySelectorAll('.tab-button');
+  
+  // 為每個按鈕添加點擊事件
+  buttons.forEach(button => {
+    button.addEventListener('click', function() {
+      // 隱藏所有內容
+      const contents = document.querySelectorAll('.tab-content');
+      contents.forEach(content => {
+        content.classList.remove('active');  // 移除active類，隱藏內容
+      });
 
-                <ol>
-                    <li>
-                        <a href="#">活動訊息</a>
-                    </li>
-                    <li>
-                        <a href="#">相關研究</a>
-                    </li>
-                </ol>
-            </li>
+      // 顯示點擊的頁籤內容
+      const targetId = button.getAttribute('data-id');  // 取得data-id屬性
+      const targetContent = document.getElementById(targetId);  // 根據ID選擇對應的內容
+      targetContent.classList.add('active');  // 顯示對應內容區域
 
-            <li class="title">
-                <a href="./submit.html">
-                    <p>提交發現</p>
-                </a>
+      // 移除所有按鈕的.active類別
+      buttons.forEach(btn => {
+        btn.classList.remove('active');  // 移除高亮顯示
+      });
 
-                <ol>
-                    <li>
-                        <a href="./myRecord.html">我的紀錄</a>
-                    </li>
-                </ol>
-            </li>
+      // 高亮顯示當前按鈕
+      button.classList.add('active');  // 添加高亮顯示
+    });
+  });
+});
 
-            <li class="title">
-                <a href="./explore.html">
-                    <p>資料探索</p>
-                </a>
-
-                <ol>
-                    <li>
-                        <a href="./exploreSpecies.html">探索鳥種</a>
-                    </li>
-                    <li>
-                        <a href="./exploreRegions.html">地區探索</a>
-                    </li>
-                </ol>
-            </li>
-
-            <li class="title">
-                <a href="./about_support.html">
-                    <p>關於我們</p>
-                </a>
-
-                <ol>
-                    <li>
-                        <a href="#">支持我們</a>
-                    </li>
-                </ol>
-            </li>
-
-            <li class="title">
-                <a href="./loginAccount.html">
-                    <p>會員登入</p>
-                </a>
-            </li>
-
-            <li class="title">
-                <a href="#">
-                    <i class="fa-solid fa-globe"></i>
-                </a>
-
-                <ol>
-                    <li>
-                        <a href="#">English</a>
-                    </li>
-                    <li>
-                        <a href="#">日本語</a>
-                    </li>
-                    <li>
-                        <a href="#">繁體中文</a>
-                    </li>
-                </ol>
-            </li>
-
-
-        </ul>
-
-    </div>
-</div>
-
-    <!-- banner -->
-
-    <div class="fullBanner">
-        <div>
-            <div>
-                <h2>ABOUT US</h2>
-                <h4>關於我們</h4>
-            </div>
-            <div>
-                <a href="#">捐款支持</a>
-                <img src="./img/11434495.png" alt="">
-            </div>
-               
-        </div>
-    </div>
-
-
-<!----------------------上半部文字----------------------->
-    <div class="main">
-        <div>
-            <ul class="keyPoints">
-                <li>尋找更多珍貴的鳥</li>
-                <li>追蹤您的鳥類清單、照片與聲音</li>
-                <li>探索來自各地的最新目擊事件</li>
-                <li>加入世界上最大的追鳥社群</li>
-                <li>為科學與保育做出貢獻</li>
-            </ul>
-
-
-            <div>
-                <p>AVES 是全球最大的鳥類觀察公民科學專案，將搜集到的數據廣泛應用在保育決策、科學研究和教育專案中，為鳥類保護和生物多樣性研究提供重要支援。AVES 集結數百個國際合作夥伴和數十萬觀鳥者，年均提供超過一億筆鳥類觀測資料。我們也支援觀察地圖、物種分布的即時更新、稀有物種出現提醒等功能，增進追鳥的樂趣與知識。</p>
-
-                <p>AVES 也與各地區的野鳥救傷中心、鳥類社團、鳥類研究機構等相互合作，協助鳥類的救援，並不定期舉辦鳥類解說、義工培訓及賞鳥博覽會等環境教育工作。</p>
-                <a href="#">了解更多</a>
-            </div>
-        </div>
-
-        <div class="bgi">
-            <h1>Balaeniceps<br>rex</h1>
-            <img src="./img/Balaeniceps_rex.png" alt="">
-        </div>
-
-    </div>
-
-    <!-- Footer -->
-
-    <!-- <div class="footer">
-
-        <div class="footer-bg">
-            <div class="main-footer">
-                <div class="footer-logo">
-                    <a href="./index.html">
-                        <img src="./img/AVES_LOGO_horizontal.png" alt="">
-                    </a>
-                    <p>4F., No. 219, Sec. 3, Nanjing E. Rd., Zhongshan Dist., Taipei City 104506, Taiwan (R.O.C.)</p>
-                </div>
-
-                <ul>
-                    <li class="footer-list">
-                        <a class="heading-link" href="./events.html">相關消息</a>
-                    </li>
-                    <li class="footer-list">
-                        <a class="heading-link" href="./submit.html">提交發現</a>
-                        <a href="./myRecord.html">我的紀錄</a>
-                    </li>
-                    <li class="footer-list">
-                        <a class="heading-link" href="./explore.html">資料探索</a>
-                        <a href="./exploreSpecies.html">鳥種探索</a>
-                        <a href="./exploreRegions.html">探索地區</a>
-                    </li>
-                    <li class="footer-list">
-                        <a class="heading-link" href="./about_support.html">關於我們</a>
-                    </li>
-                    <li class="footer-list">
-                        <a class="heading-link" href="loginAccount.html">會員登入</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-
-
-
-
-        <div>
-            <div class="copyright">
-                <p>Copyright © 2024 WiEdu Co. All rights reserved.</p>
-                <div>
-                    <a target="_blank" href="https://www.facebook.com/ebird/">
-                        <i class="fa-brands fa-facebook"></i>
-                    </a>
-                    <a target="_blank" href="https://x.com/team_ebird/">
-                        <i class="fa-brands fa-twitter"></i>
-                    </a>
-                    <a target="_blank" href="https://www.instagram.com/team_ebird/">
-                        <i class="fa-brands fa-square-instagram"></i>
-                    </a>
-                    
-                </div>
-            </div>
-        </div>
-
-    </div> -->
+  </script>
 </body>
 </html>
