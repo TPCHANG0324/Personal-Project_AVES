@@ -11,7 +11,7 @@
     max-width: 1400px;
     height: 740px;
     background-size: cover;
-    background-position:0px -50px;
+    background-position:0px 50%;
     margin: 0 auto;
     background-repeat: no-repeat;
     /* margin-top: 20px; */
@@ -322,11 +322,13 @@
 
 
 .fullBanner{
-    background-image: url(img/wild-geese-1150000_1920.jpg);
-    width: 100%;
+    background-image: url(img/wild-geese-1150000_1920\ 1.svg);
+    max-width: 100%;
     height: 180px;
-    background-position: 0 380px;
+    background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
+
 }
 
 .fullBanner>div{

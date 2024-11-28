@@ -38,7 +38,8 @@ body{
     margin: 0 auto;
     /* border: 2px solid blue; */
     height: 80px;
-    width: 1200px;
+    max-width: 1200px;
+    width: 100%;
     box-sizing: border-box;
     display: flex;
     align-items: center;
@@ -165,6 +166,172 @@ body{
 
 
 
+*{
+    /* outline: 1px solid green; */
+}
+
+/*-------------- mobile主選單 ------------------*/
+
+.mobileHeader{
+    display: none;
+}
+
+@media screen and (max-width:1200px){
+    .nav{
+        padding: 0 32px;
+    }
+    .wrapper .main:nth-of-type(3)::after{
+        width:1200px;
+        max-width: 100%;
+    }
+}
+
+
+@media screen and (max-width:1100px){
+    .nav{
+        padding: 0 32px;
+    }
+}
+
+@media screen and (max-width:1000px){
+    .scroll-nav{
+        display: none;
+    }
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .mobileHeader{
+        width: 100%;
+        background-color: #2F475D;
+        height: 80px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 40px;
+
+        position: fixed;
+
+        z-index: 500; /* 主選單 z-index 提高 */
+
+    }
+    
+    .mobileHeader img{
+        display: inline-block;
+        width: 180px;
+    }
+    
+    .mobileHeader > i{
+        font-size: 36px;
+        color: #EFE09A;
+        cursor: pointer;
+    }
+    
+    .mobileHeader > ul{
+        position: fixed;
+        top: 80px;
+        left: 0; 
+        width: 60%; 
+        background-color: #2F475D;
+        padding-left: 20px;
+        transform: translateX(-100%); /* 隱藏在左側 */
+        transition: transform 0.5s ease; /* 平滑過度 */
+        z-index: 500; /* 主選單 z-index 提高 */
+    }
+
+    .mobileHeader > ul.active {
+        transform: translateX(0); /* 移動到可見範圍 */
+    }
+
+    .mobileHeader .main-sel .title > a{
+        width: 100%;
+        text-align: left;
+    }
+
+    .main-sel .title{
+        margin: 12px 0;
+        position: relative;
+        display: flex;
+        width: 100%;
+        align-items: center;
+        padding: 8px 24px;
+    }
+
+    .main-sel > ul:first-of-type{
+        margin-top: 40px;
+    }
+
+    .main-sel > ul:first-of-type > li{
+        margin: 12px 0;
+        padding: 8px 12px;
+    }
+
+    .main-sel > ul:first-of-type > li > a{
+        display: flex;
+        color: #EFE09A;
+        font-size: 24px;
+        /* border: 1px solid red; */
+        text-decoration: none;
+    }
+
+    .main-sel > ul:first-of-type > li > a > i{
+        margin-right: 12px;
+    }
+
+    .mobileHeader .main-sel .title > ol{
+        display: none;
+        position: absolute;
+        left: 100%;
+        top: -56%;
+        font-size: 24px;
+        width: 40%;
+    }
+
+
+    .main-sel .title > i{
+        font-size: 24px;
+        color: #EFE09A;
+    }
+
+    .main-sel .title > a > p{
+        color: #EFE09A;
+        display: flex;
+        justify-content: flex-start;
+        padding: 0;
+        font-size: 24px;
+    }
+
+
+    .main-sel .title > a > p:hover:after{
+        display: none;
+    }
+
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* ----------------- Footer ----------------------- */
 
@@ -183,7 +350,7 @@ body{
 }
 
 .footer div .main-footer{
-    width: 1200px;
+    max-width: 1200px;
     height: 240px;
     background-color: #2F475D;
     margin: 0 auto;
@@ -300,4 +467,43 @@ body{
 .footer .copyright div a i{
     font-size: 40px;
     color: #2F475D;
+}
+
+
+
+/*--------------- footer RWD -----------------*/
+
+
+@media screen and (max-width:1150px) {
+    .footer .main-footer>ul{
+        gap:60px;
+    }
+}
+
+
+@media screen and (max-width:1100px) {
+    .footer .main-footer>ul{
+        gap: 40px;
+    }
+
+    .footer .copyright{
+        gap: 60px;
+    }
+}
+
+
+
+@media screen and (max-width:1000px){
+    .footer div .main-footer{
+        display: none;
+    }
+
+    .footer .copyright{
+        background-color: #2F475D;
+        color: #FEFBF1;
+    }
+
+    .footer .copyright > div{
+        display: none;
+    }
 }

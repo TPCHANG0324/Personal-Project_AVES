@@ -7,6 +7,7 @@
 
     <link rel="stylesheet" href="basic.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleRWD.css">
 
 
 
@@ -38,6 +39,132 @@
 </head>
 
 <body>
+
+    <!-- mobile header -->
+    <div class="mobileHeader">
+        <i class="fa-solid fa-bars"></i>
+
+        
+        <ul class="main-sel">
+            <li class="title">
+                <a href="./events.html">
+                    <p>相關消息</p>
+                </a>
+                <i class="fa-solid fa-chevron-right"></i>
+                
+
+                <ol>
+                    <li>
+                        <a href="./events.html#activities">活動訊息</a>
+                    </li>
+                    <li>
+                        <a href="./events.html#thesis">相關研究</a>
+                    </li>
+                </ol>
+            </li>
+
+            <li class="title">
+                <a href="./submit.html">
+                    <p>提交發現</p>
+                </a>
+                <i class="fa-solid fa-chevron-right"></i>
+
+                <ol>
+                    <li>
+                        <a href="./myRecord.html">我的紀錄</a>
+                    </li>
+                </ol>
+            </li>
+
+            <li class="title">
+                <a href="./explore.html">
+                    <p>資料探索</p>
+                </a>
+                <i class="fa-solid fa-chevron-right"></i>
+
+                <ol>
+                    <li>
+                        <a href="./exploreSpecies.html">探索鳥種</a>
+                    </li>
+                    <li>
+                        <a href="./exploreRegions.html">地區探索</a>
+                    </li>
+                </ol>
+            </li>
+
+            <li class="title">
+                <a href="./about_support.html">
+                    <p>關於我們</p>
+                </a>
+                <i class="fa-solid fa-chevron-right"></i>
+
+                <ol>
+                    <li>
+                        <a href="./about_support.html#support">支持我們</a>
+                    </li>
+                </ol>
+            </li>
+
+            <li class="title">
+                <a href="./loginAccount.html">
+                    <p>會員登入</p>
+                </a>
+            </li>
+            <li class="title">
+                <a href="#">
+                    <p>語言變更</p>
+                </a>
+                <i class="fa-solid fa-chevron-right"></i>
+
+                <ol>
+                    <li>
+                        <a href="#">English</a>
+                    </li>
+                    <li>
+                        <a href="#">日本語</a>
+                    </li>
+                    <li>
+                        <a href="#">繁體中文</a>
+                    </li>
+                </ol>
+            </li>
+            <ul>
+                <li class="title">
+                    <a target="_blank" href="https://www.facebook.com/ebird/">
+                        <i class="fa-brands fa-facebook"></i>
+                        <p>Facebook</p>
+                    </a>
+                </li>
+
+                <li>
+                    <a target="_blank" href="https://x.com/team_ebird/">
+                        <i class="fa-brands fa-twitter"></i>
+                        <p>Twitter</p>
+
+                </li>
+    
+                <li>
+                    </a>
+                    <a target="_blank" href="https://www.instagram.com/team_ebird/">
+                        <i class="fa-brands fa-square-instagram"></i>
+                        <p>Instagram</p>
+
+                    </a>
+                </li>
+                    
+                
+            </ul>
+            
+        </ul>
+
+
+        <a href="./index.html">
+            <img src="img/AVES_LOGO_horizontal.png" alt="">
+        </a>
+        
+    </div>
+
+
 
     <!-- Header -->
     <div class="scroll-nav">
@@ -370,7 +497,7 @@
     <script>
         $('.owl-carousel').owlCarousel({
         loop:true,
-        margin:550,
+        margin:0,
         nav:true,
         autoplay: true,  // 自動撥放
         autoplayTimeout: 2000,  // 自動撥放間隔時間（單位: 毫秒）
@@ -388,6 +515,37 @@
     })
     </script>
 
+    <script>
+    const menuToggle = document.querySelector(".mobileHeader > i");
+    const menu = document.querySelector(".mobileHeader ul");
+
+    // 點擊漢堡選單，切換主選單顯示跟隱藏
+    menuToggle.addEventListener("click", () => {
+        menu.classList.toggle("active"); // 切換active类
+    });
+
+    // 點擊主選單以外的區域收合主選單
+    document.addEventListener("click", (e) => {
+        if (!menu.contains(e.target) && !menuToggle.contains(e.target)) {
+            menu.classList.remove("active");
+        }
+    });
+
+    // ESC收合主選單
+    document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") {
+            menu.classList.remove("active");
+        }
+    });
+
+
+
+
+
+
+
+
+    </script>
 
 </body>
 </html>

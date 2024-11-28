@@ -4,10 +4,12 @@
 }
 
 .fullBanner{
-    background-image: url(./img/storks-3538465_1920.jpg);
-    width: 100%;
+    background-image: url(./img/storks-3538465_1920\ 1.svg);
+    max-width: 100%;
     background-size: 100%;
-    background-position: center 480px;
+    /* background-position: center 480px; */
+    background-repeat: no-repeat;
+    margin: 0 auto;
     
     
 }
