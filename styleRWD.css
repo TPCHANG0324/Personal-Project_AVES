@@ -1114,6 +1114,24 @@
     .owl-carousel .owl-stage-outer{
         max-width: 48%;
     }
+
+    .wrapper .main:nth-of-type(4) .text{
+        position: absolute;
+        top: -60px;
+        left: 8px;
+    }
+
+    body{
+        height: 2541px;
+    }
+
+    .wrapper .main:nth-of-type(3){
+        height: 320px;
+    }
+
+    .wrapper .main:nth-of-type(3){
+        margin-top: 140px;
+    }
 }
 
 
