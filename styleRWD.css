@@ -140,24 +140,7 @@
 
 
 
-
-
-
-
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -312,19 +295,12 @@
     }
 }
 
-*{
-    /* outline: 1px solid red; */
-}
-
-
 @media screen and (max-width:900px) {
     .owl-carousel .owl-stage-outer{
         width: 350px;
         height: 300px;
     }
 }
-
-
 
 
 @media screen and (max-width:850px){
@@ -370,7 +346,6 @@
         padding: 0 28px;
     }
     
-
     .wrapper .main .content h4{
         font-size: 28px;
         margin: 0;
@@ -445,7 +420,6 @@
     }
 
 }
-
 
 
 @media screen and (max-width:800px){
@@ -560,6 +534,9 @@
 
     .main div h4{
         font-size: 40px;
+        width: 100%;
+        max-width: 390px;
+        margin-left: -40px;
     }
 
     .wrapper .main ul{
@@ -607,24 +584,34 @@
 
     .wrapper .main:nth-of-type(3) div h4{
         font-size: 40px;
+        margin: 0 auto;
     }
 
     .wrapper .main:nth-of-type(3) div p{
         font-size: 20px;
         margin: 0;
-        margin-left: 30px;
-        margin-top: 0px;
         color: #FEFBF1;
+        margin: 0 auto;
+        height: auto;
+        margin-top: 12px;
+        width: 100%;
+        max-width: 480px;
     }
 
     .wrapper .main:nth-of-type(3) div {
-        margin-top: -90px;
-        margin-left: 190px;
+        margin: 0;
+        padding: 0;
+        margin: 0 auto;
+        width: 100%;
+        max-width: 650px;
     }
 
     .wrapper .main:nth-of-type(4) .text{
-        padding-top: 230px;
-        margin-left: 124px;
+        padding-top: 210px;
+        margin: 0;
+        margin: 0 auto;
+        width: 100%;
+        max-width: 430px;
     }
 
     .main div h4{
@@ -632,10 +619,10 @@
     }
 
     .wrapper .main:nth-of-type(4) .text p{
-        width: 516px;
+        width: 510px;
         font-size: 20px;
         padding: 0;
-        margin-left: -46px;
+        margin-left: -120px;
     }
 
     .no-js .owl-carousel, .owl-carousel.owl-loaded{
@@ -668,6 +655,16 @@
 }
 
 
+@media screen and (max-width:770px) {
+    .banner .fixBanner div:nth-of-type(2){
+        left: 550px;
+    }
+
+    .wrapper > .main > div > div:nth-of-type(2){
+        left: -14px;
+    }
+}
+
 
 @media screen and (max-width:700px) {
     .banner .fixBanner div:nth-of-type(2){
@@ -676,7 +673,7 @@
 
 
     .banner .title{
-        padding-top: 306px;
+        padding-left: 70px;
     }
 
     .banner .title h2{
@@ -695,13 +692,6 @@
         line-height: 44px;
     }
 
-    .wrapper .main:nth-of-type(3) div {
-        margin-left: 140px;
-    }
-
-    .wrapper .main:nth-of-type(4) .text {
-        margin-left: 64px;
-    }
 
     .wrapper > .main > div > div:nth-of-type(2) {
         left: -40px;
@@ -709,6 +699,15 @@
 
     .owl-theme .owl-dots, .owl-theme .owl-nav{
         width: 320px;
+    }
+
+    .wrapper .main:nth-of-type(3){
+        padding-bottom: 20px;
+        height: auto;
+    }
+
+    body{
+        height: 3420px;
     }
 }
 
@@ -718,13 +717,6 @@
         margin-left: 16%;
     }
 
-    .wrapper .main:nth-of-type(3) div {
-        margin-left: 120px;
-    }
-
-    .wrapper .main:nth-of-type(4) .text {
-        margin-left: 32px;
-    }
 
     .no-js .owl-carousel, .owl-carousel.owl-loaded{
         left: 208px;
@@ -732,6 +724,10 @@
 
     .owl-carousel .owl-stage-outer{
         width: 282px;
+    }
+
+    body{
+        height: 3370px;
     }
 }
 
@@ -765,6 +761,7 @@
 
     .main div h4{
         font-size: 32px;
+        margin: 0 auto;
     }
 
     .wrapper .main ul li span{
@@ -775,17 +772,15 @@
         font-size: 18px;
     }
 
-    .wrapper .main:nth-of-type(3) div {
-        margin-left: 100px;
-    }
 
     .wrapper .main:nth-of-type(3) div h4{
         font-size: 32px;
     }
 
     .wrapper .main:nth-of-type(3) div p {
-        margin-left: 60px;
         font-size: 18px;
+        max-width: 420px;
+        width: 100%;
     }
 
     .wrapper .main:nth-of-type(3) {
@@ -794,12 +789,14 @@
     }
 
     body {
-        height: 3262px;
+        height: 3282px;
     }
 
     .wrapper .main:nth-of-type(4) .text {
-        padding-left: 70px;
-        padding-top: 204px;
+        padding: 0;
+        margin: 0;
+        padding-top: 210px;
+        margin: 0 auto;
     }
 
     .no-js .owl-carousel, .owl-carousel.owl-loaded{
@@ -816,8 +813,8 @@
 
 
     .wrapper .main:nth-of-type(4) .text p{
-        width: 326px;
-        margin-left: 54px;
+        width: 100%;
+        margin: 0 auto;
     }
 }
 
@@ -827,6 +824,7 @@
         padding-top: 354px;
         margin-right: 380px;
         padding-left: 48px;
+        width: 100%;
     }
 
     .banner .title h2{
@@ -841,6 +839,7 @@
         height: 36px;
         line-height: 36px;
         width: 128px;
+        margin-left: 0;
     }
 
     .wrapper .main .content h4 {
@@ -895,9 +894,6 @@
         line-height: 120%;
     }
 
-    .wrapper .main:nth-of-type(3) div{
-        margin-left: 60px;
-    }
 
     .wrapper .main:nth-of-type(3){
         height: 360px;
@@ -929,16 +925,25 @@
     }
 
     .wrapper .main:nth-of-type(4) .text{
-        margin-left: -18px;
+        padding-top: 180px;
+    }
+
+    .wrapper .main:nth-of-type(4)>div{
+        height: 0;
     }
 
     body{
-        height: 2862px;
+        height: 2822px;
     }
 }
 
 
 @media screen and (max-width:490px) {
+
+    .mobileHeader img{
+        width: 150px;
+    }
+
     .banner .title{
         padding-top: 370px;
         margin-right: 510px;
@@ -959,9 +964,6 @@
         margin-top: 10px;
     }
 
-    .wrapper .main:nth-of-type(3) div{
-        margin-left: 30px;
-    }
 
     .wrapper .main:nth-of-type(3) div p{
         height: auto;
@@ -969,7 +971,8 @@
     }
 
     .wrapper .main:nth-of-type(4) .text{
-        margin-left: -38px;
+        padding: 0;
+        margin: 0 auto;
     }
 
     .wrapper .main:nth-of-type(4) .text p{
@@ -1014,6 +1017,106 @@
 }
 
 
+@media screen and (max-width:470px) {
+    .wrapper .main:nth-of-type(4) .text{
+        width: 100%;
+        max-width: 340px;
+        margin: 0;
+        margin: 0 auto;
+    }
+
+    .wrapper .main:nth-of-type(4) .text p{
+        padding: 0;
+        max-width: 340px;
+    }
+
+    .wrapper .main:nth-of-type(1) img{
+        width: 70%;
+    }
+
+    .wrapper .main:nth-of-type(3) img{
+        width: 60%;
+    }
+
+    .wrapper .main ul li p{
+        width: 100%;
+    }
+
+    .wrapper .main:nth-of-type(3){
+        margin-top: 150px;
+    }
+
+    .owl-carousel .owl-stage-outer{
+        max-width: 64%;
+    }
+
+    body{
+        height: 2711px;
+    }
+}
+
+@media screen and (max-width:430px) {
+    .wrapper .main:nth-of-type(3) img{
+        margin-left: 76px;
+    }
+
+    .no-js .owl-carousel, .owl-carousel.owl-loaded{
+        left: 120px;
+    }
+
+    .owl-carousel .owl-stage-outer{
+        max-width: 58%;
+    }
+}
+
+@media screen and (max-width:380px) {
+    .no-js .owl-carousel, .owl-carousel.owl-loaded{
+        left: 100px;
+    }
+    .owl-carousel .owl-stage-outer{
+        height: auto;
+        max-width: 52%;
+    }
+    .play .owl-carousel .owl-item img{
+        height: 170px;
+    }
+    .wrapper .main:nth-of-type(3){
+        margin-top: 210px;
+    }
+    body{
+        height: 2711px;
+    }
+
+}
+
+@media screen and (max-width:350px) {
+    .wrapper .main .content{
+        width: 100%;
+        max-width: 300px;
+        margin-left: 0;
+    }
+
+    .wrapper .main .content h4{
+        width: 100%;
+        max-width: 300px;
+        margin-left: 30px;
+    }
+
+    .no-js .owl-carousel, .owl-carousel.owl-loaded{
+        left: 84px;
+    }
+
+    .wrapper .main:nth-of-type(4) .text p{
+        max-width: 310px;
+        margin-top: 8px;
+    }
+
+    .owl-carousel .owl-stage-outer{
+        max-width: 48%;
+    }
+}
+
+
 @media screen and (max-width:340px) {
     .wrapper .main .content h4{
         margin-left: -30px;
@@ -1033,24 +1136,23 @@
     }
 
     .wrapper .main:nth-of-type(3){
-        margin-top: 196px;
-    }
-
-    .wrapper .main:nth-of-type(3){
+        margin-top: 136px;
         height: 300px;
     }
 
+    .wrapper .main:nth-of-type(3) div{
+        max-width: 300px;
+    }
+
     .wrapper .main:nth-of-type(3) div h4{
-        width: 260px;
+        width: 100%;
+        max-width: 300px;
+        margin: 0;
     }
 
     .wrapper .main:nth-of-type(3) div p{
         width: 230px;
         margin-left: 20px;
-    }
-
-    .wrapper .main:nth-of-type(3) div{
-        margin-left: 28px;
     }
 
     .no-js .owl-carousel, .owl-carousel.owl-loaded{
@@ -1059,11 +1161,6 @@
 
     .wrapper .main:nth-of-type(4) .text{
         margin-left: -116px;
-    }
-
-    .wrapper .main:nth-of-type(4) .text p{
-        width: 250px;
-        margin-left: 100px;
     }
 
     .wrapper .main .content h4{
@@ -1085,12 +1182,7 @@
     }
 
     body{
-        height: 2641px;
-    }
-
-    .wrapper .main:nth-of-type(3) div h4{
-        width: 340px;
-        margin-left: -50px;
+        height: 2531px;
     }
 
     .wrapper .main:nth-of-type(3) img{
@@ -1104,12 +1196,6 @@
 
     .main div h4{
         width: 300px;
-        padding-left: 40px;
-    }
-
-    .main:nth-of-type(4) > div h4{
-        width: 300px;
-        margin-left: 40px;
     }
 
     .mobileHeader img{
@@ -1130,19 +1216,90 @@
 
     .wrapper .main:nth-of-type(4) .text{
         position: relative;
+        padding: 0;
+        margin: 0 auto;
     }
 
     .main:nth-of-type(4) > div h4{
         position: absolute;
-        top: -80px;
+        top: -90px;
+        width: 300px;
+        margin-left: 20px;
     }
 
     .wrapper .main:nth-of-type(4) .text p{
-        top: -30px;
         position: absolute;
+        top: -48px;
+        width: 100%;
+        margin-left: 36px;
+        max-width: 280px;
     }
 
-    body{
-        height: 2571px;
+}
+
+
+@media screen and (max-width:320px) {
+    .wrapper .main .content h4{
+        width: 100%;
+        max-width: 300px;
     }
+
+    .wrapper .main .content p{
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    .wrapper .main:nth-of-type(4) .text p{
+        max-width: 300px;
+        max-width: 240px;
+        margin-left: 32px;
+        width: 100%;
+        top: -60px;
+    }
+
+    .wrapper .main:nth-of-type(4) .text{
+        max-width: 300px;
+        width: 100%;
+        top: 30px;
+    }
+
+    .owl-theme .owl-dots, .owl-theme .owl-nav{
+        width: 250px;
+    }
+
+    .wrapper .main .content{
+        width: 100%;
+        max-width: 300px;
+        margin-left: 16px;
+    }
+
+    .footer .copyright p{
+        padding: 0 40px;
+    }
+
+    .main:nth-of-type(4) > div h4{
+        margin-left: 0;
+    }
+
+    .no-js .owl-carousel, .owl-carousel.owl-loaded{
+        left: 100px;
+    }
+
+    .owl-carousel .owl-stage-outer{
+        max-width: 140px;
+    }
+
+    .banner .title{
+        padding-top: 320px;
+    }
+
+    .mobileHeader > i{
+        font-size: 24px;
+    }
+
+    .mobileHeader{
+        height: 70px;
+    }
+
 }

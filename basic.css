@@ -198,6 +198,11 @@ body{
         display: none;
     }
 
+    .main-sel .title:hover ol{
+        display: none;
+        
+    }
+
     *{
         margin: 0;
         padding: 0;
@@ -283,7 +288,7 @@ body{
     }
 
     .mobileHeader .main-sel .title > ol{
-        display: none;
+        /* display: none; */
         position: absolute;
         left: 100%;
         top: -56%;
