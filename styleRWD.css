@@ -1075,16 +1075,23 @@
     }
     .owl-carousel .owl-stage-outer{
         height: auto;
-        max-width: 52%;
+        max-width: 51%;
     }
     .play .owl-carousel .owl-item img{
         height: 170px;
     }
     .wrapper .main:nth-of-type(3){
-        margin-top: 210px;
+        margin-top: 140px;
+        height: 330px;
     }
     body{
-        height: 2711px;
+        height: 2581px;
+    }
+
+    .wrapper .main:nth-of-type(4) .text{
+        position: absolute;
+        top: -50px;
+        left: 24px;
     }
 
 }
