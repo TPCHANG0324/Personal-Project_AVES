@@ -1,0 +1,185 @@
+
+@media screen and (max-width:1190px) {
+    .fullBanner+.main .bgi{
+        display: none;
+    }
+    .main div:first-child{
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+
+    .support div:first-child{
+        margin: 0 auto;
+    }
+
+    .support div:first-child div:nth-of-type(2){
+        margin: 0 auto;
+    }
+
+    .support>div ul{
+        max-width: 1190px;
+        width: 100%;
+        margin-top: 44px;
+    }
+
+    .fullBanner+.main>div:nth-of-type(1) .keyPoints{
+        margin: 0;
+        margin-left: 20px;
+    }
+
+    .fullBanner+.main div:nth-of-type(1) div{
+        margin: 0;
+        margin-top: 20px;
+    }
+
+    .support>div>div>h2{
+        margin: 0;
+    }
+
+    .support>div>div>h4{
+        margin: 0;
+    }
+
+    .fullBanner>div>div>h2{
+        width: 508.45px;
+    }
+
+    .fullBanner>div>div>h4{
+        width: 508.45px;
+    }
+
+    .support>div div>p{
+        margin: 0;
+        margin: 20px 0;
+    }
+
+    .fullBanner>div>div:first-child{
+        margin: 0 auto;
+        width: 508px;
+    }
+
+}
+
+
+@media screen and (max-width:1000px) {
+    .fullBanner{
+        margin-top: 80px;
+    }
+
+    .mobileHeader{
+        top: 0px;
+    }
+
+    .main div:first-child{
+        width: 100%;
+        max-width: 1000px;
+    }
+
+    .fullBanner+.main div:nth-of-type(1) div{
+        margin: 0 auto;
+        margin-top: 20px;
+        width: 100%;
+        max-width: 60%;
+    }
+
+    .fullBanner+.main>div:nth-of-type(1) .keyPoints{
+        margin: 0 auto;
+        width: 100%;
+        max-width: 60%;
+        padding-left: 16px;
+    }
+
+    .fullBanner+.main div:nth-of-type(1) div>p+p+a{
+        position: static;
+        margin: 0 auto;
+    }
+
+    .fullBanner>div>div:first-child{
+        width: 100%;
+        max-width: 60%;
+    }
+
+    .support div:first-child{
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .support>div>div>h2{
+        width: 80%;
+        max-width: 60%;
+        margin: 0 auto;
+        text-align: left;
+    }
+
+    .support>div>div>h4{
+        width: 80%;
+        max-width: 60%;
+        margin: 0 auto;
+    }
+
+    .support div:first-child div:nth-of-type(2){
+        width: 60%;
+        max-width: 1000px;
+    }
+
+    .support>div ul{
+        margin-top: 36px;
+    }
+}
+
+
+@media screen and (max-width:700px) {
+    .fullBanner>div>div>h2, .support>div>div>h2{
+        font-size: 52px;
+    }
+
+    .fullBanner>div>div>h4, .support>div>div>h4{
+        font-size: 32px;
+    }
+
+    .fullBanner+.main>div:nth-of-type(1) .keyPoints{
+        font-size: 18px;
+    }
+
+    .fullBanner+.main div:nth-of-type(1) div p, .support>div div>p, .support>div div>p{
+        font-size: 16px;
+    }
+
+    .support>div ul li i::after{
+        top: -22px;
+        right: -17px;
+        width: 80px;
+        height: 80px;
+    }
+
+    .support>div ul li i{
+        padding-bottom: 32px;
+    }
+
+    .support>div ul li{
+        padding: 30px 15px 36px 15px;
+    }
+
+    .gotop i{
+        display: none;
+    }
+
+}
+
+
+@media screen and (max-width:640px) {
+    .fullBanner>div>div>h2, .support>div>div>h2, .fullBanner>div>div>h4, .support>div>div>h4{
+        width: auto;
+    }
+}
+
+
+@media screen and (max-width:470px) {
+    .fullBanner>div>div>h2, .support>div>div>h2, .fullBanner>div>div>h4, .support>div>div>h4{
+        width: auto;
+    }
+
+    .support>div ul{
+        display: block;
+    }
+}
