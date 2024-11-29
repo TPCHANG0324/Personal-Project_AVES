@@ -183,3 +183,21 @@
         display: block;
     }
 }
+
+@media screen and (max-width:430px) {
+    .fullBanner>div>div>h2, .support>div>div>h2{
+        font-size: 28px;
+    }
+
+    .fullBanner>div>div>h4, .support>div>div>h4{
+        font-size: 20px;
+    }
+
+    .fullBanner+.main div:nth-of-type(1) div p, .support>div div>p, .support>div div>p{
+        font-size: 14px;
+    }
+
+    .fullBanner+.main>div:nth-of-type(1) .keyPoints{
+        font-size: 12px;
+    }
+}
