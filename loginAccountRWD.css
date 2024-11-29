@@ -1,0 +1,87 @@
+
+@media screen and (max-width:1000px) {
+    .wrapper .main .login form i:nth-of-type(1){
+        left: 55px;
+        top: 248px;
+        transform: none;
+    }
+
+    .wrapper .main .login form i:nth-of-type(2){
+        left: 55px;
+        top: 290px;
+        transform: none;
+    }
+
+    .wrapper{
+        width: 100%;
+        background-image: none;
+        height: auto;
+    }
+
+    .wrapper .main .login form a{
+        max-width: 250px;
+        width: 100%;
+    }
+
+    .wrapper .main .content{
+        display: none;
+    }
+
+    .wrapper .main{
+        max-width: 1000px;
+        width: 100%;
+        height: auto;
+        margin-top: 80px;
+    }
+
+    .wrapper .main .login{
+        width: 100%;
+        max-width: 1000px;
+    }
+
+    .wrapper .main .login form i:nth-of-type(1), .wrapper .main .login form i:nth-of-type(2){
+        display: none;
+    }
+    
+
+    .wrapper .main .login form input[type="email"], .wrapper .main .login form input[type="password"]{
+        width: 50%;
+        max-width: 1000px;
+        text-align: center;
+        padding: 0;
+    }
+
+    .wrapper .main .login form a{
+        max-width: 1000px;
+        width: 50%;
+    }
+
+    .wrapper .main .login div:nth-of-type(2) ul li i{
+        font-size: 40px;
+    }
+
+    .wrapper .main .login div:nth-of-type(2){
+        gap: 18px;
+    }
+
+    .wrapper .main .login div:nth-of-type(2) p{
+        font-size: 20px;
+    }
+}
+
+
+@media screen and (max-width:550px) {
+    .wrapper .main .login form input[type="email"], .wrapper .main .login form input[type="password"]{
+        text-align: left;
+        padding-left: 12px;
+    }
+
+    .wrapper .main .login div:nth-of-type(2) p{
+        font-size: 16px;
+    }
+
+    .wrapper .main .login div:nth-of-type(2) ul li i{
+        font-size: 32px;
+    }
+
+}
