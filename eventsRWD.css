@@ -306,4 +306,8 @@
     .news ul .newList{
         margin-bottom: 16px;
     }
+
+    .activities ul li .introduce a p{
+        height: 48px;
+    }
 }
