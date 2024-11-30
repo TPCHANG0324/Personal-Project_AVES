@@ -1,0 +1,309 @@
+
+
+@media screen and (max-width:1100px){
+    .news{
+        width: 100%;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    .news ul .newList img{
+        width: 100%;
+        max-width: 290px;
+    }
+
+    .activities ul{
+        column-gap: 40px;
+    }
+
+    .activities{
+    width: 100%;
+    max-width: 1000px;
+    margin: 48px auto;
+    }
+
+    .thesis{
+        width: 100%;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    .fullBanner h1{
+        font-size: 60px;
+    }
+
+    .fullBanner h2{
+        font-size: 32px;
+    }
+} 
+
+
+@media screen and (max-width:1000px) {
+
+    .fullBanner{
+        background-size: cover;
+        margin-top: 80px;
+    }
+
+    .fullBanner>div{
+        padding-top: 20px;
+    }
+
+
+    .news, .activities, .thesis{
+        max-width: 900px;
+    }
+
+    .gotop{
+        display: none;
+    }
+
+    .news ul .newList .content{
+        max-width: 600px;
+        width: 100%;
+        padding: 0;
+        padding: 0 16px;
+    }
+
+    .news ul .newList .content a h5{
+        width: 100%;
+    }
+
+    .news ul .newList .content a p{
+        width: 100%;
+        line-height: 140%;
+        margin-top: 4px;
+    }
+
+    .news ul .newList .content a+p{
+        padding: 4px 0;
+    }
+
+    .activities ul li{
+        max-width: 270px;
+        width: 100%;
+        height: 350px;
+    }
+
+    .activities ul li .introduce a p{
+        -webkit-line-clamp: 3;
+        height: 64px;
+        width: 100%;
+    }
+    .activities ul li .introduce a h6{
+        width: 100%;
+    }
+
+    .activities div:nth-of-type(1)::before{
+        top: 1742px;
+    }
+
+    .thesis ul li{
+        max-width: 900px;
+        width: 100%;
+    }
+
+    .fullBanner h1, .fullBanner h2{
+        position: static;
+    }
+
+    .fullBanner h1{
+        margin-left: 28%;
+        width: 100%;
+        max-width: 220px;
+    }
+
+    .fullBanner h2{
+        width: 100%;
+        max-width: 140px;
+        margin-left: 52%;
+    }
+
+}
+
+
+@media screen and (max-width:900px) {
+    .news, .activities, .thesis{
+        max-width: 800px;
+    }
+}
+
+
+
+@media screen and (max-width:800px) {
+    .news, .activities, .thesis{
+        max-width: 700px;
+    }
+
+    .fullBanner h1{
+        font-size: 52px;
+    }
+
+    .fullBanner h2{
+        font-size: 28px;
+    }
+
+    .news h3, .activities h3, .thesis h3{
+        font-size: 32px;
+    }
+
+    .news h4, .activities h4, .thesis h4{
+        font-size: 20px;
+    }
+
+    .news ul .newList .content a h5{
+        font-size: 18px;
+    }
+
+    .news ul .newList .content a p{
+        font-size: 14px;
+        line-height: 120%;
+    }
+
+    .news ul .newList .content a+p{
+        font-size: 12px;
+    }
+
+    .news div+ul+a, .activities div+ul+a, .thesis div+ul+a{
+        width: 128px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 16px;
+    }
+
+    .news h3::after, .activities h3::after, .thesis h3::after{
+        height: 32px;
+        top: 12px;
+    }
+
+    .activities ul li:nth-of-type(2) img{
+        max-width: 180px;
+        width: 100%;
+        object-position: center 0px;
+        height: 160px;
+        margin-top: 12px;
+    }
+
+    .activities ul li img{
+        max-width: 180px;
+        object-position: center center;
+        width: 100%;
+        height: 160px;
+        object-fit: cover;
+        margin-top: 12px;
+    }
+
+    .activities ul li .introduce a h6{
+        font-size: 18px;
+    }
+
+    .activities ul li .introduce a p{
+        font-size: 14px;
+        line-height: 120%;
+        height: 50px;
+    }
+
+    .activities ul li{
+        height: 100%;
+    }
+
+    .activities div:nth-of-type(1)::before{
+        height: 270px;
+    }
+
+    .activities div+ul+a, .thesis div+ul+a{
+        margin-top: 40px;
+    }
+
+    .thesis ul li a .headline{
+        font-size: 16px;
+    }
+
+    .thesis ul li .author{
+        font-size: 14px;
+    }
+
+    .thesis ul li{
+        height: 100%;
+    }
+
+    .news ul .newList img{
+        max-width: 240px;
+        height: 144px;
+    }
+
+    .news ul .newList .content{
+        border: 0;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .activities ul{
+        display: block;
+        max-width: 270px;
+        margin: 0 auto;
+    }
+
+    .activities ul li{
+        margin-top: 32px;
+    }
+
+    .activities div:nth-of-type(1)::before{
+        display: none;
+    }
+
+    .thesis ul{
+        margin: 24px;
+    }
+
+    .news ul .newList{
+        padding-left: 16px;
+    }
+}
+
+
+@media screen and (max-width:430px) {
+    .fullBanner h1{
+        margin-left: 14%;
+    }
+
+    .news ul .newList .content a h5{
+        font-size: 16px;
+        margin-top: 16px;
+    }
+
+    .news ul .newList img{
+        max-width: 180px;
+        height: 124px;
+    }
+
+    .activities ul li .introduce a h6{
+        font-size: 16px;
+        margin: 0;
+    }
+
+
+    .thesis ul li a .headline{
+        line-height: 120%;
+        margin: 12px 40px 60px 40px;
+    }
+
+    .thesis ul li .author{
+        font-size: 12px;
+    }
+}
+
+
+@media screen and (max-width:420px) {
+    .thesis ul{
+        row-gap: 20px;
+    }
+
+    .thesis ul li{
+        max-width: 350px;
+    }
+
+    .news ul .newList{
+        margin-bottom: 16px;
+    }
+}
