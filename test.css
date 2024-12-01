@@ -1,27 +1,132 @@
-body {
-  font-family: Arial, sans-serif;
+.rareSpecies{
+  grid-area: rareSpecies;
+  /* background-color: blue; */
+  /* border: 5px solid blue; */
+  box-sizing: border-box;
+
 }
 
-.tabs {
+.rareSpecies div{
   display: flex;
+  width: 302px;
+  height: 45px;
+  align-items: center;
+  justify-content: center;
+
+  /* border: 1px solid green; */
   margin-bottom: 20px;
+
+}   
+
+.rareSpecies div>h5{
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 140%;
+  color: #2F475D;
+  margin-right: 16px;
 }
 
-.tab-button {
-  padding: 10px 20px;
-  margin-right: 10px;
-  cursor: pointer;
+.rareSpecies div>a{
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 140%;
+  color: #2F475D;
+  text-decoration: none;
+  margin-right: 16px;
+
 }
 
-.tab-button.active {
-  background-color: #4CAF50;
-  color: white;
+ .rareSpecies div>a:hover{
+  color: #B29671;
 }
 
-.tab-content {
-  display: none;  /* 預設隱藏內容 */
+.rareSpecies div>p{
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 140%;
+  color: #F5D367;
 }
 
-.tab-content.active {
-  display: block;  /* 顯示有.active類的內容 */
+
+.rareSpecies ul{
+  /* border: 3px solid black; */
+  display: flex;
+  justify-content: space-between;
+}
+
+.rareSpecies ul .rare{
+  height: 316px;
+  width: 244px;
+  background-color: #2F475D;
+  padding: 0 12px;
+  border-radius: 5px;
+  /* border: 1px solid yellow; */
+  position: relative;
+}
+
+
+.rareSpecies ul .rare img{
+  width: 220px;
+  height: 150px;
+  border-radius: 5px;
+  margin-bottom: 18px;
+  margin-top: 12px;
+  display: block;
+  
+}
+
+
+.rareSpecies ul .rare>.vernacularNname{
+  color: #F5D367;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 140%;
+}
+
+.rareSpecies ul .rare>.scientificName{
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 140%;
+  color: #FEFBF1;
+}
+
+.rareSpecies ul .rare>.explorer, .place{
+  color: #FEFBF1;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+
+.rareSpecies ul .rare>.date{
+  color: #FEFBF1;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 140%;
+
+
+  position: absolute;
+  top: 168px;
+  right: 16px;
+}
+
+.rareSpecies div+ul+img{
+  display: block;
+  margin-left: 968px;
+  margin-top: 16px;
+}
+
+.rare-slick .rare {
+  padding: 10px;
+  border: 1px solid #ddd;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.rare img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
 }

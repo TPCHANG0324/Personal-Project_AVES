@@ -1,0 +1,428 @@
+
+@media screen and (max-width:820px) {
+
+    .regionsWrapper{
+        grid-template-columns: auto auto auto auto;
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas:
+        "schedule schedule schedule partners"
+        "rareSpecies rareSpecies rareSpecies rareSpecies"
+        "recentlyAdd recentlyAdd recentlyAdd recentlyAdd"
+        "popularSpots popularSpots popularSpots popularSpots";
+        max-width: 820px;
+    }
+
+    .banner .fixBanner{
+        max-width: 820px;
+    }
+    .banner{
+        margin-top: 80px;
+    }
+
+    .regionsWrapper .schedule{
+        max-width: 540px;
+        height: auto;
+        margin: 0;
+        margin: 12px;
+        padding-top: 20px;
+    }
+
+    .regionsWrapper .schedule .table{
+        padding: 0;
+        height: auto;
+        max-width: 440px;
+        width: 100%;
+        padding: 8px 0 4px 0;
+        margin: 0 auto;
+    }
+
+    .regionsWrapper .schedule .table div:nth-of-type(1) h5{
+        font-size: 28px;
+        line-height: 120%;
+    }
+
+    .regionsWrapper .schedule .table div:nth-of-type(1) p{
+        font-size: 12px;
+        line-height: 120%;
+    }
+
+    .regionsWrapper .schedule .table ul li .data p{
+        font-size: 20px;
+        line-height: 32px;
+        height: 32px;
+    }
+
+    .regionsWrapper .schedule .table ul li .data i{
+        font-size: 20px;
+        padding-right: 0;
+    }
+
+    .regionsWrapper .schedule .table ul li p{
+        font-size: 20px;
+    }
+
+    .regionsWrapper .schedule .table ul li .data img{
+        width: 28px;
+        padding: 0;
+    }
+
+    .regionsWrapper .schedule .table ul{
+        gap: 12px;
+    }
+
+    .regionsWrapper .schedule .table ul li .data{
+        width: 120px;
+    }
+
+    .regionsWrapper .schedule .table ul li{
+        margin-right: 4px;
+    }
+
+    .regionsWrapper .schedule .table ul li::after{
+        height: 60px;
+        width: 0;
+        right: 0px;
+    }
+
+
+    .regionsWrapper .rareSpecies div{
+        margin: 20px auto;
+    }
+
+    .regionsWrapper .partners{
+        width: 280px;
+        height: 200px;
+    }
+
+    .regionsWrapper .partners p{
+        margin: 12px 0 12px 0;
+        font-size: 24px;
+        line-height: 120%;
+    }
+
+    .regionsWrapper .partners img{
+        width: 120px;
+        height: 120px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .regionsWrapper .partners .left, .regionsWrapper .partners .right{
+        bottom: 85px;
+    }
+
+    .regionsWrapper .partners i{
+        font-size: 32px;
+        height: 32px;
+        width: 32px;
+    }
+
+    .regionsWrapper .rareSpecies ul{
+        justify-content: flex-start;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .regionsWrapper .rareSpecies ul .rare{
+        height: auto;
+        padding-bottom: 8px;
+        margin: 12px 27px;
+    }
+
+    .regionsWrapper .rareSpecies div+ul+img{
+        display: none;
+    }
+
+    .regionsWrapper .popularSpots ol{
+        margin-bottom: 36px;
+    }
+
+    .regionsWrapper .recentlyAdd > div > .add{
+        margin: 20px auto;
+    }
+
+    .regionsWrapper .popularSpots > div:first-child{
+        height: auto;
+        justify-content: center;
+    }
+
+
+
+
+    .regionsWrapper .popularSpots{
+        height: auto;
+    }
+
+    .regionsWrapper .recentlyAdd > div > ul{
+        margin-bottom: 32px;
+    }
+
+
+
+
+
+
+    .regionsWrapper .rareSpecies ul{
+        flex-wrap: wrap;
+    }
+
+    .gotop{
+        display: none;
+    }
+
+    .banner .fixBanner .table ul li:last-of-type::after{
+        display: none;
+    }
+}
+
+
+
+@media screen and (max-width:430px) {
+
+    .regionsWrapper{
+        grid-template-columns: auto;
+        grid-template-areas:
+        "schedule"
+        "rareSpecies"
+        "recentlyAdd"
+        "popularSpots";
+        max-width: 430px;
+    }
+    .regionsWrapper .partners{
+        display: none;
+    }
+
+    .banner{
+        height: 200px;
+    }
+    .banner .fixBanner>h1{
+        margin: 0;
+        line-height: 120%;
+        max-width: 200px;
+        font-size: 44px;
+        margin-left: 40px;
+    }
+
+    .banner .fixBanner .table ul li .data p{
+        font-size: 20px;
+        line-height: 120%;
+        
+    }
+
+    .banner .fixBanner .table ul li .data i{
+        font-size: 20px;
+        line-height: 120%;
+    }
+
+    .banner .fixBanner .table ul li .data img{
+        width: 40px;
+    }
+
+    .banner .fixBanner .table ul li p{
+        font-size: 20px;
+        line-height: 120%;
+        max-width: 110px;
+    }
+
+    .banner .fixBanner .table ul{
+        gap: 0;
+        height: auto;
+        max-width: 370px;
+        width: 100%;
+        padding: 4px 16px;
+    }
+
+    .banner .fixBanner .table{
+        margin-left: 30px;
+        height: auto;
+        max-width: 370px;
+        padding: 8px 0;
+        margin-top: 4px;
+    }
+    .banner .fixBanner>h1{
+        padding-top: 56px;
+    }
+
+    .banner .fixBanner .table ul li{
+        height: auto;
+    }
+
+    .banner .fixBanner .table ul li .data{
+        width: 100px;
+        margin-bottom: 4px;
+    }
+
+    .banner .fixBanner .table ul li .data i{
+        padding-right: 8px;
+    }
+
+    .banner .fixBanner .table ul li{
+        margin: 0 4px;
+    }
+
+    .banner .fixBanner .table ul li::after{
+        width: 0;
+        right: 8px;
+        height: 48px;
+    }
+
+    .banner .fixBanner{
+        max-width: 430px;
+        height: 200px;
+    }
+
+    .regionsWrapper .schedule{
+        max-width: 400px;
+        margin: 26px auto;
+        padding-top: 0px;
+    }
+
+    .regionsWrapper .schedule .table ul{
+        gap: 0;
+        max-width: 390px;
+    }
+
+    .regionsWrapper .schedule .table{
+        padding: 8px 0 4px 20px;
+    }
+
+    .regionsWrapper .schedule .table ul li::after{
+        right: 10px;
+    }
+
+    .regionsWrapper .schedule .table ul li p{
+        max-width: 110px;
+    }
+
+    .regionsWrapper .schedule .table ul li .data{
+        margin-bottom: 0px;
+    }
+
+    .regionsWrapper .schedule .table div:nth-of-type(1){
+        margin-bottom: 0;
+    }
+
+    .regionsWrapper .rareSpecies{
+        max-width: 430px;
+    }
+    .regionsWrapper .rareSpecies div{
+        margin: 10 auto;
+    }
+
+    .regionsWrapper .recentlyAdd > div > .add{
+        margin: 20px auto 8px;
+    }
+
+
+    .regionsWrapper .rareSpecies ul{
+        max-width: 300px;
+    }
+
+    .regionsWrapper .popularSpots ol{
+        grid-auto-rows: 80px;
+        padding: 24px 20px 12px 20px;
+    }
+
+    .regionsWrapper .recentlyAdd > div > ul, .regionsWrapper .popularSpots ol{
+        max-width: 430px;
+        margin: 0 auto;
+    }
+
+    .regionsWrapper .recentlyAdd > div > ul > li h5{
+        font-size: 16px;
+    }
+
+    .regionsWrapper .recentlyAdd > div > ul > li h6{
+        font-size: 16px;
+    }
+
+    .fa-solid, .fas{
+        font-size: 16px;
+    }
+
+    .regionsWrapper .recentlyAdd > div > ul > li::after{
+        width: 360px;
+    }
+
+    .regionsWrapper .recentlyAdd > div > ul > li > div:first-child{
+        width: 380px;
+    }
+
+    .regionsWrapper .recentlyAdd > div > ul > li > div:nth-of-type(2){
+        font-size: 12px;
+    }
+
+    .regionsWrapper .recentlyAdd > div > ul > li > div:nth-of-type(3){
+        font-size: 12px;
+    }
+
+    .regionsWrapper .recentlyAdd > div > ul > li > div:first-child{
+        height: auto;
+    }
+
+    .regionsWrapper .recentlyAdd > div > ul{
+        height: auto;
+    }
+
+    .regionsWrapper .popularSpots > div:first-child{
+        margin: 0 auto;
+        margin: 24px auto ;
+        margin: 20px auto 8px;
+    }
+
+    .regionsWrapper .rareSpecies div{
+        margin: 8px auto 0;
+    }
+
+    .regionsWrapper .recentlyAdd > div > ul > li > div:nth-of-type(2) i{
+        font-size: 12px;
+    }
+    .regionsWrapper .popularSpots ol .spots .chAddr p{
+        line-height: 120%;
+        font-size: 16px;
+    }
+
+    .regionsWrapper .popularSpots ol .spots div div:last-child{
+        line-height: 120%;
+        font-size: 16px;
+        max-width: 316px;
+    }
+
+    .regionsWrapper .popularSpots ol .spots .chAddr div p{
+        font-size: 16px;
+    }
+
+    .regionsWrapper .popularSpots ol .spots .chAddr div img{
+        width: 20px;
+    }
+
+    .regionsWrapper .popularSpots ol .spots{
+        margin-bottom: 0;
+        height: 80px;
+    }
+    
+    .regionsWrapper .popularSpots{
+        margin-bottom: 20px;
+    }
+
+    .regionsWrapper .recentlyAdd > div > ul, .regionsWrapper .popularSpots ol{
+        height: auto;
+    }
+
+    .regionsWrapper .schedule .table div:nth-of-type(1) p{
+        line-height: 20px;
+    }
+
+    .banner .fixBanner a i{
+        font-size: 12px;
+        padding-top: 2px;
+        margin-left: 4px;
+    }
+
+    .banner .fixBanner>a>p{
+        font-size: 16px;
+        line-height: 120%;
+    }
+
+    
+}

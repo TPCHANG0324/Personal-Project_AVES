@@ -3,61 +3,100 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>頁籤切換練習</title>
-  <link rel="stylesheet" href="test.css">
+  <title>Document</title>
+    <link rel="stylesheet" href="basic.css">
+    <link rel="stylesheet" href="test.css">
+     <!-- Owl Carousel CSS -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+ 
+     <!-- jQuery (必要) -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+ 
+     <!-- Owl Carousel JS -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
 </head>
 <body>
-  <div class="tabs">
-    <button class="tab-button" data-id="tab1">頁籤 1</button>
-    <button class="tab-button" data-id="tab2">頁籤 2</button>
-    <button class="tab-button" data-id="tab3">頁籤 3</button>
+
+  <div class="rareSpecies">
+    <div>
+        <h5>稀有鳥種</h5>
+        <a href="#">檢視全部</a>
+        <p>Taiwan</p>
+    </div>
+
+
+    <div class="rareSpecies">
+      <div>
+        <h5>稀有鳥種</h5>
+        <a href="#">檢視全部</a>
+        <p>Taiwan</p>
+      </div>
+    
+      <div class="rare-slick owl-carousel owl-theme">
+        <div class="rare">
+          <img src="./img/暗綠柳鶯1.jpg" alt="">
+          <h6 class="vernacularNname">暗綠柳鶯</h6>
+          <h6 class="scientificName">Phylloscopus trochiloides</h6>
+          <p class="explorer">© 翔鈞 梁</p>
+          <p class="place">高雄-旗津舊高字塔(Kaohsiung-Qijin VTC Tower), Kaohsiung City, TW </p>
+          <p class="date">2024年11月4日</p>
+        </div>
+        <div class="rare">
+          <img src="./img/暗綠柳鶯1.jpg" alt="">
+          <h6 class="vernacularNname">暗綠柳鶯</h6>
+          <h6 class="scientificName">Phylloscopus trochiloides</h6>
+          <p class="explorer">© 翔鈞 梁</p>
+          <p class="place">高雄-旗津舊高字塔(Kaohsiung-Qijin VTC Tower), Kaohsiung City, TW </p>
+          <p class="date">2024年11月4日</p>
+        </div>
+        <div class="rare">
+          <img src="./img/暗綠柳鶯1.jpg" alt="">
+          <h6 class="vernacularNname">暗綠柳鶯</h6>
+          <h6 class="scientificName">Phylloscopus trochiloides</h6>
+          <p class="explorer">© 翔鈞 梁</p>
+          <p class="place">高雄-旗津舊高字塔(Kaohsiung-Qijin VTC Tower), Kaohsiung City, TW </p>
+          <p class="date">2024年11月4日</p>
+        </div>
+        <div class="rare">
+          <img src="./img/暗綠柳鶯1.jpg" alt="">
+          <h6 class="vernacularNname">暗綠柳鶯</h6>
+          <h6 class="scientificName">Phylloscopus trochiloides</h6>
+          <p class="explorer">© 翔鈞 梁</p>
+          <p class="place">高雄-旗津舊高字塔(Kaohsiung-Qijin VTC Tower), Kaohsiung City, TW </p>
+          <p class="date">2024年11月4日</p>
+        </div>
+      </div>
+    </div>
+    
   </div>
-  
-  <div class="tab-content" id="tab1">
-    <h2>這是頁籤 1 的內容</h2>
-    <p>內容 1</p>
-  </div>
-  
-  <div class="tab-content" id="tab2" style="display: none;">
-    <h2>這是頁籤 2 的內容</h2>
-    <p>內容 2</p>
-  </div>
-  
-  <div class="tab-content" id="tab3" style="display: none;">
-    <h2>這是頁籤 3 的內容</h2>
-    <p>內容 3</p>
-  </div>
+
 
   <script>
-     document.addEventListener('DOMContentLoaded', function () {
-  // 取得所有的按鈕
-  const buttons = document.querySelectorAll('.tab-button');
-  
-  // 為每個按鈕添加點擊事件
-  buttons.forEach(button => {
-    button.addEventListener('click', function() {
-      // 隱藏所有內容
-      const contents = document.querySelectorAll('.tab-content');
-      contents.forEach(content => {
-        content.classList.remove('active');  // 移除active類，隱藏內容
-      });
 
-      // 顯示點擊的頁籤內容
-      const targetId = button.getAttribute('data-id');  // 取得data-id屬性
-      const targetContent = document.getElementById(targetId);  // 根據ID選擇對應的內容
-      targetContent.classList.add('active');  // 顯示對應內容區域
-
-      // 移除所有按鈕的.active類別
-      buttons.forEach(btn => {
-        btn.classList.remove('active');  // 移除高亮顯示
-      });
-
-      // 高亮顯示當前按鈕
-      button.classList.add('active');  // 添加高亮顯示
-    });
+    $(document).ready(function() {
+  $('.owl-carousel').owlCarousel({
+    loop: true,
+    margin: 1,
+    nav: true,
+    autoplay: false,      // 禁用自动播放
+    autoplayTimeout: 5000, // 自动播放间隔时间（毫秒）
+    responsive: {
+      0: {
+        items: 1 // 屏幕宽度小于等于0px时显示1个项目
+      },
+      600: {
+        items: 2 // 屏幕宽度小于等于600px时显示2个项目
+      },
+      1000: {
+        items: 3 // 屏幕宽度小于等于1000px时显示3个项目
+      }
+    }
   });
 });
 
-  </script>
+</script>
+
 </body>
 </html>
