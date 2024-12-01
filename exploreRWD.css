@@ -1,0 +1,324 @@
+
+@media screen and (max-width:1000px) {
+    .fullBanner{
+        margin-top: 80px;
+    }
+
+    .explore > div:nth-of-type(1){
+        width: 100%;
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    .fullBanner>div{
+        display: block;
+    }
+
+    .fullBanner>div h1:nth-of-type(1){
+        position: static;
+        max-width: 360px;
+        height: auto;
+        width: 100%;
+        padding-top: 12px;
+        margin-left: 160px;
+    }
+
+    .fullBanner>div h1:nth-of-type(2){
+        position: static;
+        width: 100%;
+        max-width: 172px;
+        margin-left: 540px;
+    }
+
+    .explore > .species-search-bg, .explore .regions-search-bg{
+        background-repeat: no-repeat;
+        width: 100%;
+        max-width: 1000px;
+        height: auto;
+        background-position: center center;
+    }
+
+    .explore > .species-search-bg > .left-block, .explore > .regions-search-bg > .right-block{
+        height: auto;
+        width: 100%;
+        max-width: 460px;
+    }
+
+    .explore > .species-search-bg > .left-block > h1{
+        max-width: 340px;
+        width: 100%;
+        font-size: 86px;
+        margin-left: 90px;
+    }
+
+    .species-search-bg > .right-block > h1{
+        font-size: 118px;
+    }
+
+
+    .explore > .regions-search-bg > .right-block > h1{
+        font-size: 86px;
+        margin-left: 24px;
+    }
+    .explore > .regions-search-bg > .left-block > h1{
+        font-size: 118px;
+        margin-left: 28px;
+    }
+
+    .explore > .species-search-bg > .left-block > form > p{
+        margin: 30px;
+        padding: 0;
+    }
+   
+}
+
+
+@media screen and (max-width:980px) {
+    .explore > .species-search-bg > .left-block > h1{
+        font-size: 66px;
+        max-width: 270px;
+        margin-left: 180px;
+    }
+
+    .species-search-bg > .right-block > h1{
+        font-size: 98px;
+        margin-left: 20px;
+    }
+
+    .explore > .species-search-bg > .left-block > form > .search-btn, .explore > .regions-search-bg > .right-block > form > .search-btn{
+        font-size: 28px;
+        width: 380px;
+        height: 54px;
+        line-height: 54px;
+    }
+
+    .explore > .species-search-bg > .left-block > form > p, .explore > .regions-search-bg > .right-block > form > p{
+        font-size: 16px;
+        margin: 24px auto;
+        max-width: 332px;
+    }
+
+    .explore > .regions-search-bg > .right-block > h1{
+        font-size: 66px;
+        margin-left: 20px;
+    }
+
+    .explore > .regions-search-bg > .left-block > h1{
+        font-size: 98px;
+        margin-left: 92px;
+    }
+
+
+}
+
+
+@media screen and (max-width:820px) {
+    .fullBanner>div h1:nth-of-type(1){
+        margin-left: 140px;
+        max-width: 270px;
+        font-size: 52px;
+        line-height: 120%;
+        padding-top: 28px;
+    }
+
+    .fullBanner>div h1:nth-of-type(2){
+        font-size: 32px;
+        height: auto;
+        line-height: 120%;
+        max-width: 136px;
+        margin-left: 420px;
+    }
+
+    .species-search-bg > .right-block > h1{
+        font-size: 78px;
+        margin-top: 150px;
+    }
+
+    .explore > .species-search-bg > .left-block, .explore > .regions-search-bg > .right-block{
+        max-width: 360px;
+    }
+
+
+    .explore > .species-search-bg > .left-block > h1{
+        font-size: 52px;
+        margin-left: 130px;
+        margin-top: 120px;
+    }
+
+    .explore > .species-search-bg > .left-block > form{
+        margin-top: 120px;
+    }
+
+    .explore > .species-search-bg > .left-block > form > .search-btn, .explore > .regions-search-bg > .right-block > form > .search-btn{
+        font-size: 20px;
+        width: 300px;
+        height: 40px;
+        line-height: 40px;
+    }
+
+    .explore > .species-search-bg > .left-block > form > a > i{
+        left: 20px;
+        bottom:0;
+        font-size: 20px;
+    }
+
+    .explore > .regions-search-bg > .right-block > h1{
+        font-size: 52px;
+        margin-top: 120px;
+        max-width: 214px;
+    }
+
+    .explore > .regions-search-bg > .left-block > h1{
+        font-size: 78px;
+        margin-left: 112px;
+        margin-top: 150px;
+    }
+
+    .explore > .regions-search-bg > .right-block > form{
+        margin-top: 120px;
+    }
+
+    .explore > .regions-search-bg > .right-block > form > a > i{
+        font-size: 20px;
+        top: 0;
+        left: 20px
+    }
+
+    .explore > .species-search-bg > .left-block > form > p, .explore > .regions-search-bg > .right-block > form > p{
+        margin: 24px 24px;
+    }
+
+    .explore > .regions-search-bg > .right-block > form > p{
+        max-width: 312px;
+        width: 100%;
+        margin: 24px auto;
+    }
+
+    .explore > .species-search-bg.active, .explore > .regions-search-bg.active{
+        margin-bottom: 32px;
+        margin-top: 12px;
+    }
+
+    .explore > div:nth-of-type(1) > button{
+        font-size: 28px;
+    }
+
+    .explore > div:nth-of-type(1){
+        max-width: 760px;
+    }
+
+    .explore > div:nth-of-type(1) > button:hover::after{
+        width: 116px;
+        left: 0;
+    }
+
+}
+
+
+@media screen and (max-width:430px) {
+
+    .fullBanner>div h1:nth-of-type(1){
+        font-size: 28px;
+        padding-top: 20px;
+        margin: 0 auto;
+        max-width: 148px;
+        line-height: 120%;
+    }
+
+    .fullBanner>div h1:nth-of-type(2){
+        font-size: 20px;
+        height: auto;
+        max-width: 86px;
+        margin-left: 140px;
+    }
+
+    .explore{
+        margin-top: 12px;
+    }
+    .explore > div:nth-of-type(1){
+        max-width: 212px;
+        gap: 40px;
+    }
+
+    .explore > div:nth-of-type(1) > button{
+        margin: 0;
+        font-size: 20px;
+    }
+
+    .species-search-bg > .right-block > h1, .explore > .regions-search-bg > .right-block > h1, .explore > .regions-search-bg > .left-block > h1, .explore > .species-search-bg > .left-block > h1{
+        display: none;
+    }
+
+    .explore > div:nth-of-type(1) > button{
+        font-size: 20px;
+    }
+
+    .explore > .species-search-bg.active, .explore > .regions-search-bg.active{
+        margin-bottom: 12px;
+        max-width: 430px;
+        height: 300px;
+    }
+
+    .explore > .species-search-bg > .left-block, .explore > .regions-search-bg > .right-block{
+        max-width: 300px;
+        margin: auto auto;
+        height: 200px;
+        box-shadow:  0px 0px 20px 0px rgba(0, 0, 0, 0.30);
+        background: rgba(238, 238, 238, 0.50);
+    }
+
+    .explore > .species-search-bg > .left-block > form, .explore > .regions-search-bg > .right-block > form{
+        margin-top: 0px;
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 0;
+    }
+
+    .explore > .species-search-bg > .left-block > form > p, .explore > .regions-search-bg > .right-block > form > p{
+        line-height: 120%;
+        max-width: 248px;
+        width: 100%;
+        color: #2F475D;
+        margin: 0 auto;
+        margin-top: 72px;
+        margin-bottom: 12px;
+    }
+
+    .explore > .species-search-bg > .left-block > form > .search-btn, .explore > .regions-search-bg > .right-block > form > .search-btn{
+        font-size: 16px;
+        width: 260px;
+        height: 32px;
+        line-height: 32px;
+        margin: 0 auto;
+        padding-left: 28px;
+    }
+
+    .explore > .species-search-bg > .left-block > form > a > i{
+        left: 28px;
+        bottom: 8px;
+        font-size: 16px;
+    }
+
+    .explore > .regions-search-bg > .right-block > form > a > i{
+        font-size: 16px;
+        top: -24px;
+        left: 28px;
+    }
+
+    .explore > div:nth-of-type(1) > button:hover::after{
+        width: 84px;
+    }
+
+    .fullBanner{
+        height: 100px;
+    }
+
+    .fullBanner>div{
+        height: auto;
+    }
+    .explore > .regions-search-bg > .right-block > form > .search-btn{
+        margin-top: 19px;
+    }
+
+    
+}

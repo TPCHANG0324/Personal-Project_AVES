@@ -184,7 +184,9 @@
     }
 }
 
+
 @media screen and (max-width:430px) {
+
     .fullBanner>div>div>h2, .support>div>div>h2{
         font-size: 28px;
     }
@@ -200,4 +202,22 @@
     .fullBanner+.main>div:nth-of-type(1) .keyPoints{
         font-size: 12px;
     }
+
+    .fullBanner{
+        height: 100px;
+    }
+
+    .fullBanner>div{
+        height: auto;
+    }
+
+    .fullBanner>div>div>h2{
+        margin-top: 16px;
+    }
+
+    .support{
+        margin-top: 50px;
+    }
+
+
 }

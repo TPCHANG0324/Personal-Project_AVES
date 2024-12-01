@@ -263,6 +263,14 @@
 
 
 @media screen and (max-width:430px) {
+
+    .fullBanner{
+        height: 100px;
+    }
+
+    .fullBanner>div{
+        height: auto;
+    }
     .fullBanner h1{
         margin-left: 14%;
     }
@@ -290,6 +298,18 @@
 
     .thesis ul li .author{
         font-size: 12px;
+    }
+    .fullBanner h1{
+        font-size: 28px;
+        max-width: 116px;
+        margin: 0 auto;
+        line-height: 120%;
+    }
+    .fullBanner h2{
+        font-size: 20px;
+        line-height: 120%;
+        max-width: 88px;
+        margin-left: 157px;
     }
 }
 
