@@ -1,0 +1,555 @@
+
+@media screen and (max-width:820px) {
+    .fullBanner{
+        margin-top: 80px;
+        width: 100%;
+        max-width: 820px;
+    }
+
+    .fullBanner h1{
+        position: static;
+        margin-left: 28%;
+        width: 100%;
+        font-size: 60px;
+        padding-top: 30px;
+        max-width: 230px;
+        line-height: 120%;
+    }
+
+    .fullBanner h2{
+        position: static;
+        width: 100%;
+        margin-left: 52%;
+        font-size: 32px;
+        max-width: 140px;
+        line-height: 120%;
+    }
+
+    .submitWrapper .location > div iframe{
+        width: 800px;
+        height: 400px;
+    }
+
+    .submitWrapper .location > div > .yourLocation{
+        position: static;
+        max-width: 820px;
+        width: 100%;
+    }
+
+    .submitWrapper .location > div > .yourLocation > label{
+        color: #2F475D;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 120%;
+    }
+    .submitWrapper{
+        margin-top: 28px;
+    }
+
+    .submitWrapper .location h5{
+        font-size: 24px;
+        line-height: 120%;
+        max-width: 130px;
+        width: 100%;
+        margin-bottom: 4px;
+        margin-left: 16px;
+    }
+
+    option{
+        font-size: 12px;
+    }
+
+    .submitWrapper .location > div > .yourLocation > select{
+        font-size: 14px;
+        height: 28px;
+        line-height: 28px;
+        max-width: 160px;
+        width: 100%;
+    }
+    .submitWrapper .location > div > .yourLocation > input{
+        height: 28px;
+        line-height: 28px; 
+        width: 277px;
+        padding-left: 28px;
+    }
+    .submitWrapper .location > div > .yourLocation > input::placeholder{
+        font-size: 14px;
+        line-height: 28px;
+    }
+    .submitWrapper .location div .yourLocation input[type="text"]{
+        font-size: 12px;
+    }
+
+    .submitWrapper .location > div > .yourLocation > i{
+        font-size: 16px;
+        top: 16px;
+        right: 384px;
+    }
+
+    .submitWrapper .location form > .btn{
+        font-size: 14px;
+        height: 28px;
+        width: 48px;
+    }
+
+    .submitWrapper .location div > a{
+        font-size: 28px;
+        bottom: 114px;
+        right: 26px;
+    }
+
+    .submitWrapper .dateType{
+        display: block;
+    }
+
+    .dateType div h5{
+        font-size: 24px;
+        margin-left: 16px;
+        line-height: 120%;
+        max-width: 198px;
+        width: 100%;
+    }
+
+    .type > div:first-child{
+        max-width: 820px;
+        width: 100%;
+    }
+
+    .type{
+        margin: 0 auto;
+
+    }
+
+    .dateType > div:first-child{
+        width: 100%;
+        max-width: 820px;
+        
+    }
+
+    .dateType div .date{
+        width: 100%;
+        max-width: 329px;
+        margin: 0 auto;
+        margin-top: 16px;
+        margin-bottom: 28px;
+    }
+
+    .dateType .date .ui-datepicker{
+        width: 324px;
+        height: 266px;
+    }
+
+    #datepicker{
+        width: 160px;
+    }
+
+    .dateType .date label{
+        margin-left: 36px;
+    }
+
+    .type > div:first-child > div > a{
+        font-size: 20px;
+    }
+
+    .type > .form-content{
+        margin-top: 12px;
+    }
+
+    .submitWrapper #submitFirst > button{
+        margin-top: 40px;
+        height: 40px;
+        width: 100px;
+    }
+
+
+    .observe{
+        max-width: 820px;
+    }
+    .observe h5{
+        font-size: 28px;
+        line-height: 120%;
+        margin-bottom: 16px;
+    }
+    .selectSpecies > div > h6{
+        margin-top: 8px;
+        font-size: 18px;
+        line-height: 120%;
+    }
+
+    .selectSpecies > div > ul > li > div:nth-of-type(2) > p{
+        font-size: 16px;
+        line-height: 120%;
+    }
+    .selectSpecies > div > ul > li > div:nth-of-type(2) > span{
+        font-size: 16px;
+        line-height: 120%;
+    }
+    .selectSpecies > div > ul > li > div:nth-of-type(2){
+        margin-left: 0;
+    }
+
+    .selectSpecies > div > ul > li > .detail-btn{
+        font-size: 14px;
+        padding: 2px 4px;
+    }
+
+    .selectSpecies > div > ul{
+        max-width: 580px;
+    }
+
+    .submitBox{
+        max-width: 200px;
+        margin-right: 0;
+        margin: 0px 8px;
+    }
+
+    .submitBox > div:nth-of-type(1) > input, div:nth-of-type(2) > input{
+        width: 172px;
+        padding-left: 24px;
+        height: 28px;
+        line-height: 28px;
+    }
+
+    .submitBox > div:nth-of-type(1) > input::placeholder, div:nth-of-type(2) > input::placeholder{
+        font-size: 16px;
+    }
+
+    .submitBox > div{
+        font-size: 16px;
+        height: 28px;
+        line-height: 28px;
+    }
+
+    .submitBox > div:nth-of-type(4){
+        font-size: 16px;
+        line-height: 28px;
+        height: 28px;
+    }
+
+    .submitBox > div > i{
+        top: 6px;
+        left: 20px;
+        font-size: 16px;
+    }
+
+    .submitBox > div:nth-of-type(4){
+        margin-left: 35px;
+        max-width: 140px;
+    }
+
+    .submitBox > div:nth-of-type(2){
+        margin-bottom: 20px;
+    }
+
+    .submitWrapper #submitSec > .observe > div > .submitBox > div > button:first-of-type, .submitBox > div >.submit-btn{
+        height: 40px;
+        width: 80px;
+    }
+
+    .detail{
+        right: 150px;
+        top: 160px;
+        height: 380px;
+    }
+
+    .detail > div:first-child{
+        font-size: 18px;
+        line-height: 120%;
+
+    }
+    .description{
+        margin-bottom: 0;
+    }
+
+    table > caption{
+        font-size: 18px;
+        line-height: 120%;
+        margin-bottom: 8px;
+    }
+
+    .detail table tr{
+        font-size: 16px;
+        line-height: 120%;
+    }
+
+    .detail table tr > th, td {
+        font-size: 16px;
+        line-height: 120%;
+    }
+
+    table tr td:first-child{
+        padding-right: 0;
+    }
+
+    .detail .confirm-btn{
+        height: 36px;
+        line-height: 36px;
+        width: 72px;
+        font-size: 16px;
+        margin-top: 24px;
+    }
+
+    .type > div:first-child > div > a:hover::before{
+        width: 82px;
+        height: 0;
+    }
+
+    .gotop{
+        display: none;
+    }
+
+}
+
+
+
+@media screen and (max-width:430px) {
+    .fullBanner>div{
+        height: 100px;
+    }
+
+    .fullBanner h1{
+        font-size: 28px;
+        padding-top: 20px;
+        margin: 0 auto;
+        max-width: 148px;
+        line-height: 120%;
+    }
+    .fullBanner h2{
+        font-size: 20px;
+        height: auto;
+        max-width: 86px;
+        margin-left: 140px;
+    }
+
+    .submitWrapper .location > div > .yourLocation{
+        display: block;
+        height: auto;
+        max-width: 320px;
+        margin: 0 auto;
+        margin-top: 16px;
+    }
+    .submitWrapper .location h5{
+        font-size: 20px;
+        line-height: 100%;
+    }
+
+    .submitWrapper .location > div > .yourLocation > input{
+        height: 20px;
+        line-height: 20px;
+        padding-left: 8px;
+        padding-top: 2px;
+        width: 196px;
+    }
+
+    .submitWrapper .location > div > .yourLocation > input::placeholder{
+        font-size: 12px;
+    }
+
+    .submitWrapper .location div .yourLocation input[type="text"]{
+        font-size: 12px;
+        padding-bottom: 2px;
+    }
+
+    .submitWrapper .location form > .btn:nth-of-type(1){
+        margin-left: 100px;
+        margin-top: 12px;
+        margin-bottom: 12px;
+    }
+    
+    .submitWrapper .location form > .btn:nth-of-type(2){
+        margin-left: 0;
+        margin-left: 12px;
+    }
+
+    .submitWrapper .location > div > .yourLocation > select{
+        font-size: 12px;
+        height: 20px;
+        line-height: 20px;
+        max-width: 164px;
+        width: 100%;
+        margin-bottom: 8px;
+    }
+
+    .submitWrapper .location > div > .yourLocation > i{
+        display: none;
+        
+    }
+
+
+
+    .submitWrapper .location > div iframe{
+        width: 430px;
+        height: 250px;
+    }
+
+
+    .submitWrapper .location div > a{
+        font-size: 24px;
+        right: 18px;
+    }
+
+    .dateType div h5{
+        font-size: 20px;
+    }
+
+    .type > div:first-child{
+        max-width: 430px;
+    }
+
+    .type > div:first-child > div > a{
+        font-size: 16px;
+    }
+
+    .type > div:first-child > div > i{
+        font-size: 16px;
+        margin-left: 4px;
+    }
+
+    .type > div:first-child > div{
+        margin-right: 24px;
+    }
+
+    .type > .form-content > p{
+        margin: 0 auto;
+        font-size: 20px;
+        line-height: 120%;
+        height: auto;
+    }
+
+
+    .type > .form-content > form{
+        margin: 12px auto 0 auto;
+    }
+
+    .dateType .type .form-content{
+        flex-direction: column;
+    }
+
+    .type > div:first-child > div > a:hover::before{
+        width: 66px;
+        height: 0;
+    }
+
+    .type > .form-content{
+        display: block;
+    }
+
+    .selectSpecies{
+        max-width: 430px;
+    }
+    .observe{
+        max-width: 430px;
+        margin-bottom: 30px;
+        margin-top: 20px;
+    }
+
+    .observe h5{
+        font-size: 20px;
+        line-height: 100%;
+        margin-bottom: 8px;
+    }
+
+    .observe > div{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .submitBox{
+        height: auto;
+        margin-bottom: 16px;
+    }
+
+    .submitBox > div:nth-of-type(1){
+        margin-bottom: 8px;
+        margin-top: 14px;
+    }
+    
+    .submitWrapper #submitSec > .observe > div > .submitBox > div:nth-of-type(5){
+        margin-top: 16px;
+        gap: 8px;
+        height: 40px;
+        margin-bottom: 12px;
+    }
+
+    .selectSpecies > div > ul > li .number-input > input[type="number"]{
+        font-size: 12px;
+    }
+
+    .selectSpecies > div > h6{
+        margin-bottom: 8px;
+        font-size: 16px;
+        line-height: 100%;
+        margin-top: 12px;
+    }
+    .selectSpecies > div > ul > li .number-input > input{
+        width: 36px;
+        height: 20px;
+    }
+
+    .selectSpecies > div > ul > li .number-input{
+        width: 74px;
+    }
+    .selectSpecies > div > ul > li > div:nth-of-type(2){
+        margin-left: 4px;
+    }
+    .selectSpecies > div > ul > li > div:nth-of-type(2) > span{
+        margin-left: 16px;
+        max-width: 180px;
+    }
+
+    .observe > div > .selectSpecies > div:nth-of-type(2) > ul > li:nth-of-type(3) > div:nth-of-type(2) > span::after{
+        margin-left: 8px;
+        font-size: 16px;
+    }
+
+    .observe > div > .selectSpecies > div:nth-of-type(2) > ul > li:nth-of-type(4) > div:nth-of-type(2) > span::after{
+        margin-left: 8px;
+        font-size: 16px;
+    }
+
+
+    .selectSpecies > div > ul > li > div:nth-of-type(2) > p, .selectSpecies > div > ul > li > div:nth-of-type(2) > span{
+        font-size: 12px;
+        line-height: 100%;
+    }
+    
+    .submitBox > div:nth-of-type(2){
+        margin-bottom: 8px;
+    }
+
+    .selectSpecies > div > ul > li > .detail-btn{
+        font-size: 10px;
+        margin-right: 16px;
+    }
+
+    .selectSpecies > div > ul{
+        max-width: 400px;
+    }
+
+    .selectSpecies{
+        padding-bottom: 20px;
+    }
+
+    .detail{
+        right: 14px;
+        top: 100px;
+        height: 380px;
+        max-width: 400px;
+        width: 100%;
+    }
+
+    textarea {
+        width: 280px;
+    }
+
+    .detail > div:first-child{
+        line-height: 100%;
+        font-size: 20px;
+    }
+
+    .detail .confirm-btn{
+        height: 32px;
+        line-height: 32px;
+        width: 60px;
+    }
+}

@@ -7,9 +7,10 @@
 }
 
 .rareSpecies div{
-  display: flex;
-  width: 302px;
-  height: 45px;
+  display: block;
+  width: 1000px;
+  /* gap:20px; */
+  
   align-items: center;
   justify-content: center;
 
@@ -56,18 +57,18 @@
 
 .rareSpecies ul .rare{
   height: 316px;
-  width: 244px;
+  width: 300px;
   background-color: #2F475D;
   padding: 0 12px;
   border-radius: 5px;
   /* border: 1px solid yellow; */
   position: relative;
+  
 }
 
 
 .rareSpecies ul .rare img{
-  width: 220px;
-  height: 150px;
+  /* width: 300px; */
   border-radius: 5px;
   margin-bottom: 18px;
   margin-top: 12px;
@@ -125,8 +126,43 @@
 }
 
 .rare img {
-  max-width: 100%;
-  height: auto;
+  max-width: 250px;
+  height: 150px;
   display: block;
   margin: 0 auto;
+}
+
+.rare-slick, .slick-initialized, .slick-slider{
+  width: 820px;
+}
+
+
+.slick-prev, .slick-next {
+  background-color: pink;
+  border: 1px solid black;
+  font-size: 100px;
+  color: #333;
+  
+}
+
+.rareSpecies > .rare-slick > .slick-prev:before, .rareSpecies > .rare-slick > .slick-next:before{
+  color: #de0505;
+  background-color: #2F475D;
+  font-size: 100px;
+  display: block;
+}
+
+.slick-next:before{
+  color: #f90000 ;
+  background-color: #2F475D;
+  font-size: 100px;
+}
+
+.slick-prev, .slick-next
+{
+  display: block;
+  color: #f90000;
+  background-color: #2F475D;
+  font-size: 100px;
+  font-size: 200px;
 }

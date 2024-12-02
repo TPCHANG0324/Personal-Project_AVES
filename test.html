@@ -16,6 +16,9 @@
      <!-- Owl Carousel JS -->
      <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
+     <link rel="stylesheet" type="text/css" href="../Personal Project_AVES/sources/slick-1.8.1/slick/slick.css"/>
+     <link rel="stylesheet" type="text/css" href="../Personal Project_AVES/sources/slick-1.8.1/slick/slick-theme.css"/>
+
 </head>
 <body>
 
@@ -34,67 +37,76 @@
         <p>Taiwan</p>
       </div>
     
-      <div class="rare-slick owl-carousel owl-theme">
-        <div class="rare">
-          <img src="./img/暗綠柳鶯1.jpg" alt="">
-          <h6 class="vernacularNname">暗綠柳鶯</h6>
-          <h6 class="scientificName">Phylloscopus trochiloides</h6>
-          <p class="explorer">© 翔鈞 梁</p>
-          <p class="place">高雄-旗津舊高字塔(Kaohsiung-Qijin VTC Tower), Kaohsiung City, TW </p>
-          <p class="date">2024年11月4日</p>
-        </div>
-        <div class="rare">
-          <img src="./img/暗綠柳鶯1.jpg" alt="">
-          <h6 class="vernacularNname">暗綠柳鶯</h6>
-          <h6 class="scientificName">Phylloscopus trochiloides</h6>
-          <p class="explorer">© 翔鈞 梁</p>
-          <p class="place">高雄-旗津舊高字塔(Kaohsiung-Qijin VTC Tower), Kaohsiung City, TW </p>
-          <p class="date">2024年11月4日</p>
-        </div>
-        <div class="rare">
-          <img src="./img/暗綠柳鶯1.jpg" alt="">
-          <h6 class="vernacularNname">暗綠柳鶯</h6>
-          <h6 class="scientificName">Phylloscopus trochiloides</h6>
-          <p class="explorer">© 翔鈞 梁</p>
-          <p class="place">高雄-旗津舊高字塔(Kaohsiung-Qijin VTC Tower), Kaohsiung City, TW </p>
-          <p class="date">2024年11月4日</p>
-        </div>
-        <div class="rare">
-          <img src="./img/暗綠柳鶯1.jpg" alt="">
-          <h6 class="vernacularNname">暗綠柳鶯</h6>
-          <h6 class="scientificName">Phylloscopus trochiloides</h6>
-          <p class="explorer">© 翔鈞 梁</p>
-          <p class="place">高雄-旗津舊高字塔(Kaohsiung-Qijin VTC Tower), Kaohsiung City, TW </p>
-          <p class="date">2024年11月4日</p>
-        </div>
-      </div>
+      <ul class="rare-slick">
+        <li class="rare">
+            <img src="./img/暗綠柳鶯1.jpg" alt="">
+            <h6 class="vernacularNname">暗綠柳鶯</h6>
+            <h6 class="scientificName">Phylloscopus trochiloides</h6>
+            <p class="explorer">© 翔鈞 梁</p>
+            <p class="place">高雄-旗津舊高字塔(Kaohsiung-Qijin VTC Tower), Kaohsiung City, TW </p>
+            <p class="date">2024年11月4日</p>
+        </li>
+
+
+        <li class="rare">
+            <img src="./img/1800 (13).jpg" alt="">
+            <h6 class="vernacularNname">環頸鴴</h6>
+            <h6 class="scientificName">Charadrius hiaticula</h6>
+            <p class="explorer">© Gary Deghi</p>
+            <p class="place">嘉義布袋濕地IBA-新民里(Budai Wetland IBA-Xinmin Village), Chiayi County, Taiwan</p>
+            <p class="date">2024年11月17日</p>
+        </li>
+
+        <li class="rare">
+            <img src="./img/1800 (21).jpg" alt="">
+            <h6 class="vernacularNname">弗氏鷗</h6>
+            <h6 class="scientificName">Leucophaeus pipixcan</h6>
+            <p class="explorer">© William Tsai</p>
+            <p class="place">高雄永安IBA-永安濕地鹽田區(Yung'an IBA--Yung'an Wetland Salt Pan Area), Kaohsiung City, Taiwan</p>
+            <p class="date">2024年11月17日</p>
+        </li>
+
+        <li class="rare">
+            <img src="./img/1800 (20).jpg" alt="">
+            <h6 class="vernacularNname">紅耳鵯</h6>
+            <h6 class="scientificName">Pycnonotus jocosus</h6>
+            <p class="explorer">© 惟雅 蔡</p>
+            <p class="place">柴山93號, 鼓山區 TW-高雄市 (22.6455,120.2530), Kaohsiung City, Taiwan</p>
+            <p class="date">2024年11月17日</p>
+        </li>
+
+        <button type="button" class="slick-prev">Previous</button>
+        <button type="button" class="slick-next">Next</button>
+    </ul>
+    
+
     </div>
     
   </div>
 
 
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/1.2.1/jquery-migrate.min.js"></script>
+  <script type="text/javascript" src="../Personal Project_AVES/sources/slick-1.8.1/slick/slick.min.js"></script>
+
   <script>
 
-    $(document).ready(function() {
-  $('.owl-carousel').owlCarousel({
-    loop: true,
-    margin: 1,
-    nav: true,
-    autoplay: false,      // 禁用自动播放
-    autoplayTimeout: 5000, // 自动播放间隔时间（毫秒）
-    responsive: {
-      0: {
-        items: 1 // 屏幕宽度小于等于0px时显示1个项目
-      },
-      600: {
-        items: 2 // 屏幕宽度小于等于600px时显示2个项目
-      },
-      1000: {
-        items: 3 // 屏幕宽度小于等于1000px时显示3个项目
-      }
-    }
+  $('.rare-slick').slick({
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    adaptiveHeight:true,
+    accessibility :true,
+    arrows: true,
+    // centerMode:true,
+    // centerPadding:'100px'
   });
-});
+
+
+  $('.rare-slick').slick({
+    prevArrow: '<button type="button" class="slick-prev">Previous</button>',
+    nextArrow: '<button type="button" class="slick-next">Next</button>'
+  });
 
 </script>
 

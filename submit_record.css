@@ -154,6 +154,7 @@
 .submitWrapper .location div .yourLocation input[type="text"] {
     border: 1px solid #ACB4B3; 
     background-color: #FEFBF1;
+    font-size: 16px;
 }
 
 .submitWrapper .location div .yourLocation input[type="text"]:focus{
@@ -368,7 +369,7 @@
 
 /* -------------------- 紀錄類型 ------------------------ */
 .type{
-    border: 3px solid green;
+    /* border: 3px solid green; */
     margin-left: 50px;
     width: 100%;
     margin-top: 56px;
