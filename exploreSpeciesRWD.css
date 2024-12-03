@@ -367,9 +367,6 @@
 
 
 @media screen and (max-width:430px) {
-    *{
-        /* outline: 2px solid red; */
-    }
 
     .speciesWrapper{
         max-width: 430px;
@@ -488,6 +485,7 @@
         margin: 0 auto;
         height: auto;
         width: auto;
+        margin-bottom: 12px;
     }
 
     .feature > div:first-child > p{
@@ -651,4 +649,13 @@
     .bestVideo .videoSlick > .slick-prev{
         left: 21%;
     }
+
+    .slick-dotted.slick-slider .slick-dots, .slick-dotted.slick-slider .slick-dots{
+        border: 0;
+    }
+
+    .bestVideo .videoSlick > .slick-next, .bestVideo .videoSlick > .slick-prev, .bestPhoto .photoSlick > .slick-next, .bestPhoto .photoSlick > .slick-prev{
+        border: 0;
+    }
+
 }
