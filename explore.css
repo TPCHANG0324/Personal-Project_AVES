@@ -1742,14 +1742,13 @@ body{
 
 .bestPhoto div{
     display: flex;
-    width: auto;
-    height: 45px;
+    width: 1200px;
+    /* height: 45px; */
     align-items: center;
     justify-content: flex-start;
-
+    padding-left: 40px;
     /* border: 1px solid green; */
     margin-bottom: 20px;
-    padding-left: 40px;
 
 }   
 
@@ -1789,27 +1788,82 @@ body{
 }
 
 
+.slick-dotted.slick-slider{
+    height: auto;
+}
 
-.bestPhoto ul{
+/* 導航點 */
+.slick-dotted.slick-slider .slick-dots{
+    bottom: -8px;
+    width: 100%;
+    max-width: 160px;
+}
+
+.slick-dotted.slick-slider .slick-dots li.slick-active button:before{
+    color: #B29671;
+}
+.slick-dotted.slick-slider .slick-dots li button:before{
+    color: #2F475D;
+}
+
+
+/* 導航箭頭按鈕 */
+.bestPhoto .photoSlick > .slick-prev:before, .bestPhoto .photoSlick > .slick-next:before{
+    font-size: 44px;
+    color: #B29671;
+}
+
+.bestVideo .videoSlick > .slick-prev:before, .bestVideo .videoSlick > .slick-next:before{
+    font-size: 44px;
+    color: #B29671;
+}
+
+.bestPhoto .photoSlick > .slick-next, .bestVideo .videoSlick > .slick-next{
+    right: 41%;
+    top: 97%;
+}
+
+.bestPhoto .photoSlick > .slick-prev, .bestVideo .videoSlick > .slick-prev{
+    top: 97%;
+    left: 39%;
+}
+    
+.bestPhoto > .photoSlick > .slick-list > .slick-track{
+    max-width: 1200px;
+    width: 1200px;
+    padding-left: 0;
+}
+
+.bestVideo > .videoSlick > .slick-list > .slick-track{
+    max-width: 1200px;
+    width: 1200px;
+    padding-left: 0;
+}
+
+.bestPhoto .photoSlick{
     /* border: 3px solid black; */
     display: flex;
     justify-content: center;
-    gap: 44px;
+    /* gap: 20px; */
+    width: 100%;
+    /* overflow: hidden; */
     
 }
 
-.bestPhoto ul .photoList{
+.bestPhoto .photoSlick .photoList{
     height: 316px;
-    width: 244px;
+    max-width: 244px;
     background-color: #2F475D;
     padding: 0 12px;
     border-radius: 5px;
     /* border: 1px solid yellow; */
     position: relative;
+    width: 100%;
+    margin: 0 20px;
 }
 
 
-.bestPhoto ul .photoList img{
+.bestPhoto .photoSlick .photoList img{
     width: 220px;
     height: 150px;
     border-radius: 5px;
@@ -1820,14 +1874,14 @@ body{
 }
 
 
-.bestPhoto ul .photoList > .vernacularNname{
+.bestPhoto .photoSlick .photoList > .vernacularNname{
     color: #F5D367;
     font-size: 16px;
     font-weight: 700;
     line-height: 140%;
 }
 
-.bestPhoto ul .photoList > .scientificName{
+.bestPhoto .photoSlick .photoList > .scientificName{
     font-size: 14px;
     font-style: italic;
     font-weight: 400;
@@ -1835,7 +1889,7 @@ body{
     color: #FEFBF1;
 }
 
-.bestPhoto ul .photoList > .explorer, .place{
+.bestPhoto .photoSlick .photoList > .explorer, .place{
     color: #FEFBF1;
     font-size: 14px;
     font-weight: 400;
@@ -1843,7 +1897,7 @@ body{
 }
 
 
-.bestPhoto ul .photoList > .date{
+.bestPhoto .photoSlick .photoList > .date{
     color: #FEFBF1;
     font-size: 14px;
     font-weight: 400;
@@ -1855,8 +1909,8 @@ body{
     right: 16px;
 }
 
-.bestPhoto div+ul+img{
-    display: block;
+.bestPhoto div+.photoSlick+img{
+    display: none;
     margin-left: 920px;
     margin-top: 16px;
 }
@@ -1884,8 +1938,8 @@ body{
 
 .bestVideo div{
     display: flex;
-    width: auto;
-    height: 45px;
+    width: 1200px;
+    /* height: 45px; */
     align-items: center;
     justify-content: flex-start;
 
@@ -1933,7 +1987,7 @@ body{
 
 
 
-.bestVideo ul{
+.bestVideo .videoSlick{
     /* border: 3px solid black; */
     display: flex;
     justify-content: center;
@@ -1941,21 +1995,23 @@ body{
     
 }
 
-.bestVideo ul .videoList{
+.bestVideo .videoSlick .videoList{
     height: 316px;
-    width: 244px;
+    max-width: 244px;
+    width: 100%;
     background-color: #2F475D;
     padding: 0 12px;
     border-radius: 5px;
     /* border: 1px solid yellow; */
     position: relative;
+    margin: 0 20px;
 }
 
-.bestVideo ul .videoList a {
+.bestVideo .videoSlick .videoList a {
     position: relative;
 }
 
-.bestVideo ul .videoList a i{
+.bestVideo .videoSlick .videoList a i{
     position: absolute;
     font-size: 48px;
     top: 32%;
@@ -1964,7 +2020,7 @@ body{
 }
 
 
-.bestVideo ul .videoList a img{
+.bestVideo .videoSlick .videoList a img{
     width: 220px;
     height: 150px;
     border-radius: 5px;
@@ -1975,14 +2031,14 @@ body{
 }
 
 
-.bestVideo ul .videoList > .vernacularNname{
+.bestVideo .videoSlick .videoList > .vernacularNname{
     color: #F5D367;
     font-size: 16px;
     font-weight: 700;
     line-height: 140%;
 }
 
-.bestVideo ul .videoList > .scientificName{
+.bestVideo .videoSlick .videoList > .scientificName{
     font-size: 14px;
     font-style: italic;
     font-weight: 400;
@@ -1990,7 +2046,7 @@ body{
     color: #FEFBF1;
 }
 
-.bestVideo ul .videoList > .explorer, .place{
+.bestVideo .videoSlick .videoList > .explorer, .place{
     color: #FEFBF1;
     font-size: 14px;
     font-weight: 400;
@@ -1998,7 +2054,7 @@ body{
 }
 
 
-.bestVideo ul .videoList > .date{
+.bestVideo .videoSlick .videoList > .date{
     color: #FEFBF1;
     font-size: 14px;
     font-weight: 400;
@@ -2010,8 +2066,8 @@ body{
     right: 16px;
 }
 
-.bestVideo div+ul+img{
-    display: block;
+.bestVideo div+.videoSlick+img{
+    display: none;
     margin-left: 920px;
     margin-top: 16px;
     margin-bottom: 60px;

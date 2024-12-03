@@ -7,6 +7,7 @@
 
     <link rel="stylesheet" href="basic.css">
     <link rel="stylesheet" href="explore.css">
+    <link rel="stylesheet" href="exploreSpeciesRWD.css">
 
 
 
@@ -17,9 +18,139 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
+
+    <!-- Slick輪播CDN -->
+    <link rel="stylesheet" type="text/css" href="../Personal Project_AVES/sources/slick-1.8.1/slick/slick.css"/>
+    <!-- // Add the new slick-theme.css if you want the default styling -->
+    <link rel="stylesheet" type="text/css" href="../Personal Project_AVES/sources/slick-1.8.1/slick/slick-theme.css"/>
+
 </head>
 <body>
     
+    <!-- mobile header -->
+    <div class="mobileHeader">
+        <i class="fa-solid fa-bars"></i>
+
+        
+        <ul class="main-sel">
+            <li class="title">
+                <a href="./events.html">
+                    <p>相關消息</p>
+                </a>
+                <i class="fa-solid fa-chevron-right"></i>
+                
+
+                <ol>
+                    <li>
+                        <a href="./events.html#activities">活動訊息</a>
+                    </li>
+                    <li>
+                        <a href="./events.html#thesis">相關研究</a>
+                    </li>
+                </ol>
+            </li>
+
+            <li class="title">
+                <a href="./submit.html">
+                    <p>提交發現</p>
+                </a>
+                <i class="fa-solid fa-chevron-right"></i>
+
+                <ol>
+                    <li>
+                        <a href="./myRecord.html">我的紀錄</a>
+                    </li>
+                </ol>
+            </li>
+
+            <li class="title">
+                <a href="./explore.html">
+                    <p>資料探索</p>
+                </a>
+                <i class="fa-solid fa-chevron-right"></i>
+
+                <ol>
+                    <li>
+                        <a href="./exploreSpecies.html">探索鳥種</a>
+                    </li>
+                    <li>
+                        <a href="./exploreRegions.html">地區探索</a>
+                    </li>
+                </ol>
+            </li>
+
+            <li class="title">
+                <a href="./about_support.html">
+                    <p>關於我們</p>
+                </a>
+                <i class="fa-solid fa-chevron-right"></i>
+
+                <ol>
+                    <li>
+                        <a href="./about_support.html#support">支持我們</a>
+                    </li>
+                </ol>
+            </li>
+
+            <li class="title">
+                <a href="./loginAccount.html">
+                    <p>會員登入</p>
+                </a>
+            </li>
+            <li class="title">
+                <a href="#">
+                    <p>語言變更</p>
+                </a>
+                <i class="fa-solid fa-chevron-right"></i>
+
+                <ol>
+                    <li>
+                        <a href="#">English</a>
+                    </li>
+                    <li>
+                        <a href="#">日本語</a>
+                    </li>
+                    <li>
+                        <a href="#">繁體中文</a>
+                    </li>
+                </ol>
+            </li>
+            <ul>
+                <li class="title">
+                    <a target="_blank" href="https://www.facebook.com/ebird/">
+                        <i class="fa-brands fa-facebook"></i>
+                        <p>Facebook</p>
+                    </a>
+                </li>
+
+                <li>
+                    <a target="_blank" href="https://x.com/team_ebird/">
+                        <i class="fa-brands fa-twitter"></i>
+                        <p>Twitter</p>
+
+                </li>
+    
+                <li>
+                    </a>
+                    <a target="_blank" href="https://www.instagram.com/team_ebird/">
+                        <i class="fa-brands fa-square-instagram"></i>
+                        <p>Instagram</p>
+
+                    </a>
+                </li>
+                    
+                
+            </ul>
+            
+        </ul>
+
+
+        <a href="./index.html">
+            <img src="img/AVES_LOGO_horizontal.png" alt="">
+        </a>
+        
+    </div>
+
      <!-- Header -->
     <div class="scroll-nav">
         <div class="nav">
@@ -298,7 +429,7 @@
             </div>
 
 
-            <ul>
+            <ul class="photoSlick">
                 <li class="photoList">
                     <img src="./img/1800 (9).jpg" alt="">
                     <h6 class="vernacularNname">黑面琵鷺</h6>
@@ -334,6 +465,23 @@
                     <p class="place">台中-大安溫寮庄(Taichung-Da'an Wenliao Village), Taichung City, Taiwan</p>
                     <p class="date">2019年4月5日</p>
                 </li>
+
+                <li class="photoList">
+                    <img src="./img/1800 (28).jpg" alt="">
+                    <h6 class="vernacularNname">黑面琵鷺</h6>
+                    <h6 class="scientificName">Platalea minor</h6>
+                    <p class="explorer">© Rui-Yang Ho</p>
+                    <p class="place">台北金山-清水濕地(Jinshan-Qingshui Wetland), New Taipei City, Taiwan</p>
+                    <p class="date">2022年4月4日</p>
+                </li>
+                <li class="photoList">
+                    <img src="./img/1800 (29).jpg" alt="">
+                    <h6 class="vernacularNname">黑面琵鷺</h6>
+                    <h6 class="scientificName">Platalea minor</h6>
+                    <p class="explorer">© Yi-Cheng Chen</p>
+                    <p class="place">台南七股IBA-全區(Qigu IBA), Tainan City, Taiwan</p>
+                    <p class="date">2018年2月27日</p>
+                </li>
             </ul>
             <img src="./img/Frame 313310.svg" alt="">
         </div>
@@ -341,14 +489,6 @@
 
     
       
-
-
-
-
-
-
-
-
 
 
 
@@ -364,9 +504,9 @@
                 <p>Taiwan</p>
             </div>
 
-            <ul>
+            <ul class="videoSlick">
                 <li class="videoList">
-                    <a href="#">
+                    <a target="_blank" href="https://cdn.download.ams.birds.cornell.edu/api/v2/asset/621065484/mp4/1280">
                         <i class="fa-regular fa-circle-play"></i>
                         <img src="./img/1800 (22).jpg" alt="">
                     </a>
@@ -378,7 +518,7 @@
                 </li>
 
                 <li class="videoList">
-                    <a href="#">
+                    <a target="_blank" href="https://cdn.download.ams.birds.cornell.edu/api/v2/asset/621024479/mp4/1280">
                         <i class="fa-regular fa-circle-play"></i>
                         <img src="./img/1800 (23).jpg" alt="">
                     </a>
@@ -390,7 +530,7 @@
                 </li>
 
                 <li class="videoList">
-                    <a href="#">
+                    <a target="_blank" href="https://cdn.download.ams.birds.cornell.edu/api/v2/asset/621065465/mp4/1280">
                         <i class="fa-regular fa-circle-play"></i>
                         <img src="./img/1800 (24).jpg" alt="">
                     </a>
@@ -402,7 +542,7 @@
                 </li>
 
                 <li class="videoList">
-                    <a href="#">
+                    <a target="_blank" href="https://cdn.download.ams.birds.cornell.edu/api/v2/asset/620972505/mp4/1280">
                         <i class="fa-regular fa-circle-play"></i>
                         <img src="./img/1800 (25).jpg" alt="">
                     </a>
@@ -412,6 +552,19 @@
                     <p class="place">台南北門IBA-井仔腳鹽田東區(Beimen IBA-Jingzaijiao Salt Pan East Area), Tainan City, Taiwan</p>
                     <p class="date">2023年10月31日</p>
                 </li>
+
+                <li class="videoList">
+                    <a target="_blank" href="https://cdn.download.ams.birds.cornell.edu/api/v2/asset/621192096/mp4/1280">
+                        <i class="fa-regular fa-circle-play"></i>
+                        <img src="./img/1800 (31).jpg" alt="">
+                    </a>
+                    <h6 class="vernacularNname">黑面琵鷺</h6>
+                    <h6 class="scientificName">Platalea minor</h6>
+                    <p class="explorer">© Yi-Cheng Chen</p>
+                    <p class="place">台南北門IBA-井仔腳鹽田東區(Beimen IBA-Jingzaijiao Salt Pan East Area), Tainan City, Taiwan</p>
+                    <p class="date">2023年10月31日</p>
+                </li>
+
             </ul>
             <img src="./img/Frame 313310.svg" alt="">
         </div>
@@ -488,5 +641,24 @@
 
     </div>
 
+
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-3.4.1.min.js"></script>
+    <script type="text/javascript" src="../Personal Project_AVES/sources/slick-1.8.1/slick/slick.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('.photoSlick, .videoSlick').slick({
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                autoplay: false,
+                autoplaySpeed: 1000,
+                infinite:false,
+                arrows: true,
+                dots: true,
+            });
+        });
+    </script>
 </body>
 </html>
