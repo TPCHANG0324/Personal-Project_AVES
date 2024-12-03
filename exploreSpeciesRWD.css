@@ -1,6 +1,654 @@
 
 @media screen and (max-width:820px) {
+
     .speciesWrapper{
         margin-top: 80px;
+        max-width: 820px;
+    }
+
+    .speciesPhoto{
+        max-width: 820px;
+        width: 100%;
+        height: auto;
+        margin-bottom: 32px;
+    }
+
+    .introduceLeft{
+        width: 100%;
+        max-width: 240px;
+    }
+
+    .introduceLeft .introduceName{
+        width: 118%;
+        height: 226px;
+        margin-top: 148px;
+        margin-left: 16px;
+    }
+
+    .introduceLeft .introduceName h4{
+        font-size: 28px;
+        line-height: 120%;
+        padding-top: 28px;
+        margin-left: 50px;
+        margin-bottom: 10px;
+    }
+
+    .introduceLeft .introduceName h5{
+        font-size: 20px;
+        line-height: 120%;
+        margin-left: 50px;
+        margin-bottom: 10px;
+    }
+
+    .introduceLeft .introduceName ul{
+        margin-left: 50px;
+        gap: 12px;
+        align-items: center;
+    }
+
+    .introduceLeft .introduceName > ul:nth-of-type(1) > li:first-child{
+        width: 44px;
+        height: 28px;
+        line-height: 28px;
+    }
+
+    .introduceLeft .introduceName > ul:nth-of-type(2){
+        margin-top: 8px;
+        margin-left: 48px;
+        gap: 0;
+        width: 184px;
+        height: 60px;
+    }
+
+    .introduceRight > a:first-child{
+        font-size: 20px;    
+        margin-top: 20px;
+        margin-right: 8px;
+        line-height: 120%;
+    }
+
+    .introduceRight{
+        width: 620px;
+        height: 421px;
+        margin-right: 16px;
+        background-size: contain;
+        background-position: center center;   
+        background-repeat: no-repeat; 
+        position: relative;
+    }
+
+    .introduceRight a + ul{
+        right: 12px;
+        width: auto;
+        height: auto;
+        gap: 8px;
+        bottom: -70px;
+        position: absolute;
+    }
+
+    .introduceRight a + ul li > a > img{
+        width: 120px;
+        height: auto;
+    }
+
+    .introduceRight a + ul a i{
+        font-size: 28px;
+    }
+
+    .introduceRight a + ul li{
+        width: auto;
+        height: auto;
+    }
+
+    .introduceLeft > div:last-child{
+        width: 300px;
+        margin-top: 44px;
+        margin-left: 28px;
+    }
+
+    .introduceLeft .introduceName ul li{
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .introduceLeft .introduceName > ul:nth-of-type(2) > li{
+        margin: 0 8px;
+    }
+
+    .introduceLeft > div:last-child > a:first-child > i{
+        font-size: 18px;
+        line-height: 56px;
+    }
+
+    .introduceLeft > div:last-child > a:first-child > .fa-volume-high:before, .fa-volume-up:before{
+        margin-right: 8px;
+    }
+
+    .introduceLeft > div:last-child > a:first-child{
+        height: 56px;
+        width: auto;
+       
+    }
+    .introduceLeft > div:last-child > a:last-child{
+        font-size: 18px;
+        line-height: 120%;
+    }
+
+
+    .feature{
+        max-width: 820px;
+        width: 100%;
+        height: auto;
+    }
+    .feature > div:first-child{
+        max-width: 820px;
+        width: 100%;
+        height: 254px;
+    }
+
+    .feature > div:first-child > h5{
+        font-size: 28px;
+        line-height: 120%;
+        margin: 0 32px;
+    }
+
+    
+    .feature > div:first-child > p{
+        font-size: 20px;
+        line-height: 120%;
+    }
+
+    .feature > div:nth-child(2) > div:first-child h6{
+        font-size: 28px;
+        line-height: 120%;
+    }
+
+    .feature > div:nth-child(2) > div:first-child ul> li p{
+        font-size: 20px;
+        line-height: 120%;
+        padding-left: 20px;
+    }
+
+    .feature > div:nth-child(2) > div:first-child ul> li p:nth-of-type(2){
+        font-size: 32px;
+        line-height: 120%;
+        padding-top: 20px;
+    }
+
+    .feature > div:nth-child(2) > div:first-child ul> li:first-child p:last-child{
+        font-size: 20px;
+        line-height: 120%;
+        padding-top: 44px;
+    }
+
+    .feature > div:nth-child(2) > div:first-child ul> li:first-child{
+        padding-top: 0px;
+        height: auto;
+        margin-bottom: 50px;
+        padding-left: 28px;
+    }
+
+    .feature > div:nth-child(2) > div:first-child{
+        max-width: 540px;
+        height: auto;
+    }
+
+    .feature > div:nth-child(2) > div:first-child ul{
+        padding-left: 0;
+    }
+
+    .feature > div:nth-child(2) > div:nth-child(2){
+        width: 280px;
+        height: 220px;
+        top: -30px;
+        right: 20px;
+    }
+    
+
+    .feature > div:nth-child(2) > div:nth-child(2) > p{
+        font-size: 18px;
+        line-height: 120%;
+        padding-left: 16%;
+    }
+    .feature > div:nth-child(2) > div:nth-child(2) > h6{
+        font-size: 28px;
+        line-height: 120%;
+    }
+
+    .feature > div:nth-child(2) > div:nth-child(3){
+        width: 240px;
+        height: 90px;
+        margin-top: 230px;
+        margin-left: 20px;
+    }
+
+    .feature > div:nth-child(2) > div:nth-child(3) > div{
+        gap: 8px;
+        margin-bottom: 4px;
+    }
+
+    .feature > div:nth-child(2) > div:nth-child(3) > div > h6{
+        font-size: 20px;
+        line-height: 28px;
+        height: 28px;
+    }
+
+    .feature > div:nth-child(2) > div:nth-child(3) > div > i{
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    .feature > div:nth-child(2) > div:nth-child(3) > a{
+        width: 220px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 16px;
+    }
+
+
+    .distribution{
+        max-width: 820px;
+        width: 100%;
+        margin-top: 32px;
+    }
+    .distribution iframe{
+        width: 800px;
+        height: 400px;
+    }
+
+    .distribution h5{
+        font-size: 28px;
+        line-height: 120%;
+        margin: 0px 0 10px 40px;
+    }
+
+
+    .bestPhoto{
+        max-width: 820px;
+        width: 100%;
+    }
+
+    .bestPhoto div{
+        max-width: 820px;
+        margin: 0 auto 20px auto;
+    }
+    .bestPhoto div>h5{
+        font-size: 28px;
+        line-height: 120%;
+    }
+
+    .bestPhoto div>a{
+        font-size: 18px;
+        line-height: 120%;
+    }
+
+    .bestPhoto div>p{
+        font-size: 16px;
+        line-height: 120%;
+    }
+
+
+    .bestPhoto .photoSlick .slick-list .slick-track .photoList{
+        width: 100% !important;
+    }
+
+    .bestPhoto .photoSlick .slick-list .slick-track{
+        max-width: 820px;
+    }
+
+    .bestVideo > .videoSlick > .slick-list > .slick-track{
+        max-width: 820px;
+    }
+
+    .bestPhoto .photoSlick .slick-list{
+        padding-left: 0;
+    }
+
+    .bestPhoto .photoSlick > .slick-next{
+        right: 38%;
+        top: 96%;
+    }
+
+    .bestPhoto .photoSlick > .slick-prev{
+        top: 96%;
+        left: 35%;
+    }
+
+    .bestVideo div{
+        max-width: 820px;
+        width: 100%;
+    }
+
+    .bestVideo div>h5{
+        font-size: 28px;
+        line-height: 120%;
+    }
+
+    .bestVideo div>a{
+        font-size: 18px;
+        line-height: 120%;
+    }
+
+    .bestVideo div>p{
+        font-size: 16px;
+        line-height: 120%;
+    }
+
+    .bestVideo .videoSlick .videoList{
+        width: auto !important;
+    }
+
+
+    .bestVideo > .slick-slider > .slick-list{
+        padding-left: 0;
+    }
+
+    .bestVideo .videoSlick > .slick-next{
+        right: 38%;
+        top: 96%;
+    }
+
+    .bestVideo .videoSlick > .slick-prev{
+        top: 96%;
+        left: 35%;
+    }
+
+    .bestVideo{
+        margin-bottom: 16px;
+    }
+
+
+    .gotop{
+        display: none;
+    }
+
+   
+    
+}
+
+
+@media screen and (max-width:430px) {
+    *{
+        /* outline: 2px solid red; */
+    }
+
+    .speciesWrapper{
+        max-width: 430px;
+        width: 100%;
+    }
+
+    .speciesPhoto{
+        max-width: 430px;
+        width: 100%;
+        flex-direction: column-reverse;
+        margin: 0;
+    }
+
+    .introduceRight{
+        margin: 0;
+        width: 322px;
+        height: 241px;
+    }
+    .introduceRight > ul > a{
+        display: none;
+    }
+
+    .introduceRight a + ul{
+        display: block;
+        right: -106px;
+        bottom: -4px;
+    }
+
+    .introduceRight a + ul li > a > img{
+        width: 105px;
+        height: auto;
+    }
+
+    .introduceRight > a:first-child{
+        margin-right: 0;
+        margin-left: 16px;
+    }
+
+    .introduceLeft .introduceName{
+        margin: 0;
+    }
+
+    .introduceLeft{
+        width: 100%;
+        max-width: 430px;
+        height: auto;
+        position: relative;
+    }
+
+    .introduceLeft .introduceName{
+        max-width: 430px;
+        height: auto;
+        padding-bottom: 12px;
+        box-shadow: none;
+        border-radius: 0;
+    }
+   
+    .introduceLeft .introduceName h4{
+        max-width: auto;
+        font-size: 24px;
+        line-height: 100%;
+        padding-top: 16px;
+        margin-bottom: 8px;
+    }
+
+    .introduceLeft .introduceName h5{
+        font-size: 18px;
+        line-height: 100%;
+    }
+
+    .introduceLeft .introduceName ul li{
+        font-size: 14px;
+    }
+
+    .introduceLeft .introduceName > ul:nth-of-type(2){
+        width: auto;
+        height: auto;
+        margin-top: 4px;
+        margin-left: 40px;
+        
+    }
+
+    .introduceLeft > div:last-child{
+        margin: 0;
+        max-width: 150px;
+        position: absolute;
+        bottom: 20px;
+        right: 40px;
+        display: block;
+        text-align: center;
+    }
+
+    .introduceLeft > div:last-child > a:last-child{
+        margin: 0;
+        margin-top: 4px;
+    }
+
+    .introduceLeft > div:last-child > a:first-child > i{
+        font-size: 16px;
+        line-height: 44px;
+    }
+
+    .introduceLeft > div:last-child > a:first-child{
+        height: 44px;
+        margin-bottom: 8px;
+    }
+
+    .introduceLeft > div:last-child > a:last-child{
+        font-size: 14px;
+        line-height: 100%;
+    }
+
+    .feature > div:first-child > h5{
+        font-size: 24px;
+        line-height: 100%;
+        margin: 0 auto;
+        height: auto;
+        width: auto;
+    }
+
+    .feature > div:first-child > p{
+        font-size: 20px;
+        line-height: 120%;
+        width: auto;
+        height: auto;
+    }
+
+    .feature > div:first-child{
+        padding: 20px 20px 24px 20px;
+        height: auto;
+        flex-direction: column;
+    }
+    
+
+
+    .feature{
+        max-width: 430px;
+        width: 100%;
+    }
+
+    .feature > div:nth-child(2){
+        flex-direction: column;
+    }
+
+    .feature > div:nth-child(2) > div:first-child{
+        max-width: 430px;
+        height: auto;
+    }
+
+
+    .feature > div:nth-child(2) > div:first-child h6{
+        font-size: 24px;
+        line-height: 100%;
+        padding-top: 16px;
+        padding-left: 0;
+        width: auto;
+        margin-bottom: 4px;
+    }
+
+    .feature > div:nth-child(2) > div:first-child ul{
+        padding: 0;
+        max-width: 400px;
+        height: 140px;
+    }
+
+    .feature > div:nth-child(2) > div:first-child ul> li:first-child{
+        padding: 0;
+        margin-bottom: 0;
+    }
+
+    .feature > div:nth-child(2) > div:first-child ul> li{
+        height: auto;
+    }
+
+
+    .feature > div:nth-child(2) > div:first-child ul> li p{
+        font-size: 16px;
+        line-height: 100%;
+    }
+    .feature > div:nth-child(2) > div:first-child ul> li p:nth-of-type(2){
+        font-size: 28px;
+        line-height: 100%;
+    }
+
+    .feature > div:nth-child(2) > div:first-child ul> li:first-child p:last-child{
+        font-size: 16px;
+        line-height: 100%;
+    }
+
+
+    .feature > div:nth-child(2) > div:nth-child(2){
+        position: static;
+        max-width: 430px;
+        width: 100%;
+        height: auto;
+        gap: 16px;
+        padding-bottom: 16px;
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+    .feature > div:nth-child(2) > div:nth-child(2) > h6{
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        margin-top: 15px;
+    }
+
+    .feature > div:nth-child(2) > div:nth-child(2) > p{
+        padding-left: 28%;
+    }
+
+
+    .feature > div:nth-child(2) > div:nth-child(3){
+        margin: 12px auto;
+        height: auto;
+    }
+
+    .feature > div:nth-child(2) > div:nth-child(3) > div{
+        justify-content: center;
+        
+    }
+
+
+    .distribution{
+        max-width: 430px;
+        width: 100%;
+        margin-top: 0;
+        margin-bottom: 12px;
+    }
+
+    .distribution h5{
+        margin: 8px 0 8px 0;
+        text-align: center;
+    }
+
+    .distribution iframe{
+        width: 400px;
+        height: 250px;
+    }
+
+    .bestPhoto{
+        max-width: 430px;
+        width: 100%;
+        margin-bottom: 16px;
+    }
+
+    .bestPhoto div{
+        padding-left: 68px;
+    }
+
+    .bestPhoto div{
+        max-width: 430px;
+    }
+
+    .bestPhoto .photoSlick > .slick-next{
+        right: 27%;
+    }
+
+    .bestPhoto .photoSlick > .slick-prev{
+        left: 21%;
+    }
+
+
+    .bestVideo{
+        max-width: 430px;
+        width: 100%;
+    }
+
+
+    .bestVideo div{
+        padding-left: 68px;
+    }
+
+    .bestVideo .videoSlick > .slick-next{
+        right: 27%;
+    }
+
+    .bestVideo .videoSlick > .slick-prev{
+        left: 21%;
     }
 }

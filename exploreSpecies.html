@@ -25,9 +25,6 @@
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
 
 
-    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 </head>
 <body>
     
@@ -646,8 +643,9 @@
     </div>
 
 
-
-    
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 
     <script>
         $(document).ready(function(){
@@ -659,6 +657,29 @@
                 infinite:false,
                 arrows: true,
                 dots: true,
+                
+
+                responsive:[
+                    {
+                        breakpoint: 820,
+                        settings: {
+                            slidesToShow: 2, 
+                            slidesToScroll: 1,
+                            infinite: false,
+                            dots: true,
+                            arrows: true,
+                        }
+                    },
+                    {
+                        breakpoint: 430,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                            arrows: true,
+                            dots: true
+                        }
+                    }
+                ]
             });
         });
     </script>
