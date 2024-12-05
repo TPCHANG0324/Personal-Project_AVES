@@ -482,10 +482,9 @@
     .feature > div:first-child > h5{
         font-size: 24px;
         line-height: 100%;
-        margin: 0 auto;
+        margin: 0 auto 12px auto;
         height: auto;
         width: auto;
-        margin-bottom: 12px;
     }
 
     .feature > div:first-child > p{

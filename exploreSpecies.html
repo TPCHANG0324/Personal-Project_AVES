@@ -14,6 +14,7 @@
     <!-- font-awesome icons Libraries 匯入 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"> 
 
+
     <!-- Google 字體: Roboto Flex -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -657,29 +658,29 @@
                 infinite:false,
                 arrows: true,
                 dots: true,
-                
-
-                responsive:[
-                    {
-                        breakpoint: 820,
-                        settings: {
-                            slidesToShow: 2, 
-                            slidesToScroll: 1,
-                            infinite: false,
-                            dots: true,
-                            arrows: true,
-                        }
-                    },
-                    {
-                        breakpoint: 430,
-                        settings: {
-                            slidesToShow: 1,
-                            slidesToScroll: 1,
-                            arrows: true,
-                            dots: true
-                        }
-                    }
-                ]
+                variableWidth: true
+            
+                // responsive:[
+                //     {
+                //         breakpoint: 820,
+                //         settings: {
+                //             slidesToShow: 2, 
+                //             slidesToScroll: 1,
+                //             infinite: false,
+                //             dots: true,
+                //             arrows: true,
+                //         }
+                //     },
+                //     {
+                //         breakpoint: 430,
+                //         settings: {
+                //             slidesToShow: 1,
+                //             slidesToScroll: 1,
+                //             arrows: true,
+                //             dots: true
+                //         }
+                //     }
+                // ]
             });
         });
     </script>
