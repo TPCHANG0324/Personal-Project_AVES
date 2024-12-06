@@ -15,9 +15,16 @@
 
 </head>
 <body>
-    <!-- mobile header -->
-    <div class="mobileHeader">
-        <i class="fa-solid fa-bars"></i>
+     <!-- mobile header -->
+     <div class="mobileHeader">
+        <div id="menu-btn-container">
+            <div id="menu-btn">
+              <input type="checkbox" id="menu-checkbox" />
+              <label for="menu-checkbox" id="menu-label">
+                <div id="menu-bar"></div>
+              </label>
+            </div>
+        </div>
 
         
         <ul class="main-sel">
@@ -111,14 +118,14 @@
                     </a>
                 </li>
 
-                <li>
+                <li class="title">
                     <a target="_blank" href="https://x.com/team_ebird/">
                         <i class="fa-brands fa-twitter"></i>
                         <p>Twitter</p>
 
                 </li>
     
-                <li>
+                <li class="title">
                     </a>
                     <a target="_blank" href="https://www.instagram.com/team_ebird/">
                         <i class="fa-brands fa-square-instagram"></i>
@@ -248,7 +255,7 @@
             <div class="left-block">
                 <h1>Explore</h1>
                 <form action="">
-                    <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                    <a href="exploreSpecies.html"><i class="fa-solid fa-magnifying-glass"></i></a>
                     <input type="text" class="search-btn" placeholder="輸入鳥種名">
                     <p>全球所有鳥種的分布地圖、統計數字、照片及錄音，以及你個人賞鳥的統計數據。</p>
                 </form>
@@ -269,7 +276,7 @@
                 <h1>Explore</h1>
                 <form action="">
                 
-                    <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                    <a href="exploreRegions.html"><i class="fa-solid fa-magnifying-glass"></i></a>
                     <input type="text" class="search-btn" placeholder="輸入國家或縣市名稱">
                     <p>一個地區的最新觀察、紀錄清單、賞鳥活動、及最佳熱門鳥點。</p>
                     
@@ -363,5 +370,7 @@
         });
     });
     </script>
+
+    <script src="basic.js"></script>
 </body>
 </html>

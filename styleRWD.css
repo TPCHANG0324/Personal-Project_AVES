@@ -494,10 +494,6 @@
         padding-top: 290px;
     }
 
-    .footer .copyright p{
-        font-size: 14px;
-    }
-
     .wrapper .main:nth-of-type(1) img{
         position: static;
         margin: 0 auto;
@@ -807,10 +803,6 @@
         width: 264px;
     }
 
-    .footer .copyright p {
-        padding: 0 70px;
-    }
-
 
     .wrapper .main:nth-of-type(4) .text p{
         width: 100%;
@@ -940,9 +932,9 @@
 
 @media screen and (max-width:490px) {
 
-    .mobileHeader img{
+    /* .mobileHeader img{
         width: 150px;
-    }
+    } */
 
     .banner .title{
         padding-top: 370px;
@@ -1223,9 +1215,9 @@
         width: 300px;
     }
 
-    .mobileHeader img{
+    /* .mobileHeader img{
         width: 100px;
-    }
+    } */
 
     .play .owl-carousel .owl-item img{
         height: 150px;
@@ -1297,10 +1289,6 @@
         width: 100%;
         max-width: 300px;
         margin-left: 16px;
-    }
-
-    .footer .copyright p{
-        padding: 0 40px;
     }
 
     .main:nth-of-type(4) > div h4{

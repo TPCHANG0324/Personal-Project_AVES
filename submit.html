@@ -28,9 +28,16 @@
 </head>
 <body>
     
-    <!-- mobile header -->
-    <div class="mobileHeader">
-        <i class="fa-solid fa-bars"></i>
+     <!-- mobile header -->
+     <div class="mobileHeader">
+        <div id="menu-btn-container">
+            <div id="menu-btn">
+              <input type="checkbox" id="menu-checkbox" />
+              <label for="menu-checkbox" id="menu-label">
+                <div id="menu-bar"></div>
+              </label>
+            </div>
+        </div>
 
         
         <ul class="main-sel">
@@ -124,14 +131,14 @@
                     </a>
                 </li>
 
-                <li>
+                <li class="title">
                     <a target="_blank" href="https://x.com/team_ebird/">
                         <i class="fa-brands fa-twitter"></i>
                         <p>Twitter</p>
 
                 </li>
     
-                <li>
+                <li class="title">
                     </a>
                     <a target="_blank" href="https://www.instagram.com/team_ebird/">
                         <i class="fa-brands fa-square-instagram"></i>
@@ -1003,5 +1010,6 @@
 });
     </script>
 
+<script src="basic.js"></script>
 </body>
 </html>

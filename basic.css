@@ -378,7 +378,6 @@ body{
         transition: transform 0.5s ease; /* 平滑過度 */
         z-index: 500; /* 主選單 z-index 提高 */
         height: 100%;
-        opacity: .2px;
     }
 
     .mobileHeader .main-sel.active {
@@ -386,7 +385,6 @@ body{
     }
 
     .mobileHeader .main-sel .title > a{
-        width: 100%;
         text-align: left;
     }
 
@@ -420,19 +418,30 @@ body{
         margin-right: 12px;
     }
 
-    .mobileHeader .main-sel .title > ol{
-        /* display: none; */
+    .mobileHeader .main-sel .title ol{
+        display: none;
         position: absolute;
         left: 100%;
-        top: -56%;
+        top: 0;
         font-size: 24px;
-        width: 40%;
+        width: 30%;
+        padding: 0;
+    }
+
+    .mobileHeader .main-sel .title ol.visible {
+        display: block; /* 切換顯示 */
     }
 
 
     .main-sel .title > i{
         font-size: 24px;
         color: #EFE09A;
+        margin-left: auto;
+        cursor: pointer;
+    }
+
+    .main-sel .title > i:hover{
+        color: #5F446F;
     }
 
     .main-sel .title > a > p{
@@ -448,12 +457,147 @@ body{
         display: none;
     }
 
+    .main-sel .title > a p:hover{
+        background-color: #5F446F;
+    }
+
+
     
 }
 
 
 
+@media screen and (max-width:820px) {
+    #menu-btn-container{
+        width: 24px;
+        height: 20px;
+        margin-top: 16px;
+    }
 
+    #menu-btn{
+        width: 24px;
+        height: 18px;
+    }
+
+    #menu-checkbox{
+        width: 24px;
+        height: 20px;
+    }
+
+    #menu-label{
+        height: 24px;
+        width: 20px;
+    }
+
+    #menu-label:before, #menu-label:after, #menu-bar{
+        height: 3px;
+    }
+
+    #menu-label:after{
+        top: 8px;
+    }
+
+    #menu-bar{
+        top: 14px;
+    }
+
+    .mobileHeader img{
+        width: 160px;
+    }
+
+
+}
+
+@media screen and (max-width:660px) {
+    .main-sel .title > a > p, .main-sel .title > i, .main-sel .title:last-child > a > i, .main-sel .title > ol li a, .main-sel > ul:first-of-type > li > a > i{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:570px) {
+    .main-sel .title > a > p, .main-sel .title > i, .main-sel .title:last-child > a > i, .main-sel .title > ol li a, .main-sel > ul:first-of-type > li > a > i{
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .mobileHeader .main-sel .title ol{
+        width: 40%;
+    }
+}
+
+@media screen and (max-width:430px) {
+    .mobileHeader img{
+        width: 120px;
+    }
+
+    #menu-btn-container{
+        width: 20px;
+        height: 20px;
+        margin-top: 8px;
+    }
+
+    #menu-btn{
+        width: 17px;
+        height: 18px;
+    }
+
+    #menu-checkbox{
+        width: 16px;
+        height: 16px;
+    }
+
+    #menu-label{
+        height: 20px;
+        width: 16px;
+    }
+
+    #menu-label:before, #menu-label:after, #menu-bar{
+        height: 2px;
+    }
+
+    #menu-label:before{
+        top: 5px;
+    }
+
+    #menu-label:after{
+        top: 9px;
+    }
+
+    #menu-bar{
+        top: 13px;
+    }
+
+    #menu-bar:before{
+        font-size: 5px;
+    }
+
+    @keyframes moveUpThenDown {
+        50% {
+            top: -12px;
+        }
+        100% {
+            top: -6px;
+        }
+    }
+
+    .main-sel .title > a > p, .main-sel .title > i, .main-sel .title:last-child > a > i, .main-sel .title > ol li a, .main-sel > ul:first-of-type > li > a > i{
+        font-size: 16px;
+    }
+
+    .mobileHeader .main-sel{
+        width: 60%;
+    }
+
+    .mobileHeader .main-sel .title ol{
+        width: 40%;
+    }
+
+
+
+
+        
+}
 
 
 
@@ -641,5 +785,30 @@ body{
 
     .footer .copyright > div{
         display: none;
+    }
+}
+
+@media screen and (max-width:800px){
+    .footer .copyright p{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:630px) {
+    .footer .copyright p{
+        padding: 0 16px;
+    }
+}
+
+@media screen and (max-width:600px){
+    .footer .copyright p {
+        padding: 0 70px;
+    }
+}
+
+
+@media screen and (max-width:320px){
+    .footer .copyright p{
+        padding: 0 40px;
     }
 }

@@ -31,6 +31,8 @@
     <!-- jQuery (必要) -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
     <!-- Owl Carousel JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
@@ -145,14 +147,14 @@
                     </a>
                 </li>
 
-                <li>
+                <li class="title">
                     <a target="_blank" href="https://x.com/team_ebird/">
                         <i class="fa-brands fa-twitter"></i>
                         <p>Twitter</p>
 
                 </li>
     
-                <li>
+                <li class="title">
                     </a>
                     <a target="_blank" href="https://www.instagram.com/team_ebird/">
                         <i class="fa-brands fa-square-instagram"></i>
@@ -524,48 +526,7 @@
     })
     </script>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const menuToggle = document.querySelector("#menu-checkbox");
-            // const menu = document.querySelector(".mobileHeader .main-sel");
-            const menu = document.querySelector(".main-sel");
-
-            // 點擊漢堡選單，切換主選單顯示跟隱藏
-            menuToggle.addEventListener("click", () => {
-                // alert(menu)
-                menu.classList.toggle("active");
-            });
-
-
-
-
-            // 點擊主選單以外的區域收合主選單
-            document.addEventListener("click", (e) => {
-                if (!menu.contains(e.target) && !menuToggle.contains(e.target)) {
-                    // menu.classList.remove("active")
-                    $('.menu').removeClass('active')
-                }
-            });
-
-            // ESC收合主選單
-            document.addEventListener("keydown", (e) => {
-                if (e.key === "Escape") {
-                    // menu.classList.remove("active");
-                    $('.menu').removeClass('active')
-
-                }
-            });
-        })
-
-
-    // $(document).ready(function(){
-    //     $(`.main-sel .title > i`).click(function(){
-    //         $(`.main-sel .title ol`).toggle();
-    //     })
-    // })
-
-
-    </script>
+<script src="basic.js"></script>
 
 </body>
 </html>
